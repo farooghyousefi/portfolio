@@ -318,7 +318,7 @@ function setLanguage(language) {
     const translation = getNestedTranslation(selectedLanguage, element.dataset.i18n);
 
     if (translation) {
-      element.textContent = translation;
+      element.innerHTML = translations[key];
     }
   });
 
