@@ -1,86 +1,79 @@
 const translations = {
   en: {
     meta: {
-      title: "Faroogh Yousefi | Modern Workplace & Cloud Engineer",
-      description: "Portfolio of Faroogh Yousefi, Modern Workplace & Cloud Engineer based in Berlin."
+      title: "Faroogh Yousefi | IT Engineer",
+      description: "Portfolio of Faroogh Yousefi, Berlin-based IT Engineer focused on Modern Workplace, Cloud and Automation."
     },
     nav: {
+      about: "About",
       skills: "Skills",
+      learning: "Learning",
       projects: "Projects",
       experience: "Experience",
-      contact: "Contact"
+      contact: "Contact",
+      cv: "View CV"
     },
     hero: {
-      eyebrow: "Berlin based IT professional",
-      name: "Faroogh Yousefi",
-      role: "Modern Workplace Engineer | Cloud & Automation",
-      description:
-        "Berlin-based IT professional with hands-on experience in Microsoft 365, Intune, Entra ID, ServiceNow, Jira and Power Automate. Focused on modern workplace operations, endpoint management, process automation and cloud technologies.",
+      eyebrow: "Berlin-based IT professional",
+      title: "IT Engineer | Modern Workplace, Cloud & Automation",
+      subtitle:
+        "Berlin-based IT professional with a strong background in IT support, modern workplace operations and process automation - currently moving deeper into cloud technologies, DevOps practices and AI-supported workflows.",
       viewProjects: "View Projects",
-      contact: "Get in Touch"
+      contact: "Contact Me"
     },
     status: {
-      online: "Workplace systems online",
-      currentFocus: "Current Focus",
-      focusValue: "AWS, Azure & DevOps",
-      coreStack: "Core Stack",
-      microsoft365: "Microsoft 365",
-      automation: "Automation",
-      powerAutomate: "Power Automate",
-      itsm: "ITSM",
-      serviceNow: "ServiceNow",
-      identity: "Identity",
-      entraId: "Entra ID"
+      currentFocus: "Current focus",
+      focusValue: "Cloud, Automation & AI-supported workflows",
+      status: "Status",
+      open: "Open to IT Engineer and Modern Workplace roles"
     },
     sections: {
-      technicalToolkit: "Technical toolkit",
-      skills: "Skills",
-      selectedWork: "Selected work",
+      about: "About",
+      skills: "Core Skills",
+      learning: "Cloud & Automation Learning Path",
       projects: "Projects",
-      professionalExperience: "Professional experience",
       experience: "Experience",
-      letConnect: "Let us connect",
       contact: "Contact"
     },
-    skills: {
-      microsoft365: "Microsoft 365",
-      intune: "Microsoft Intune",
-      entraId: "Microsoft Entra ID",
-      powerAutomate: "Power Automate",
-      serviceNow: "ServiceNow",
-      jira: "Jira",
-      aws: "AWS",
-      azure: "Azure",
-      github: "GitHub",
-      itsm: "ITSM",
-      endpointManagement: "Endpoint Management",
-      automation: "Automation"
+    about: {
+      text:
+        "I work close to users, devices, services and processes. My strength is practical IT support and modern workplace operations, and I am actively building deeper capability in cloud, automation, DevOps habits and AI-supported workflows."
+    },
+    learning: {
+      cloud: {
+        title: "Cloud foundations",
+        text: "Hands-on learning with AWS and Azure around compute, storage, identity, serverless concepts and practical deployment basics."
+      },
+      automation: {
+        title: "Automation practice",
+        text: "Building automation thinking for onboarding, offboarding, ITSM workflows and repeatable service tasks."
+      },
+      ai: {
+        title: "AI-supported workflows",
+        text: "Using AI as a modern productivity and learning tool for research, documentation, troubleshooting and structured project work."
+      }
     },
     projects: {
       visitLive: "Visit live app",
       budget: {
         kicker: "Live project",
         title: "BudgetUp",
-        description:
-          "A private finance dashboard for tracking income, expenses, assets, debts and family budgets."
+        description: "A private finance dashboard for tracking income, expenses, assets, debts and family budgets."
       },
       aws: {
         kicker: "Cloud learning",
         title: "AWS Learning Projects",
-        description:
-          "Hands-on cloud projects using AWS services such as EC2, S3, Lambda, API Gateway and IAM."
+        description: "Hands-on cloud projects using AWS services such as EC2, S3, Lambda, API Gateway and IAM."
       },
       automation: {
         kicker: "Workflow design",
         title: "Automation Concepts",
-        description:
-          "Process automation concepts for onboarding, offboarding and IT service workflows."
+        description: "Process automation concepts for onboarding, offboarding and IT service workflows."
       }
     },
     experience: {
       company: "ING DiBa AG",
       role: "IT Support · Modern Workplace · Process Automation",
-      focusAreas: "Focus areas",
       focusMicrosoft365: "Microsoft 365 support",
       focusEndpoint: "Endpoint and device lifecycle management",
       focusIntune: "Intune compliance",
@@ -93,91 +86,84 @@ const translations = {
       linkedin: "LinkedIn"
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. Built with clean HTML and CSS."
+      text: "© 2026 Faroogh Yousefi. Built with clean HTML, CSS and a small JavaScript language switcher."
     }
   },
   de: {
     meta: {
-      title: "Faroogh Yousefi | Modern Workplace & Cloud Engineer",
-      description: "Portfolio von Faroogh Yousefi, Modern Workplace & Cloud Engineer aus Berlin."
+      title: "Faroogh Yousefi | IT Engineer",
+      description: "Portfolio von Faroogh Yousefi, IT Engineer aus Berlin mit Fokus auf Modern Workplace, Cloud und Automatisierung."
     },
     nav: {
+      about: "Über mich",
       skills: "Skills",
+      learning: "Lernen",
       projects: "Projekte",
       experience: "Erfahrung",
-      contact: "Kontakt"
+      contact: "Kontakt",
+      cv: "CV ansehen"
     },
     hero: {
       eyebrow: "IT-Profi aus Berlin",
-      name: "Faroogh Yousefi",
-      role: "Modern Workplace Engineer | Cloud & Automatisierung",
-      description:
-        "IT-Profi aus Berlin mit praktischer Erfahrung in Microsoft 365, Intune, Entra ID, ServiceNow, Jira und Power Automate. Fokus auf Modern Workplace Operations, Endpoint Management, Prozessautomatisierung und Cloud-Technologien.",
+      title: "IT Engineer | Modern Workplace, Cloud & Automatisierung",
+      subtitle:
+        "IT-Profi aus Berlin mit starkem Hintergrund in IT Support, Modern Workplace Operations und Prozessautomatisierung - aktuell mit stärkerem Fokus auf Cloud-Technologien, DevOps-Praktiken und KI-gestützte Workflows.",
       viewProjects: "Projekte ansehen",
-      contact: "Kontakt aufnehmen"
-    },
-    status: {
-      online: "Workplace-Systeme online",
-      currentFocus: "Aktueller Fokus",
-      focusValue: "AWS, Azure & DevOps",
-      coreStack: "Kern-Stack",
-      microsoft365: "Microsoft 365",
-      automation: "Automatisierung",
-      powerAutomate: "Power Automate",
-      itsm: "ITSM",
-      serviceNow: "ServiceNow",
-      identity: "Identität",
-      entraId: "Entra ID"
-    },
-    sections: {
-      technicalToolkit: "Technisches Toolkit",
-      skills: "Skills",
-      selectedWork: "Ausgewählte Arbeiten",
-      projects: "Projekte",
-      professionalExperience: "Berufserfahrung",
-      experience: "Erfahrung",
-      letConnect: "Lass uns vernetzen",
       contact: "Kontakt"
     },
-    skills: {
-      microsoft365: "Microsoft 365",
-      intune: "Microsoft Intune",
-      entraId: "Microsoft Entra ID",
-      powerAutomate: "Power Automate",
-      serviceNow: "ServiceNow",
-      jira: "Jira",
-      aws: "AWS",
-      azure: "Azure",
-      github: "GitHub",
-      itsm: "ITSM",
-      endpointManagement: "Endpoint Management",
-      automation: "Automatisierung"
+    status: {
+      currentFocus: "Aktueller Fokus",
+      focusValue: "Cloud, Automatisierung & KI-gestützte Workflows",
+      status: "Status",
+      open: "Offen für IT Engineer und Modern Workplace Rollen"
+    },
+    sections: {
+      about: "Über mich",
+      skills: "Core Skills",
+      learning: "Cloud & Automation Learning Path",
+      projects: "Projekte",
+      experience: "Erfahrung",
+      contact: "Kontakt"
+    },
+    about: {
+      text:
+        "Ich arbeite nah an Nutzern, Geräten, Services und Prozessen. Meine Stärke liegt in praktischem IT Support und Modern Workplace Operations, während ich meine Fähigkeiten in Cloud, Automatisierung, DevOps-Arbeitsweisen und KI-gestützten Workflows aktiv ausbaue."
+    },
+    learning: {
+      cloud: {
+        title: "Cloud-Grundlagen",
+        text: "Praxisnahes Lernen mit AWS und Azure rund um Compute, Storage, Identity, Serverless-Konzepte und grundlegende Deployments."
+      },
+      automation: {
+        title: "Automatisierungspraxis",
+        text: "Automatisierungsdenken für Onboarding, Offboarding, ITSM-Workflows und wiederholbare Service-Aufgaben."
+      },
+      ai: {
+        title: "KI-gestützte Workflows",
+        text: "KI als modernes Produktivitäts- und Lernwerkzeug für Recherche, Dokumentation, Troubleshooting und strukturierte Projektarbeit."
+      }
     },
     projects: {
       visitLive: "Live-App besuchen",
       budget: {
         kicker: "Live-Projekt",
         title: "BudgetUp",
-        description:
-          "Ein privates Finanz-Dashboard zum Verfolgen von Einnahmen, Ausgaben, Vermögen, Schulden und Familienbudgets."
+        description: "Ein privates Finanz-Dashboard zum Verfolgen von Einnahmen, Ausgaben, Vermögen, Schulden und Familienbudgets."
       },
       aws: {
         kicker: "Cloud-Lernen",
         title: "AWS Learning Projects",
-        description:
-          "Praxisnahe Cloud-Projekte mit AWS-Services wie EC2, S3, Lambda, API Gateway und IAM."
+        description: "Praxisnahe Cloud-Projekte mit AWS-Services wie EC2, S3, Lambda, API Gateway und IAM."
       },
       automation: {
         kicker: "Workflow-Design",
         title: "Automation Concepts",
-        description:
-          "Konzepte zur Prozessautomatisierung für Onboarding, Offboarding und IT-Service-Workflows."
+        description: "Konzepte zur Prozessautomatisierung für Onboarding, Offboarding und IT-Service-Workflows."
       }
     },
     experience: {
       company: "ING DiBa AG",
       role: "IT Support · Modern Workplace · Prozessautomatisierung",
-      focusAreas: "Schwerpunkte",
       focusMicrosoft365: "Microsoft 365 Support",
       focusEndpoint: "Endpoint- und Device-Lifecycle-Management",
       focusIntune: "Intune Compliance",
@@ -190,91 +176,84 @@ const translations = {
       linkedin: "LinkedIn"
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. Erstellt mit sauberem HTML und CSS."
+      text: "© 2026 Faroogh Yousefi. Erstellt mit sauberem HTML, CSS und einem kleinen JavaScript-Sprachumschalter."
     }
   },
   fa: {
     meta: {
-      title: "Faroogh Yousefi | مهندس Modern Workplace و Cloud",
-      description: "پورتفولیوی Faroogh Yousefi، متخصص Modern Workplace و Cloud ساکن برلین."
+      title: "Faroogh Yousefi | IT Engineer",
+      description: "پورتفولیوی Faroogh Yousefi، IT Engineer ساکن برلین با تمرکز روی Modern Workplace، Cloud و Automation."
     },
     nav: {
+      about: "درباره من",
       skills: "مهارت ها",
+      learning: "مسیر یادگیری",
       projects: "پروژه ها",
       experience: "تجربه",
-      contact: "تماس"
+      contact: "تماس",
+      cv: "مشاهده CV"
     },
     hero: {
       eyebrow: "متخصص IT ساکن برلین",
-      name: "Faroogh Yousefi",
-      role: "مهندس Modern Workplace | Cloud و Automation",
-      description:
-        "متخصص IT ساکن برلین با تجربه عملی در Microsoft 365، Intune، Entra ID، ServiceNow، Jira و Power Automate. متمرکز بر عملیات Modern Workplace، مدیریت endpoint، اتوماسیون فرایندها و فناوری های ابری.",
+      title: "IT Engineer | Modern Workplace، Cloud و Automation",
+      subtitle:
+        "متخصص IT ساکن برلین با پیش زمینه قوی در IT Support، عملیات Modern Workplace و اتوماسیون فرایندها - در حال توسعه عمیق تر مهارت ها در Cloud، روش های DevOps و workflowهای پشتیبانی شده با AI.",
       viewProjects: "مشاهده پروژه ها",
-      contact: "ارتباط با من"
+      contact: "تماس با من"
     },
     status: {
-      online: "سیستم های Workplace فعال هستند",
       currentFocus: "تمرکز فعلی",
-      focusValue: "AWS، Azure و DevOps",
-      coreStack: "فناوری های اصلی",
-      microsoft365: "Microsoft 365",
-      automation: "اتوماسیون",
-      powerAutomate: "Power Automate",
-      itsm: "ITSM",
-      serviceNow: "ServiceNow",
-      identity: "هویت",
-      entraId: "Entra ID"
+      focusValue: "Cloud، Automation و workflowهای پشتیبانی شده با AI",
+      status: "وضعیت",
+      open: "آماده برای نقش های IT Engineer و Modern Workplace"
     },
     sections: {
-      technicalToolkit: "ابزارها و مهارت های فنی",
-      skills: "مهارت ها",
-      selectedWork: "نمونه کارهای منتخب",
+      about: "درباره من",
+      skills: "مهارت های اصلی",
+      learning: "مسیر یادگیری Cloud و Automation",
       projects: "پروژه ها",
-      professionalExperience: "تجربه حرفه ای",
       experience: "تجربه",
-      letConnect: "در ارتباط باشیم",
       contact: "تماس"
     },
-    skills: {
-      microsoft365: "Microsoft 365",
-      intune: "Microsoft Intune",
-      entraId: "Microsoft Entra ID",
-      powerAutomate: "Power Automate",
-      serviceNow: "ServiceNow",
-      jira: "Jira",
-      aws: "AWS",
-      azure: "Azure",
-      github: "GitHub",
-      itsm: "ITSM",
-      endpointManagement: "مدیریت Endpoint",
-      automation: "اتوماسیون"
+    about: {
+      text:
+        "من نزدیک به کاربران، دستگاه ها، سرویس ها و فرایندها کار می کنم. نقطه قوت من IT Support عملی و عملیات Modern Workplace است و در حال توسعه توانایی های عمیق تر در Cloud، Automation، عادت های DevOps و workflowهای پشتیبانی شده با AI هستم."
+    },
+    learning: {
+      cloud: {
+        title: "مبانی Cloud",
+        text: "یادگیری عملی با AWS و Azure در زمینه compute، storage، identity، مفاهیم serverless و اصول deployment."
+      },
+      automation: {
+        title: "تمرین Automation",
+        text: "ساخت ذهنیت اتوماسیون برای onboarding، offboarding، workflowهای ITSM و کارهای تکرارشونده سرویس."
+      },
+      ai: {
+        title: "Workflowهای پشتیبانی شده با AI",
+        text: "استفاده از AI به عنوان ابزار مدرن بهره وری و یادگیری برای تحقیق، مستندسازی، troubleshooting و کار پروژه ای ساختارمند."
+      }
     },
     projects: {
       visitLive: "مشاهده نسخه زنده",
       budget: {
         kicker: "پروژه فعال",
         title: "BudgetUp",
-        description:
-          "داشبورد مالی خصوصی برای پیگیری درآمدها، هزینه ها، دارایی ها، بدهی ها و بودجه خانواده."
+        description: "داشبورد مالی خصوصی برای پیگیری درآمدها، هزینه ها، دارایی ها، بدهی ها و بودجه خانواده."
       },
       aws: {
         kicker: "یادگیری Cloud",
         title: "پروژه های آموزشی AWS",
-        description:
-          "پروژه های عملی Cloud با سرویس های AWS مانند EC2، S3، Lambda، API Gateway و IAM."
+        description: "پروژه های عملی Cloud با سرویس های AWS مانند EC2، S3، Lambda، API Gateway و IAM."
       },
       automation: {
         kicker: "طراحی Workflow",
-        title: "مفاهیم اتوماسیون",
-        description:
-          "مفاهیم اتوماسیون فرایند برای onboarding، offboarding و workflowهای سرویس IT."
+        title: "مفاهیم Automation",
+        description: "مفاهیم اتوماسیون فرایند برای onboarding، offboarding و workflowهای سرویس IT."
       }
     },
     experience: {
       company: "ING DiBa AG",
       role: "IT Support · Modern Workplace · Process Automation",
-      focusAreas: "حوزه های تمرکز",
       focusMicrosoft365: "پشتیبانی Microsoft 365",
       focusEndpoint: "مدیریت چرخه عمر endpoint و دستگاه ها",
       focusIntune: "Compliance در Intune",
@@ -287,7 +266,7 @@ const translations = {
       linkedin: "LinkedIn"
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. ساخته شده با HTML و CSS تمیز."
+      text: "© 2026 Faroogh Yousefi. ساخته شده با HTML، CSS و یک تغییر دهنده زبان کوچک با JavaScript."
     }
   }
 };

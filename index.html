@@ -5,26 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Portfolio of Faroogh Yousefi, Modern Workplace & Cloud Engineer based in Berlin."
+    content="Portfolio of Faroogh Yousefi, Berlin-based IT Engineer focused on Modern Workplace, Cloud and Automation."
   />
-  <title>Faroogh Yousefi | Modern Workplace & Cloud Engineer</title>
+  <title>Faroogh Yousefi | IT Engineer</title>
   <link rel="canonical" href="https://farooghyousefi.com/" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
+    <nav class="terminal-nav section-shell" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="Faroogh Yousefi home">
-        <span class="brand-mark">FY</span>
-        <span>Faroogh Yousefi</span>
+        <span class="terminal-dot red" aria-hidden="true"></span>
+        <span class="terminal-dot yellow" aria-hidden="true"></span>
+        <span class="terminal-dot green" aria-hidden="true"></span>
+        <span class="brand-text">Faroogh Yousefi</span>
       </a>
+
       <div class="nav-actions">
         <div class="nav-links">
+          <a href="#about" data-i18n="nav.about">About</a>
           <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#learning" data-i18n="nav.learning">Learning</a>
           <a href="#projects" data-i18n="nav.projects">Projects</a>
           <a href="#experience" data-i18n="nav.experience">Experience</a>
           <a href="#contact" data-i18n="nav.contact">Contact</a>
+          <a href="assets/Faroogh-Yousefi-CV.pdf" target="_blank" rel="noopener noreferrer" data-i18n="nav.cv">View CV</a>
         </div>
+
         <div class="language-switcher" aria-label="Language selector">
           <button class="language-button" type="button" data-lang="de">DE</button>
           <span aria-hidden="true">|</span>
@@ -38,140 +45,166 @@
 
   <main id="top">
     <section class="hero section-shell" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Berlin based IT professional</p>
-        <h1 id="hero-title" data-i18n="hero.name">Faroogh Yousefi</h1>
-        <p class="role" data-i18n="hero.role">Modern Workplace Engineer | Cloud & Automation</p>
-        <p class="hero-text" data-i18n="hero.description">
-          Berlin-based IT professional with hands-on experience in Microsoft 365, 
-          Intune, Entra ID, ServiceNow, Jira and Power Automate. 
-          Focused on modern workplace operations, endpoint management, process automation and cloud technologies.
-        </p>
-        <div class="hero-actions" aria-label="Hero actions">
-          <a class="button button-primary" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
-          <a class="button button-secondary" href="#contact" data-i18n="hero.contact">Get in Touch</a>
+      <div class="terminal-window">
+        <div class="terminal-titlebar" aria-hidden="true">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-path">~/portfolio/profile</span>
+        </div>
+
+        <div class="terminal-body">
+          <p class="command-line">$ whoami</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Berlin-based IT professional</p>
+          <h1 id="hero-title" data-i18n="hero.title">IT Engineer | Modern Workplace, Cloud & Automation</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Berlin-based IT professional with a strong background in IT support, modern workplace operations
+            and process automation - currently moving deeper into cloud technologies, DevOps practices and
+            AI-supported workflows.
+          </p>
+
+          <ul class="tech-pills" aria-label="Key technologies">
+            <li>Microsoft 365</li>
+            <li>Intune</li>
+            <li>Entra ID</li>
+            <li>Power Automate</li>
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>GitHub</li>
+            <li>AI Workflows</li>
+          </ul>
+
+          <div class="hero-actions" aria-label="Hero actions">
+            <a class="button primary" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
+            <a class="button secondary" href="#contact" data-i18n="hero.contact">Contact Me</a>
+          </div>
+
+          <div class="status-grid">
+            <article class="status-card">
+              <span data-i18n="status.currentFocus">Current focus</span>
+              <strong data-i18n="status.focusValue">Cloud, Automation & AI-supported workflows</strong>
+            </article>
+            <article class="status-card">
+              <span data-i18n="status.status">Status</span>
+              <strong data-i18n="status.open">Open to IT Engineer and Modern Workplace roles</strong>
+            </article>
+          </div>
         </div>
       </div>
+    </section>
 
-      <aside class="hero-panel" aria-label="Professional focus overview">
-        <div class="panel-topline">
-          <span class="status-dot" aria-hidden="true"></span>
-          <span data-i18n="status.online">Workplace systems online</span>
-        </div>
-        <div class="signal-card signal-primary">
-          <span class="signal-label" data-i18n="status.currentFocus">Current Focus</span>
-          <strong data-i18n="status.focusValue">AWS, Azure & DevOps</strong>
-        </div>
-        <div class="signal-grid">
-          <div class="signal-card">
-            <span class="signal-label" data-i18n="status.coreStack">Core Stack</span>
-            <strong data-i18n="status.microsoft365">Microsoft 365</strong>
-          </div>
-          <div class="signal-card">
-            <span class="signal-label" data-i18n="status.automation">Automation</span>
-            <strong data-i18n="status.powerAutomate">Power Automate</strong>
-          </div>
-          <div class="signal-card">
-            <span class="signal-label" data-i18n="status.itsm">ITSM</span>
-            <strong data-i18n="status.serviceNow">ServiceNow</strong>
-          </div>
-          <div class="signal-card">
-            <span class="signal-label" data-i18n="status.identity">Identity</span>
-            <strong data-i18n="status.entraId">Entra ID</strong>
-          </div>
-        </div>
-      </aside>
+    <section class="section-shell two-column" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="command-line">$ cat about.txt</p>
+        <h2 id="about-title" data-i18n="sections.about">About</h2>
+      </div>
+      <div class="prose-panel">
+        <p data-i18n="about.text">
+          I work close to users, devices, services and processes. My strength is practical IT support and
+          modern workplace operations, and I am actively building deeper capability in cloud, automation,
+          DevOps habits and AI-supported workflows.
+        </p>
+      </div>
     </section>
 
     <section class="section-shell" id="skills" aria-labelledby="skills-title">
       <div class="section-heading">
-        <p class="eyebrow" data-i18n="sections.technicalToolkit">Technical toolkit</p>
-        <h2 id="skills-title" data-i18n="sections.skills">Skills</h2>
+        <p class="command-line">$ ls core-skills</p>
+        <h2 id="skills-title" data-i18n="sections.skills">Core Skills</h2>
       </div>
-      <ul class="skill-list" aria-label="Skills list">
-        <li data-i18n="skills.microsoft365">Microsoft 365</li>
-        <li data-i18n="skills.intune">Microsoft Intune</li>
-        <li data-i18n="skills.entraId">Microsoft Entra ID</li>
-        <li data-i18n="skills.powerAutomate">Power Automate</li>
-        <li data-i18n="skills.serviceNow">ServiceNow</li>
-        <li data-i18n="skills.jira">Jira</li>
-        <li data-i18n="skills.aws">AWS</li>
-        <li data-i18n="skills.azure">Azure</li>
-        <li data-i18n="skills.github">GitHub</li>
-        <li data-i18n="skills.itsm">ITSM</li>
-        <li data-i18n="skills.endpointManagement">Endpoint Management</li>
-        <li data-i18n="skills.automation">Automation</li>
+      <ul class="skill-list" aria-label="Core skills">
+        <li>Microsoft 365</li>
+        <li>Microsoft Intune</li>
+        <li>Microsoft Entra ID</li>
+        <li>Power Automate</li>
+        <li>ServiceNow</li>
+        <li>Jira</li>
+        <li>AWS</li>
+        <li>Azure</li>
+        <li>GitHub</li>
+        <li>ITSM</li>
+        <li>Endpoint Management</li>
+        <li>Automation</li>
       </ul>
+    </section>
+
+    <section class="section-shell" id="learning" aria-labelledby="learning-title">
+      <div class="section-heading">
+        <p class="command-line">$ roadmap --current</p>
+        <h2 id="learning-title" data-i18n="sections.learning">Cloud & Automation Learning Path</h2>
+      </div>
+
+      <div class="learning-grid">
+        <article class="terminal-card">
+          <span class="card-index">01</span>
+          <h3 data-i18n="learning.cloud.title">Cloud foundations</h3>
+          <p data-i18n="learning.cloud.text">Hands-on learning with AWS and Azure around compute, storage, identity, serverless concepts and practical deployment basics.</p>
+        </article>
+        <article class="terminal-card">
+          <span class="card-index">02</span>
+          <h3 data-i18n="learning.automation.title">Automation practice</h3>
+          <p data-i18n="learning.automation.text">Building automation thinking for onboarding, offboarding, ITSM workflows and repeatable service tasks.</p>
+        </article>
+        <article class="terminal-card">
+          <span class="card-index">03</span>
+          <h3 data-i18n="learning.ai.title">AI-supported workflows</h3>
+          <p data-i18n="learning.ai.text">Using AI as a modern productivity and learning tool for research, documentation, troubleshooting and structured project work.</p>
+        </article>
+      </div>
     </section>
 
     <section class="section-shell" id="projects" aria-labelledby="projects-title">
       <div class="section-heading">
-        <p class="eyebrow" data-i18n="sections.selectedWork">Selected work</p>
+        <p class="command-line">$ open projects</p>
         <h2 id="projects-title" data-i18n="sections.projects">Projects</h2>
       </div>
 
       <div class="project-grid">
         <article class="project-card featured-project">
-          <div>
-            <p class="card-kicker" data-i18n="projects.budget.kicker">Live project</p>
-            <h3 data-i18n="projects.budget.title">BudgetUp</h3>
-            <p data-i18n="projects.budget.description">
-              A private finance dashboard for tracking income, expenses,
-              assets, debts and family budgets.
-            </p>
-          </div>
-          <a href="https://budget.farooghyousefi.com" target="_blank" rel="noreferrer" data-i18n="projects.visitLive">
-            Visit live app
-          </a>
+          <span class="card-index" data-i18n="projects.budget.kicker">Live project</span>
+          <h3 data-i18n="projects.budget.title">BudgetUp</h3>
+          <p data-i18n="projects.budget.description">A private finance dashboard for tracking income, expenses, assets, debts and family budgets.</p>
+          <a href="https://budget.farooghyousefi.com" target="_blank" rel="noreferrer" data-i18n="projects.visitLive">Visit live app</a>
         </article>
 
         <article class="project-card">
-          <p class="card-kicker" data-i18n="projects.aws.kicker">Cloud learning</p>
+          <span class="card-index" data-i18n="projects.aws.kicker">Cloud learning</span>
           <h3 data-i18n="projects.aws.title">AWS Learning Projects</h3>
-          <p data-i18n="projects.aws.description">
-            Hands-on cloud projects using AWS services such as EC2, S3, Lambda,
-            API Gateway and IAM.
-          </p>
+          <p data-i18n="projects.aws.description">Hands-on cloud projects using AWS services such as EC2, S3, Lambda, API Gateway and IAM.</p>
         </article>
 
         <article class="project-card">
-          <p class="card-kicker" data-i18n="projects.automation.kicker">Workflow design</p>
+          <span class="card-index" data-i18n="projects.automation.kicker">Workflow design</span>
           <h3 data-i18n="projects.automation.title">Automation Concepts</h3>
-          <p data-i18n="projects.automation.description">
-            Process automation concepts for onboarding, offboarding and IT
-            service workflows.
-          </p>
+          <p data-i18n="projects.automation.description">Process automation concepts for onboarding, offboarding and IT service workflows.</p>
         </article>
       </div>
     </section>
 
-    <section class="section-shell experience" id="experience" aria-labelledby="experience-title">
+    <section class="section-shell two-column" id="experience" aria-labelledby="experience-title">
       <div class="section-heading">
-        <p class="eyebrow" data-i18n="sections.professionalExperience">Professional experience</p>
+        <p class="command-line">$ history --work</p>
         <h2 id="experience-title" data-i18n="sections.experience">Experience</h2>
       </div>
 
       <article class="experience-card">
-        <div class="experience-main">
+        <div>
           <p class="company" data-i18n="experience.company">ING DiBa AG</p>
           <h3 data-i18n="experience.role">IT Support · Modern Workplace · Process Automation</h3>
         </div>
-        <div class="focus-area">
-          <p data-i18n="experience.focusAreas">Focus areas</p>
-          <ul>
-            <li data-i18n="experience.focusMicrosoft365">Microsoft 365 support</li>
-            <li data-i18n="experience.focusEndpoint">Endpoint and device lifecycle management</li>
-            <li data-i18n="experience.focusIntune">Intune compliance</li>
-            <li data-i18n="experience.focusWorkflows">ServiceNow and Jira workflows</li>
-            <li data-i18n="experience.focusPowerAutomate">Power Automate process improvements</li>
-          </ul>
-        </div>
+        <ul>
+          <li data-i18n="experience.focusMicrosoft365">Microsoft 365 support</li>
+          <li data-i18n="experience.focusEndpoint">Endpoint and device lifecycle management</li>
+          <li data-i18n="experience.focusIntune">Intune compliance</li>
+          <li data-i18n="experience.focusWorkflows">ServiceNow and Jira workflows</li>
+          <li data-i18n="experience.focusPowerAutomate">Power Automate process improvements</li>
+        </ul>
       </article>
     </section>
 
-    <section class="section-shell contact" id="contact" aria-labelledby="contact-title">
+    <section class="section-shell" id="contact" aria-labelledby="contact-title">
       <div class="section-heading">
-        <p class="eyebrow" data-i18n="sections.letConnect">Let us connect</p>
+        <p class="command-line">$ connect</p>
         <h2 id="contact-title" data-i18n="sections.contact">Contact</h2>
       </div>
 
@@ -196,9 +229,10 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <p data-i18n="footer.text">© 2026 Faroogh Yousefi. Built with clean HTML and CSS.</p>
+  <footer class="footer section-shell">
+    <p data-i18n="footer.text">© 2026 Faroogh Yousefi. Built with clean HTML, CSS and a small JavaScript language switcher.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
