@@ -37,7 +37,7 @@ const translations = {
     },
     about: {
       text:
-        "I come from an Enterprise IT and Modern Workplace background and am now focused on Cloud, DevOps, and Platform Engineering. My experience includes Microsoft 365 environments, endpoint operations, identity and access management, IT service management, and workflow automation. I am currently building portfolio projects with AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD, and automation."
+         "I come from an Enterprise IT and Modern Workplace background and am now focused on Cloud, DevOps, and Platform Engineering.<br><br>My experience includes Microsoft 365 environments, endpoint operations, identity and access management, IT service management, and workflow automation. I am currently building hands-on portfolio projects with AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD, and automation technologies."
     },
     skills: {
       cloud: "Cloud",
@@ -318,7 +318,7 @@ function setLanguage(language) {
     const translation = getNestedTranslation(selectedLanguage, element.dataset.i18n);
 
     if (translation) {
-      element.textContent = translation;
+      element.innerHTML = value;
     }
   });
 
