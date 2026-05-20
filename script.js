@@ -111,7 +111,7 @@ const translations = {
       contact: "Kontakt"
     },
     hero: {
-      name: "Faroog Yousefi",
+      name: "Faroogh Yousefi",
       subtitle: "Cloud & DevOps Engineer in Progress | AWS, Azure, Automatisierung & Platform Engineering",
       text:
         "Ich baue praktische Cloud- und Automatisierungsprojekte und entwickle hands-on Fähigkeiten in AWS, Azure, Linux, Infrastructure as Code, CI/CD und modernen Platform Operations.",
@@ -318,7 +318,7 @@ function setLanguage(language) {
     const translation = getNestedTranslation(selectedLanguage, element.dataset.i18n);
 
     if (translation) {
-      element.innerHTML = value;
+      element.textContent = translation;
     }
   });
 
