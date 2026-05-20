@@ -1,89 +1,96 @@
 const translations = {
   en: {
     meta: {
-      title: "Faroogh Yousefi | IT Engineer",
-      description: "Portfolio of Faroogh Yousefi, Berlin-based IT Engineer focused on Modern Workplace, Cloud and Automation."
+      title: "Faroogh Yousefi | Cloud & DevOps Engineer in Progress",
+      description:
+        "Portfolio of Faroogh Yousefi, Berlin-based Cloud and DevOps Engineer in progress focused on AWS, Azure, automation and platform engineering."
     },
     nav: {
       about: "About",
       skills: "Skills",
-      learning: "Learning",
+      training: "Training",
       projects: "Projects",
       experience: "Experience",
-      contact: "Contact",
-      cv: "View CV"
+      contact: "Contact"
     },
     hero: {
-      eyebrow: "Berlin-based IT professional",
-      title: "IT Engineer | Modern Workplace, Cloud & Automation",
-      subtitle:
-        "Berlin-based IT professional with a strong background in IT support, modern workplace operations and process automation - currently moving deeper into cloud technologies, DevOps practices and AI-supported workflows.",
+      name: "Faroogh Yousefi",
+      subtitle: "Cloud & DevOps Engineer in Progress | AWS, Azure, Automation & Platform Engineering",
+      text:
+        "I build practical cloud and automation projects while developing hands-on skills in AWS, Azure, Linux, Infrastructure as Code, CI/CD, and modern platform operations.",
       viewProjects: "View Projects",
-      contact: "Contact Me"
+      viewCv: "View CV"
     },
     status: {
-      currentFocus: "Current focus",
-      focusValue: "Cloud, Automation & AI-supported workflows",
-      status: "Status",
-      open: "Open to IT Engineer and Modern Workplace roles"
+      positioning: "Target positioning",
+      positioningValue: "Cloud & DevOps | Platform Engineering | Automation",
+      currentTraining: "Current training",
+      trainingValue: "Full-time AWS & DevOps Engineer program at Clarusway GmbH"
     },
     sections: {
       about: "About",
-      skills: "Core Skills",
-      learning: "Cloud & Automation Learning Path",
-      projects: "Projects",
+      skills: "Skills",
+      training: "Education / Training",
+      projects: "Portfolio Projects",
       experience: "Experience",
       contact: "Contact"
     },
     about: {
       text:
-        "I work close to users, devices, services and processes. My strength is practical IT support and modern workplace operations, and I am actively building deeper capability in cloud, automation, DevOps habits and AI-supported workflows."
+        "I come from an Enterprise IT and Modern Workplace background and am now focused on Cloud, DevOps, and Platform Engineering. My experience includes Microsoft 365 environments, endpoint operations, identity and access management, IT service management, and workflow automation. I am currently building portfolio projects with AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD, and automation."
     },
-    learning: {
-      cloud: {
-        title: "Cloud foundations",
-        text: "Hands-on learning with AWS and Azure around compute, storage, identity, serverless concepts and practical deployment basics."
-      },
-      automation: {
-        title: "Automation practice",
-        text: "Building automation thinking for onboarding, offboarding, ITSM workflows and repeatable service tasks."
-      },
-      ai: {
-        title: "AI-supported workflows",
-        text: "Using AI as a modern productivity and learning tool for research, documentation, troubleshooting and structured project work."
-      }
+    skills: {
+      cloud: "Cloud",
+      devops: "DevOps",
+      platform: "Platform / Enterprise IT"
+    },
+    training: {
+      type: "Current full-time program",
+      title: "AWS & DevOps Engineer Program",
+      date: "May 2026 - October 2026",
+      description:
+        "Full-time AWS and DevOps training focused on cloud infrastructure, Linux, networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, monitoring, automation, and portfolio-based projects.",
+      certHeading: "Certifications in preparation"
     },
     projects: {
-      visitLive: "Visit live app",
-      budget: {
-        kicker: "Live project",
-        title: "BudgetUp",
-        description: "A private finance dashboard for tracking income, expenses, assets, debts and family budgets."
+      inProgress: "In Progress",
+      awsInfra: {
+        title: "AWS Cloud Infrastructure Lab",
+        description:
+          "Designing and deploying AWS infrastructure using core services such as EC2, VPC, IAM, S3, and CloudWatch."
       },
-      aws: {
-        kicker: "Cloud learning",
-        title: "AWS Learning Projects",
-        description: "Hands-on cloud projects using AWS services such as EC2, S3, Lambda, API Gateway and IAM."
+      cicd: {
+        title: "DevOps CI/CD Pipeline Lab",
+        description:
+          "Building a CI/CD workflow with GitHub, Jenkins, Docker, and automated deployment concepts."
       },
-      automation: {
-        kicker: "Workflow design",
-        title: "Automation Concepts",
-        description: "Process automation concepts for onboarding, offboarding and IT service workflows."
+      iac: {
+        title: "Infrastructure as Code Project",
+        description:
+          "Creating reproducible infrastructure using Terraform and cloud automation practices."
+      },
+      workplace: {
+        title: "Modern Workplace Automation",
+        description:
+          "Automation-focused project based on Microsoft 365, Power Automate, endpoint workflows, and IT operations improvement."
       }
     },
     experience: {
       company: "ING DiBa AG",
-      role: "IT Support · Modern Workplace · Process Automation",
-      focusMicrosoft365: "Microsoft 365 support",
-      focusEndpoint: "Endpoint and device lifecycle management",
-      focusIntune: "Intune compliance",
-      focusWorkflows: "ServiceNow and Jira workflows",
-      focusPowerAutomate: "Power Automate process improvements"
+      role: "IT Support Engineer - Modern Workplace & Automation",
+      point1: "Supported the operation of a large-scale Modern Workplace environment with thousands of users and endpoints.",
+      point2: "Worked on endpoint lifecycle processes including onboarding, reboarding, offboarding, device preparation, and secure data cleanup.",
+      point3: "Supported Microsoft 365, endpoint hardware, mobile devices, collaboration tools, and workplace technologies in an enterprise banking environment.",
+      point4: "Contributed to IT service management processes using ServiceNow across incident, request, and change management.",
+      point5: "Supported workflow improvements and automation-related processes using Microsoft 365, ServiceNow, and Power Automate.",
+      point6: "Worked with identity, user management, endpoint operations, and technical troubleshooting in a regulated enterprise environment."
     },
     contact: {
       email: "Email",
+      linkedin: "LinkedIn",
       github: "GitHub",
-      linkedin: "LinkedIn"
+      cv: "CV Download",
+      cvText: "Open PDF resume"
     },
     footer: {
       text: "© 2026 Faroogh Yousefi. Built with clean HTML, CSS and a small JavaScript language switcher."
@@ -91,89 +98,96 @@ const translations = {
   },
   de: {
     meta: {
-      title: "Faroogh Yousefi | IT Engineer",
-      description: "Portfolio von Faroogh Yousefi, IT Engineer aus Berlin mit Fokus auf Modern Workplace, Cloud und Automatisierung."
+      title: "Faroogh Yousefi | Cloud & DevOps Engineer in Progress",
+      description:
+        "Portfolio von Faroogh Yousefi, Cloud und DevOps Engineer in Progress aus Berlin mit Fokus auf AWS, Azure, Automatisierung und Platform Engineering."
     },
     nav: {
       about: "Über mich",
       skills: "Skills",
-      learning: "Lernen",
+      training: "Training",
       projects: "Projekte",
       experience: "Erfahrung",
-      contact: "Kontakt",
-      cv: "CV ansehen"
-    },
-    hero: {
-      eyebrow: "IT-Profi aus Berlin",
-      title: "IT Engineer | Modern Workplace, Cloud & Automatisierung",
-      subtitle:
-        "IT-Profi aus Berlin mit starkem Hintergrund in IT Support, Modern Workplace Operations und Prozessautomatisierung - aktuell mit stärkerem Fokus auf Cloud-Technologien, DevOps-Praktiken und KI-gestützte Workflows.",
-      viewProjects: "Projekte ansehen",
       contact: "Kontakt"
     },
+    hero: {
+      name: "Faroogh Yousefi",
+      subtitle: "Cloud & DevOps Engineer in Progress | AWS, Azure, Automatisierung & Platform Engineering",
+      text:
+        "Ich baue praktische Cloud- und Automatisierungsprojekte und entwickle hands-on Fähigkeiten in AWS, Azure, Linux, Infrastructure as Code, CI/CD und modernen Platform Operations.",
+      viewProjects: "Projekte ansehen",
+      viewCv: "CV ansehen"
+    },
     status: {
-      currentFocus: "Aktueller Fokus",
-      focusValue: "Cloud, Automatisierung & KI-gestützte Workflows",
-      status: "Status",
-      open: "Offen für IT Engineer und Modern Workplace Rollen"
+      positioning: "Zielpositionierung",
+      positioningValue: "Cloud & DevOps | Platform Engineering | Automatisierung",
+      currentTraining: "Aktuelles Training",
+      trainingValue: "Vollzeit AWS & DevOps Engineer Programm bei Clarusway GmbH"
     },
     sections: {
       about: "Über mich",
-      skills: "Core Skills",
-      learning: "Cloud & Automation Learning Path",
-      projects: "Projekte",
+      skills: "Skills",
+      training: "Ausbildung / Training",
+      projects: "Portfolio-Projekte",
       experience: "Erfahrung",
       contact: "Kontakt"
     },
     about: {
       text:
-        "Ich arbeite nah an Nutzern, Geräten, Services und Prozessen. Meine Stärke liegt in praktischem IT Support und Modern Workplace Operations, während ich meine Fähigkeiten in Cloud, Automatisierung, DevOps-Arbeitsweisen und KI-gestützten Workflows aktiv ausbaue."
+        "Ich komme aus dem Enterprise-IT- und Modern-Workplace-Umfeld und fokussiere mich jetzt auf Cloud, DevOps und Platform Engineering. Meine Erfahrung umfasst Microsoft-365-Umgebungen, Endpoint Operations, Identity und Access Management, IT Service Management und Workflow-Automatisierung. Aktuell baue ich Portfolio-Projekte mit AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD und Automatisierung."
     },
-    learning: {
-      cloud: {
-        title: "Cloud-Grundlagen",
-        text: "Praxisnahes Lernen mit AWS und Azure rund um Compute, Storage, Identity, Serverless-Konzepte und grundlegende Deployments."
-      },
-      automation: {
-        title: "Automatisierungspraxis",
-        text: "Automatisierungsdenken für Onboarding, Offboarding, ITSM-Workflows und wiederholbare Service-Aufgaben."
-      },
-      ai: {
-        title: "KI-gestützte Workflows",
-        text: "KI als modernes Produktivitäts- und Lernwerkzeug für Recherche, Dokumentation, Troubleshooting und strukturierte Projektarbeit."
-      }
+    skills: {
+      cloud: "Cloud",
+      devops: "DevOps",
+      platform: "Platform / Enterprise IT"
+    },
+    training: {
+      type: "Aktuelles Vollzeitprogramm",
+      title: "AWS & DevOps Engineer Program",
+      date: "Mai 2026 - Oktober 2026",
+      description:
+        "Vollzeittraining für AWS und DevOps mit Fokus auf Cloud-Infrastruktur, Linux, Networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, Monitoring, Automatisierung und portfolio-basierte Projekte.",
+      certHeading: "Zertifizierungen in Vorbereitung"
     },
     projects: {
-      visitLive: "Live-App besuchen",
-      budget: {
-        kicker: "Live-Projekt",
-        title: "BudgetUp",
-        description: "Ein privates Finanz-Dashboard zum Verfolgen von Einnahmen, Ausgaben, Vermögen, Schulden und Familienbudgets."
+      inProgress: "In Arbeit",
+      awsInfra: {
+        title: "AWS Cloud Infrastructure Lab",
+        description:
+          "Design und Deployment von AWS-Infrastruktur mit Kernservices wie EC2, VPC, IAM, S3 und CloudWatch."
       },
-      aws: {
-        kicker: "Cloud-Lernen",
-        title: "AWS Learning Projects",
-        description: "Praxisnahe Cloud-Projekte mit AWS-Services wie EC2, S3, Lambda, API Gateway und IAM."
+      cicd: {
+        title: "DevOps CI/CD Pipeline Lab",
+        description:
+          "Aufbau eines CI/CD-Workflows mit GitHub, Jenkins, Docker und Konzepten für automatisierte Deployments."
       },
-      automation: {
-        kicker: "Workflow-Design",
-        title: "Automation Concepts",
-        description: "Konzepte zur Prozessautomatisierung für Onboarding, Offboarding und IT-Service-Workflows."
+      iac: {
+        title: "Infrastructure as Code Project",
+        description:
+          "Erstellung reproduzierbarer Infrastruktur mit Terraform und Cloud-Automatisierungspraktiken."
+      },
+      workplace: {
+        title: "Modern Workplace Automation",
+        description:
+          "Automatisierungsorientiertes Projekt auf Basis von Microsoft 365, Power Automate, Endpoint-Workflows und Verbesserungen im IT-Betrieb."
       }
     },
     experience: {
       company: "ING DiBa AG",
-      role: "IT Support · Modern Workplace · Prozessautomatisierung",
-      focusMicrosoft365: "Microsoft 365 Support",
-      focusEndpoint: "Endpoint- und Device-Lifecycle-Management",
-      focusIntune: "Intune Compliance",
-      focusWorkflows: "ServiceNow- und Jira-Workflows",
-      focusPowerAutomate: "Prozessverbesserungen mit Power Automate"
+      role: "IT Support Engineer - Modern Workplace & Automation",
+      point1: "Unterstützung des Betriebs einer großen Modern-Workplace-Umgebung mit tausenden Nutzern und Endpoints.",
+      point2: "Mitarbeit an Endpoint-Lifecycle-Prozessen wie Onboarding, Reboarding, Offboarding, Gerätevorbereitung und sicherer Datenbereinigung.",
+      point3: "Support für Microsoft 365, Endpoint-Hardware, mobile Geräte, Collaboration Tools und Workplace-Technologien in einem Enterprise-Banking-Umfeld.",
+      point4: "Mitwirkung an IT-Service-Management-Prozessen mit ServiceNow in Incident-, Request- und Change-Management.",
+      point5: "Unterstützung von Workflow-Verbesserungen und automatisierungsnahen Prozessen mit Microsoft 365, ServiceNow und Power Automate.",
+      point6: "Arbeit mit Identity, User Management, Endpoint Operations und technischem Troubleshooting in einem regulierten Enterprise-Umfeld."
     },
     contact: {
       email: "E-Mail",
+      linkedin: "LinkedIn",
       github: "GitHub",
-      linkedin: "LinkedIn"
+      cv: "CV Download",
+      cvText: "PDF-Lebenslauf öffnen"
     },
     footer: {
       text: "© 2026 Faroogh Yousefi. Erstellt mit sauberem HTML, CSS und einem kleinen JavaScript-Sprachumschalter."
@@ -181,89 +195,96 @@ const translations = {
   },
   fa: {
     meta: {
-      title: "Faroogh Yousefi | IT Engineer",
-      description: "پورتفولیوی Faroogh Yousefi، IT Engineer ساکن برلین با تمرکز روی Modern Workplace، Cloud و Automation."
+      title: "Faroogh Yousefi | Cloud & DevOps Engineer in Progress",
+      description:
+        "پورتفولیوی Faroogh Yousefi، Cloud و DevOps Engineer in Progress ساکن برلین با تمرکز بر AWS، Azure، Automation و Platform Engineering."
     },
     nav: {
       about: "درباره من",
       skills: "مهارت ها",
-      learning: "مسیر یادگیری",
+      training: "آموزش",
       projects: "پروژه ها",
       experience: "تجربه",
-      contact: "تماس",
-      cv: "مشاهده CV"
+      contact: "تماس"
     },
     hero: {
-      eyebrow: "متخصص IT ساکن برلین",
-      title: "IT Engineer | Modern Workplace، Cloud و Automation",
-      subtitle:
-        "متخصص IT ساکن برلین با پیش زمینه قوی در IT Support، عملیات Modern Workplace و اتوماسیون فرایندها - در حال توسعه عمیق تر مهارت ها در Cloud، روش های DevOps و workflowهای پشتیبانی شده با AI.",
+      name: "Faroogh Yousefi",
+      subtitle: "Cloud & DevOps Engineer in Progress | AWS، Azure، Automation و Platform Engineering",
+      text:
+        "من پروژه های عملی Cloud و Automation می سازم و هم زمان مهارت های hands-on خود را در AWS، Azure، Linux، Infrastructure as Code، CI/CD و Platform Operations مدرن توسعه می دهم.",
       viewProjects: "مشاهده پروژه ها",
-      contact: "تماس با من"
+      viewCv: "مشاهده CV"
     },
     status: {
-      currentFocus: "تمرکز فعلی",
-      focusValue: "Cloud، Automation و workflowهای پشتیبانی شده با AI",
-      status: "وضعیت",
-      open: "آماده برای نقش های IT Engineer و Modern Workplace"
+      positioning: "موقعیت هدف",
+      positioningValue: "Cloud & DevOps | Platform Engineering | Automation",
+      currentTraining: "آموزش فعلی",
+      trainingValue: "برنامه تمام وقت AWS & DevOps Engineer در Clarusway GmbH"
     },
     sections: {
       about: "درباره من",
-      skills: "مهارت های اصلی",
-      learning: "مسیر یادگیری Cloud و Automation",
-      projects: "پروژه ها",
+      skills: "مهارت ها",
+      training: "آموزش / دوره",
+      projects: "پروژه های پورتفولیو",
       experience: "تجربه",
       contact: "تماس"
     },
     about: {
       text:
-        "من نزدیک به کاربران، دستگاه ها، سرویس ها و فرایندها کار می کنم. نقطه قوت من IT Support عملی و عملیات Modern Workplace است و در حال توسعه توانایی های عمیق تر در Cloud، Automation، عادت های DevOps و workflowهای پشتیبانی شده با AI هستم."
+        "من از زمینه Enterprise IT و Modern Workplace می آیم و اکنون روی Cloud، DevOps و Platform Engineering تمرکز دارم. تجربه من شامل محیط های Microsoft 365، عملیات endpoint، identity و access management، IT service management و workflow automation است. در حال حاضر پروژه های پورتفولیو با AWS، Azure، Linux، Terraform، Docker، Kubernetes، CI/CD و automation می سازم."
     },
-    learning: {
-      cloud: {
-        title: "مبانی Cloud",
-        text: "یادگیری عملی با AWS و Azure در زمینه compute، storage، identity، مفاهیم serverless و اصول deployment."
-      },
-      automation: {
-        title: "تمرین Automation",
-        text: "ساخت ذهنیت اتوماسیون برای onboarding، offboarding، workflowهای ITSM و کارهای تکرارشونده سرویس."
-      },
-      ai: {
-        title: "Workflowهای پشتیبانی شده با AI",
-        text: "استفاده از AI به عنوان ابزار مدرن بهره وری و یادگیری برای تحقیق، مستندسازی، troubleshooting و کار پروژه ای ساختارمند."
-      }
+    skills: {
+      cloud: "Cloud",
+      devops: "DevOps",
+      platform: "Platform / Enterprise IT"
+    },
+    training: {
+      type: "برنامه تمام وقت فعلی",
+      title: "AWS & DevOps Engineer Program",
+      date: "می 2026 - اکتبر 2026",
+      description:
+        "آموزش تمام وقت AWS و DevOps با تمرکز بر cloud infrastructure، Linux، networking، Terraform، Docker، Kubernetes، Jenkins، CI/CD، monitoring، automation و پروژه های portfolio-based.",
+      certHeading: "گواهی نامه های در حال آمادگی"
     },
     projects: {
-      visitLive: "مشاهده نسخه زنده",
-      budget: {
-        kicker: "پروژه فعال",
-        title: "BudgetUp",
-        description: "داشبورد مالی خصوصی برای پیگیری درآمدها، هزینه ها، دارایی ها، بدهی ها و بودجه خانواده."
+      inProgress: "در حال انجام",
+      awsInfra: {
+        title: "AWS Cloud Infrastructure Lab",
+        description:
+          "طراحی و پیاده سازی زیرساخت AWS با سرویس های اصلی مانند EC2، VPC، IAM، S3 و CloudWatch."
       },
-      aws: {
-        kicker: "یادگیری Cloud",
-        title: "پروژه های آموزشی AWS",
-        description: "پروژه های عملی Cloud با سرویس های AWS مانند EC2، S3، Lambda، API Gateway و IAM."
+      cicd: {
+        title: "DevOps CI/CD Pipeline Lab",
+        description:
+          "ساخت workflow برای CI/CD با GitHub، Jenkins، Docker و مفاهیم automated deployment."
       },
-      automation: {
-        kicker: "طراحی Workflow",
-        title: "مفاهیم Automation",
-        description: "مفاهیم اتوماسیون فرایند برای onboarding، offboarding و workflowهای سرویس IT."
+      iac: {
+        title: "Infrastructure as Code Project",
+        description:
+          "ایجاد زیرساخت قابل تکرار با Terraform و روش های cloud automation."
+      },
+      workplace: {
+        title: "Modern Workplace Automation",
+        description:
+          "پروژه متمرکز بر automation بر پایه Microsoft 365، Power Automate، endpoint workflows و بهبود IT operations."
       }
     },
     experience: {
       company: "ING DiBa AG",
-      role: "IT Support · Modern Workplace · Process Automation",
-      focusMicrosoft365: "پشتیبانی Microsoft 365",
-      focusEndpoint: "مدیریت چرخه عمر endpoint و دستگاه ها",
-      focusIntune: "Compliance در Intune",
-      focusWorkflows: "Workflowهای ServiceNow و Jira",
-      focusPowerAutomate: "بهبود فرایندها با Power Automate"
+      role: "IT Support Engineer - Modern Workplace & Automation",
+      point1: "پشتیبانی از عملیات یک محیط بزرگ Modern Workplace با هزاران کاربر و endpoint.",
+      point2: "کار روی فرایندهای endpoint lifecycle شامل onboarding، reboarding، offboarding، آماده سازی دستگاه و پاک سازی امن داده ها.",
+      point3: "پشتیبانی از Microsoft 365، سخت افزار endpoint، دستگاه های موبایل، ابزارهای collaboration و فناوری های workplace در محیط enterprise banking.",
+      point4: "مشارکت در فرایندهای IT service management با ServiceNow در incident، request و change management.",
+      point5: "پشتیبانی از بهبود workflowها و فرایندهای مرتبط با automation با Microsoft 365، ServiceNow و Power Automate.",
+      point6: "کار با identity، user management، endpoint operations و troubleshooting فنی در محیط enterprise regulated."
     },
     contact: {
       email: "ایمیل",
+      linkedin: "LinkedIn",
       github: "GitHub",
-      linkedin: "LinkedIn"
+      cv: "دانلود CV",
+      cvText: "باز کردن رزومه PDF"
     },
     footer: {
       text: "© 2026 Faroogh Yousefi. ساخته شده با HTML، CSS و یک تغییر دهنده زبان کوچک با JavaScript."
