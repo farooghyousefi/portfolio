@@ -111,7 +111,7 @@ const translations = {
       contact: "Kontakt"
     },
     hero: {
-      name: "Faroogh Yousefi",
+      name: "Faroog Yousefi",
       subtitle: "Cloud & DevOps Engineer in Progress | AWS, Azure, Automatisierung & Platform Engineering",
       text:
         "Ich baue praktische Cloud- und Automatisierungsprojekte und entwickle hands-on Fähigkeiten in AWS, Azure, Linux, Infrastructure as Code, CI/CD und modernen Platform Operations.",

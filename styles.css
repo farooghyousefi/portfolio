@@ -222,9 +222,11 @@ h1 {
   max-width: 980px;
   margin-bottom: 14px;
   color: #f0f6fc;
-  font-size: clamp(3.6rem, 13vw, 7.2rem);
-  line-height: 0.92;
+  font-size: clamp(2.45rem, 7vw, 4.4rem);
+  line-height: 1;
   letter-spacing: 0;
+  white-space: nowrap;
+  word-spacing: normal;
 }
 
 .hero-role {
@@ -658,7 +660,14 @@ html[dir="rtl"] .brand-text {
   }
 
   h1 {
-    font-size: clamp(3rem, 17vw, 4.9rem);
+    max-width: 980px;
+    margin-bottom: 14px;
+    color: #f0f6fc;
+    font-size: clamp(2.05rem, 8.2vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: 0;
+    white-space: nowrap;
+    word-spacing: normal;
   }
 
   .skill-list {
