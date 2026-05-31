@@ -53,30 +53,44 @@
         </div>
 
         <div class="terminal-body">
-          <p class="command-line">$ whoami</p>
-          <h1 id="hero-title" data-i18n="hero.name">Faroogh Yousefi</h1>
-          <p class="hero-role" data-i18n="hero.subtitle">Cloud & DevOps Engineer in Progress | AWS, Azure, Automation & Platform Engineering</p>
-          <p class="hero-text" data-i18n="hero.text">
-            I build practical cloud and automation projects while developing hands-on skills in AWS, Azure,
-            Linux, Infrastructure as Code, CI/CD, and modern platform operations.
-          </p>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="command-line">$ whoami</p>
+              <h1 id="hero-title" data-i18n="hero.name">Faroogh Yousefi</h1>
+              <p class="hero-role" data-i18n="hero.subtitle">Cloud & DevOps Engineer in Progress | AWS, Azure, Automation & Platform Engineering</p>
+              <p class="hero-text" data-i18n="hero.text">
+                I build practical cloud and automation projects while developing hands-on skills in AWS, Azure,
+                Linux, Infrastructure as Code, CI/CD, and modern platform operations.
+              </p>
 
-          <ul class="tech-pills" aria-label="Target technologies">
-            <li>AWS</li>
-            <li>Azure</li>
-            <li>Linux</li>
-            <li>Terraform</li>
-            <li>Docker</li>
-            <li>Kubernetes</li>
-            <li>Jenkins</li>
-            <li>CI/CD</li>
-          </ul>
+              <ul class="tech-pills" aria-label="Target technologies">
+                <li>AWS</li>
+                <li>Azure</li>
+                <li>Linux</li>
+                <li>Terraform</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Jenkins</li>
+                <li>CI/CD</li>
+              </ul>
 
-          <div class="hero-actions" aria-label="Hero actions">
-            <a class="button primary" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
-            <a class="button secondary" href="assets/Faroogh-Yousefi-CV.pdf" target="_blank" rel="noopener noreferrer" data-i18n="hero.viewCv">View CV</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/farooghyousefi/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="button secondary" href="https://github.com/farooghyousefi" target="_blank" rel="noreferrer">GitHub</a>
+              <div class="hero-actions" aria-label="Hero actions">
+                <a class="button primary" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
+                <a class="button secondary" href="assets/Faroogh-Yousefi-CV.pdf" target="_blank" rel="noopener noreferrer" data-i18n="hero.viewCv">View CV</a>
+                <a class="button secondary" href="https://www.linkedin.com/in/farooghyousefi/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a class="button secondary" href="https://github.com/farooghyousefi" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+
+            <aside class="photo-card" aria-label="Portrait of Faroogh Yousefi">
+              <img
+                src="assets/profile-photo.jpg"
+                alt="Portrait of Faroogh Yousefi"
+                onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
+              />
+              <div class="photo-fallback" hidden>FY</div>
+              <span data-i18n="photo.caption">Cloud & DevOps in progress</span>
+            </aside>
           </div>
 
           <div class="status-grid">
@@ -99,7 +113,7 @@
         <h2 id="about-title" data-i18n="sections.about">About</h2>
       </div>
       <div class="prose-panel">
-        <p data-i18n="about.text">
+        <p data-i18n="about.text" data-i18n-html="true">
           I come from an Enterprise IT and Modern Workplace background and am now focused on Cloud, DevOps, and Platform Engineering.<br><br>
           My experience includes Microsoft 365 environments, endpoint operations, identity and access management, IT service management, and workflow automation.<br><br>
           I am currently building hands-on portfolio projects with AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD, and automation technologies.
@@ -194,10 +208,10 @@
       </div>
 
       <div class="project-grid">
-          <article class="project-card featured-project">
-          <span class="card-index">Featured Project</span>
-          <h3>BudgetUp</h3>
-          <p>
+        <article class="project-card featured-project">
+          <span class="card-index" data-i18n="projects.featured">Featured Project</span>
+          <h3 data-i18n="projects.budgetup.title">BudgetUp</h3>
+          <p data-i18n="projects.budgetup.description">
             Personal finance and budgeting application focused on expense tracking,
             financial overview, and clean user experience.
           </p>
@@ -206,7 +220,7 @@
             target="_blank"
             rel="noreferrer"
           >
-            View Project
+            <span data-i18n="projects.viewProject">View Project</span>
           </a>
         </article>
         <article class="project-card">
@@ -289,7 +303,7 @@
   </main>
 
   <footer class="footer section-shell">
-    <p data-i18n="footer.text">© 2026 Faroogh Yousefi. Built with clean HTML, CSS and a small JavaScript language switcher.</p>
+    <p data-i18n="footer.text">© 2026 Faroogh Yousefi. Cloud, DevOps & Automation Portfolio.</p>
   </footer>
 
   <script src="script.js"></script>

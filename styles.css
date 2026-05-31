@@ -195,6 +195,18 @@ a {
   padding: clamp(24px, 5vw, 42px);
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: clamp(24px, 5vw, 48px);
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
 .command-line {
   margin: 0 0 12px;
   color: var(--blue);
@@ -270,7 +282,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 32px;
 }
 
 .button {
@@ -304,6 +315,65 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
+}
+
+.photo-card {
+  position: relative;
+  overflow: hidden;
+  width: min(100%, 300px);
+  justify-self: end;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(88, 166, 255, 0.14), transparent 58%),
+    rgba(21, 26, 34, 0.86);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.34);
+}
+
+.photo-card::before {
+  display: block;
+  padding-top: 118%;
+  content: "";
+}
+
+.photo-card img,
+.photo-fallback {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-card img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.photo-fallback {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(88, 166, 255, 0.25), transparent 34%),
+    rgba(13, 17, 23, 0.92);
+  color: var(--blue);
+  font-size: clamp(3rem, 9vw, 5.4rem);
+  font-weight: 900;
+}
+
+.photo-card span {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  left: 14px;
+  padding: 10px 12px;
+  border: 1px solid rgba(88, 166, 255, 0.36);
+  border-radius: 8px;
+  background: rgba(13, 17, 23, 0.78);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 850;
+  line-height: 1.4;
+  backdrop-filter: blur(10px);
 }
 
 .status-card,
@@ -545,10 +615,11 @@ section:not(.hero) {
 .contact-card {
   display: flex;
   min-width: 0;
-  min-height: 128px;
+  min-height: 0;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 18px 20px;
   text-decoration: none;
   transition: border-color 160ms ease, transform 160ms ease;
 }
@@ -559,12 +630,14 @@ section:not(.hero) {
 }
 
 .contact-card strong {
-  overflow-wrap: anywhere;
   color: var(--text);
+  font-size: 0.96rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 .contact-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .footer {
@@ -619,6 +692,7 @@ html[dir="rtl"] .brand-text {
   }
 
   .status-grid,
+  .hero-grid,
   .two-column,
   .learning-grid,
   .project-grid,
@@ -626,6 +700,11 @@ html[dir="rtl"] .brand-text {
   .training-layout,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .photo-card {
+    width: min(100%, 260px);
+    justify-self: start;
   }
 
   .skill-list {
@@ -658,6 +737,11 @@ html[dir="rtl"] .brand-text {
   .hero-actions,
   .button {
     width: 100%;
+  }
+
+  .photo-card {
+    width: 100%;
+    max-width: 260px;
   }
 
   h1 {

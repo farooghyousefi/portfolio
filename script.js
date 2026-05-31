@@ -21,6 +21,9 @@ const translations = {
       viewProjects: "View Projects",
       viewCv: "View CV"
     },
+    photo: {
+      caption: "Cloud & DevOps in progress"
+    },
     status: {
       positioning: "Target positioning",
       positioningValue: "Cloud & DevOps | Platform Engineering | Automation",
@@ -53,6 +56,13 @@ const translations = {
       certHeading: "Certifications in preparation"
     },
     projects: {
+      featured: "Featured Project",
+      viewProject: "View Project",
+      budgetup: {
+        title: "BudgetUp",
+        description:
+          "Personal finance and budgeting application focused on expense tracking, financial overview, and clean user experience."
+      },
       inProgress: "In Progress",
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
@@ -93,7 +103,7 @@ const translations = {
       cvText: "Open PDF resume"
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. Built with clean HTML, CSS and a small JavaScript language switcher."
+      text: "© 2026 Faroogh Yousefi. Cloud, DevOps & Automation Portfolio."
     }
   },
   de: {
@@ -117,6 +127,9 @@ const translations = {
         "Ich baue praktische Cloud- und Automatisierungsprojekte und entwickle hands-on Fähigkeiten in AWS, Azure, Linux, Infrastructure as Code, CI/CD und modernen Platform Operations.",
       viewProjects: "Projekte ansehen",
       viewCv: "CV ansehen"
+    },
+    photo: {
+      caption: "Cloud & DevOps in Progress"
     },
     status: {
       positioning: "Zielpositionierung",
@@ -150,6 +163,13 @@ const translations = {
       certHeading: "Zertifizierungen in Vorbereitung"
     },
     projects: {
+      featured: "Ausgewähltes Projekt",
+      viewProject: "Projekt ansehen",
+      budgetup: {
+        title: "BudgetUp",
+        description:
+          "Private Finanz- und Budget-App mit Fokus auf Ausgabentracking, finanziellen Überblick und eine saubere Nutzererfahrung."
+      },
       inProgress: "In Arbeit",
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
@@ -190,7 +210,7 @@ const translations = {
       cvText: "PDF-Lebenslauf öffnen"
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. Erstellt mit sauberem HTML, CSS und einem kleinen JavaScript-Sprachumschalter."
+      text: "© 2026 Faroogh Yousefi. Cloud-, DevOps- und Automation-Portfolio."
     }
   },
   fa: {
@@ -214,6 +234,9 @@ const translations = {
         "من پروژه های عملی Cloud و Automation می سازم و هم زمان مهارت های hands-on خود را در AWS، Azure، Linux، Infrastructure as Code، CI/CD و Platform Operations مدرن توسعه می دهم.",
       viewProjects: "مشاهده پروژه ها",
       viewCv: "مشاهده CV"
+    },
+    photo: {
+      caption: "در مسیر Cloud و DevOps"
     },
     status: {
       positioning: "موقعیت هدف",
@@ -247,6 +270,13 @@ const translations = {
       certHeading: "گواهی نامه های در حال آمادگی"
     },
     projects: {
+      featured: "پروژه منتخب",
+      viewProject: "مشاهده پروژه",
+      budgetup: {
+        title: "BudgetUp",
+        description:
+          "اپلیکیشن مدیریت مالی و بودجه شخصی با تمرکز بر پیگیری هزینه ها، نمای کلی مالی و تجربه کاربری تمیز."
+      },
       inProgress: "در حال انجام",
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
@@ -287,7 +317,7 @@ const translations = {
       cvText: "باز کردن رزومه PDF"
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. ساخته شده با HTML، CSS و یک تغییر دهنده زبان کوچک با JavaScript."
+      text: "© 2026 Faroogh Yousefi. پورتفولیوی Cloud، DevOps و Automation."
     }
   }
 };
@@ -317,8 +347,12 @@ function setLanguage(language) {
   translatableElements.forEach((element) => {
     const translation = getNestedTranslation(selectedLanguage, element.dataset.i18n);
 
-    if (translation) {
-      element.innerHTML = translations[key];
+    if (translation !== undefined) {
+      if (element.dataset.i18nHtml === "true") {
+        element.innerHTML = translation;
+      } else {
+        element.textContent = translation;
+      }
     }
   });
 
