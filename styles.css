@@ -474,7 +474,9 @@ section:not(.hero) {
 
 .skill-group,
 .training-card,
-.cert-card {
+.cert-card,
+.education-card,
+.credential-card {
   border: 1px solid var(--line);
   border-radius: 10px;
   background: rgba(21, 26, 34, 0.78);
@@ -519,7 +521,9 @@ section:not(.hero) {
 }
 
 .training-card,
-.cert-card {
+.cert-card,
+.education-card,
+.credential-card {
   padding: 24px;
 }
 
@@ -534,8 +538,82 @@ section:not(.hero) {
 }
 
 .training-card p:not(.company):not(.training-date),
-.cert-card {
+.cert-card,
+.education-card,
+.credential-card {
   color: var(--muted);
+}
+
+.education-block {
+  margin-top: 18px;
+}
+
+.education-block > h3,
+.credential-card h3 {
+  margin-bottom: 14px;
+  color: #f0f6fc;
+  font-size: 1.08rem;
+}
+
+.education-grid,
+.credentials-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.education-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.credentials-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 14px;
+}
+
+.education-card span,
+.timeline-meta span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--blue);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.education-card h4 {
+  margin: 0 0 10px;
+  color: #f0f6fc;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.education-card p,
+.credential-card li {
+  line-height: 1.7;
+}
+
+.credential-card ul {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.credential-card li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.credential-card li::before {
+  position: absolute;
+  top: 0.78em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--blue);
+  content: "";
+  transform: translateY(-50%);
 }
 
 .learning-grid,
@@ -584,6 +662,11 @@ section:not(.hero) {
   text-decoration: underline;
 }
 
+.experience-list {
+  display: grid;
+  gap: 14px;
+}
+
 .experience-card {
   padding: 24px;
 }
@@ -616,6 +699,33 @@ section:not(.hero) {
   background: var(--green);
   content: "";
   transform: translateY(-50%);
+}
+
+.timeline-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.timeline-meta .company {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+html[dir="rtl"] .credential-card li {
+  padding-right: 18px;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .credential-card li::before {
+  right: 0;
+  left: auto;
+}
+
+html[dir="rtl"] .timeline-meta .company {
+  text-align: left;
 }
 
 .contact-card {
@@ -701,6 +811,8 @@ html[dir="rtl"] .brand-text {
   .hero-grid,
   .two-column,
   .learning-grid,
+  .education-grid,
+  .credentials-grid,
   .project-grid,
   .skill-groups,
   .training-layout,
@@ -711,6 +823,20 @@ html[dir="rtl"] .brand-text {
   .photo-card {
     width: min(100%, 360px);
     justify-self: start;
+  }
+
+  .timeline-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .timeline-meta .company {
+    text-align: left;
+  }
+
+  html[dir="rtl"] .timeline-meta .company {
+    text-align: right;
   }
 
   .skill-list {

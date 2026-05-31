@@ -33,9 +33,9 @@ const translations = {
     sections: {
       about: "About",
       skills: "Skills",
-      training: "Education / Training",
+      training: "Training & Education",
       projects: "Portfolio Projects",
-      experience: "Experience",
+      experience: "Professional Experience",
       contact: "Contact"
     },
     about: {
@@ -53,7 +53,57 @@ const translations = {
       date: "May 2026 - October 2026",
       description:
         "Full-time AWS and DevOps training focused on cloud infrastructure, Linux, networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, monitoring, automation, and portfolio-based projects.",
-      certHeading: "Certifications in preparation"
+      certHeading: "Certifications in preparation",
+      certAwsCp: "AWS Cloud Practitioner",
+      certAwsSaa: "AWS Solutions Architect Associate",
+      certAz900: "Microsoft Azure Fundamentals AZ-900",
+      certAz104: "Microsoft Azure Administrator AZ-104",
+      certIhk: "IHK Fachinformatiker for Application Development"
+    },
+    education: {
+      heading: "Education & background",
+      businessInfo: {
+        date: "Since October 2025",
+        title: "B.Sc. Business Informatics",
+        school: "FernUniversität in Hagen",
+        description:
+          "Part-time studies focused on databases, IT management, process analysis, process optimization and digital business processes."
+      },
+      ihk: {
+        date: "August 2021 - January 2024",
+        title: "IHK retraining: Application Development",
+        school: "FORUM Berufsbildung e.V., Berlin",
+        description:
+          "Software development, databases, project planning and an IHK final project migrating a SQL database server into an Azure cloud environment."
+      },
+      english: {
+        date: "February 2024 - May 2024",
+        title: "Intensive Business English",
+        school: "Berlin School of English",
+        description:
+          "Business English, professional communication and writing for international workplace contexts."
+      },
+      electrical: {
+        date: "September 2010 - June 2013",
+        title: "Electrical Engineering studies",
+        school: "University of Science and Technology, Iran",
+        description:
+          "Foundations in industrial electronics, electrical circuits, automation technology, project and quality management."
+      }
+    },
+    credentials: {
+      languagesHeading: "Languages",
+      german: "German C2",
+      english: "English B2",
+      farsi: "Farsi C2",
+      dari: "Dari C1",
+      kurdish: "Kurdish native",
+      strengthsHeading: "Working strengths",
+      strength1: "Analytical thinking",
+      strength2: "Solution-oriented support",
+      strength3: "Continuous learning",
+      strength4: "Communication",
+      strength5: "Intercultural competence"
     },
     projects: {
       featured: "Featured Project",
@@ -86,14 +136,41 @@ const translations = {
       }
     },
     experience: {
-      company: "ING DiBa AG",
-      role: "IT Support Engineer - Modern Workplace & Automation",
-      point1: "Supported the operation of a large-scale Modern Workplace environment with thousands of users and endpoints.",
-      point2: "Worked on endpoint lifecycle processes including onboarding, reboarding, offboarding, device preparation, and secure data cleanup.",
-      point3: "Supported Microsoft 365, endpoint hardware, mobile devices, collaboration tools, and workplace technologies in an enterprise banking environment.",
-      point4: "Contributed to IT service management processes using ServiceNow across incident, request, and change management.",
-      point5: "Supported workflow improvements and automation-related processes using Microsoft 365, ServiceNow, and Power Automate.",
-      point6: "Worked with identity, user management, endpoint operations, and technical troubleshooting in a regulated enterprise environment."
+      ing: {
+        date: "Since June 2024",
+        company: "ING DiBa AG, Berlin",
+        role: "IT Support Engineer - Modern Workplace & Automation",
+        point1: "Operated and supported a large Modern Workplace environment with more than 4,000 users and 8,000 endpoints.",
+        point2: "Supported Microsoft 365, Microsoft Teams Rooms, workplace hardware, mobile devices and collaboration technologies.",
+        point3: "Worked with Intune compliance, endpoint registration, device lifecycle processes and rollout support.",
+        point4: "Supported identity and user management tasks with Microsoft Entra ID and Active Directory.",
+        point5: "Contributed to onboarding and offboarding workflow improvements using ServiceNow and Power Automate."
+      },
+      internship: {
+        date: "February 2023 - August 2023",
+        company: "IHK internship, Berlin",
+        role: "IT internship - Automation & Service Desk",
+        point1: "Implemented Power Automate workflows and automated recurring operational processes.",
+        point2: "Handled service desk and Jira tickets with a focus on process improvement.",
+        point3: "Worked in agile Scrum teams on IT support and operations projects.",
+        point4: "Installed, configured and maintained hardware, operating systems and network components."
+      },
+      majorel: {
+        date: "May 2019 - July 2021",
+        company: "Majorel, Berlin",
+        role: "IT Support Specialist",
+        point1: "Delivered 1st and 2nd level support for hardware, operating systems, networks and peripherals.",
+        point2: "Supported users through troubleshooting, issue analysis, solution guidance and user training.",
+        point3: "Contributed to support documentation and continuous improvement of service processes."
+      },
+      earlier: {
+        date: "2005 - 2017",
+        company: "Sports center, Iran / Berliner Stadtmission",
+        role: "Trainer, coordinator & volunteer work",
+        point1: "Led group and individual activities, including planning, organization and coordination.",
+        point2: "Worked with local institutions and multicultural teams, strengthening communication and leadership skills.",
+        point3: "Built a practical foundation in responsibility, service mindset and structured teamwork."
+      }
     },
     contact: {
       email: "Email",
@@ -140,9 +217,9 @@ const translations = {
     sections: {
       about: "Über mich",
       skills: "Skills",
-      training: "Ausbildung / Training",
+      training: "Training & Ausbildung",
       projects: "Portfolio-Projekte",
-      experience: "Erfahrung",
+      experience: "Beruflicher Werdegang",
       contact: "Kontakt"
     },
     about: {
@@ -160,7 +237,57 @@ const translations = {
       date: "Mai 2026 - Oktober 2026",
       description:
         "Vollzeittraining für AWS und DevOps mit Fokus auf Cloud-Infrastruktur, Linux, Networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, Monitoring, Automatisierung und portfolio-basierte Projekte.",
-      certHeading: "Zertifizierungen in Vorbereitung"
+      certHeading: "Zertifizierungen in Vorbereitung",
+      certAwsCp: "AWS Cloud Practitioner",
+      certAwsSaa: "AWS Solutions Architect Associate",
+      certAz900: "Microsoft Azure Fundamentals AZ-900",
+      certAz104: "Microsoft Azure Administrator AZ-104",
+      certIhk: "IHK Fachinformatiker für Anwendungsentwicklung"
+    },
+    education: {
+      heading: "Ausbildung & Hintergrund",
+      businessInfo: {
+        date: "Seit Oktober 2025",
+        title: "B.Sc. Wirtschaftsinformatik",
+        school: "FernUniversität in Hagen",
+        description:
+          "Berufsbegleitendes Studium mit Fokus auf Datenbanken, IT-Management, Prozessanalyse, Prozessoptimierung und digitale Geschäftsprozesse."
+      },
+      ihk: {
+        date: "August 2021 - Januar 2024",
+        title: "Umschulung: Fachinformatiker für Anwendungsentwicklung",
+        school: "FORUM Berufsbildung e.V., Berlin",
+        description:
+          "Softwareentwicklung, Datenbanken, Projektplanung und IHK-Abschlussprojekt zur Migration eines SQL-Datenbankservers in eine Azure-Cloudumgebung."
+      },
+      english: {
+        date: "Februar 2024 - Mai 2024",
+        title: "Intensivkurs Business English",
+        school: "Berlin School of English",
+        description:
+          "Business English, professionelle Kommunikation und Schreiben für internationale Arbeitskontexte."
+      },
+      electrical: {
+        date: "September 2010 - Juni 2013",
+        title: "Studium Elektrotechnik",
+        school: "Universität für Wissenschaft und Technologie, Iran",
+        description:
+          "Grundlagen in Industrieelektronik, elektrischen Schaltungen, Automatisierungstechnik, Projekt- und Qualitätsmanagement."
+      }
+    },
+    credentials: {
+      languagesHeading: "Sprachen",
+      german: "Deutsch C2",
+      english: "Englisch B2",
+      farsi: "Farsi C2",
+      dari: "Dari C1",
+      kurdish: "Kurdisch Muttersprache",
+      strengthsHeading: "Arbeitsstärken",
+      strength1: "Analytisches Denken",
+      strength2: "Lösungsorientierter Support",
+      strength3: "Kontinuierliches Lernen",
+      strength4: "Kommunikationsstärke",
+      strength5: "Interkulturelle Kompetenz"
     },
     projects: {
       featured: "Ausgewähltes Projekt",
@@ -193,14 +320,41 @@ const translations = {
       }
     },
     experience: {
-      company: "ING DiBa AG",
-      role: "IT Support Engineer - Modern Workplace & Automation",
-      point1: "Unterstützung des Betriebs einer großen Modern-Workplace-Umgebung mit tausenden Nutzern und Endpoints.",
-      point2: "Mitarbeit an Endpoint-Lifecycle-Prozessen wie Onboarding, Reboarding, Offboarding, Gerätevorbereitung und sicherer Datenbereinigung.",
-      point3: "Support für Microsoft 365, Endpoint-Hardware, mobile Geräte, Collaboration Tools und Workplace-Technologien in einem Enterprise-Banking-Umfeld.",
-      point4: "Mitwirkung an IT-Service-Management-Prozessen mit ServiceNow in Incident-, Request- und Change-Management.",
-      point5: "Unterstützung von Workflow-Verbesserungen und automatisierungsnahen Prozessen mit Microsoft 365, ServiceNow und Power Automate.",
-      point6: "Arbeit mit Identity, User Management, Endpoint Operations und technischem Troubleshooting in einem regulierten Enterprise-Umfeld."
+      ing: {
+        date: "Seit Juni 2024",
+        company: "ING DiBa AG, Berlin",
+        role: "IT Support Engineer - Modern Workplace & Automation",
+        point1: "Betrieb und Support einer großen Modern-Workplace-Umgebung mit über 4.000 Nutzern und 8.000 Endgeräten.",
+        point2: "Support für Microsoft 365, Microsoft Teams Rooms, Workplace-Hardware, mobile Geräte und Collaboration-Technologien.",
+        point3: "Mitarbeit bei Intune-Compliance, Geräteregistrierung, Device-Lifecycle-Prozessen und Rollout-Support.",
+        point4: "Unterstützung im Identity- und User-Management mit Microsoft Entra ID und Active Directory.",
+        point5: "Mitwirkung an Onboarding- und Offboarding-Workflow-Verbesserungen mit ServiceNow und Power Automate."
+      },
+      internship: {
+        date: "Februar 2023 - August 2023",
+        company: "IHK-Praktikum, Berlin",
+        role: "IT-Praktikum - Automation & Service Desk",
+        point1: "Umsetzung von Power-Automate-Workflows und Automatisierung wiederkehrender operativer Prozesse.",
+        point2: "Bearbeitung von Service-Desk- und Jira-Tickets mit Fokus auf Prozessverbesserung.",
+        point3: "Mitarbeit in agilen Scrum-Teams an IT-Support- und Operations-Projekten.",
+        point4: "Installation, Konfiguration und Wartung von Hardware, Betriebssystemen und Netzwerkkomponenten."
+      },
+      majorel: {
+        date: "Mai 2019 - Juli 2021",
+        company: "Majorel, Berlin",
+        role: "IT Support Spezialist",
+        point1: "1st- und 2nd-Level-Support für Hardware, Betriebssysteme, Netzwerke und Peripheriegeräte.",
+        point2: "Benutzerbetreuung durch Troubleshooting, Problemanalyse, Lösungsbegleitung und Anwenderschulungen.",
+        point3: "Mitwirkung an Support-Dokumentation und kontinuierlicher Verbesserung von Serviceprozessen."
+      },
+      earlier: {
+        date: "2005 - 2017",
+        company: "Sportzentrum, Iran / Berliner Stadtmission",
+        role: "Trainer, Koordinator & ehrenamtliche Arbeit",
+        point1: "Leitung von Gruppen- und Einzelaktivitäten inklusive Planung, Organisation und Koordination.",
+        point2: "Zusammenarbeit mit lokalen Institutionen und multikulturellen Teams zur Stärkung von Kommunikation und Leadership.",
+        point3: "Praktische Grundlage in Verantwortung, Service-Mentalität und strukturierter Teamarbeit aufgebaut."
+      }
     },
     contact: {
       email: "E-Mail",
@@ -247,9 +401,9 @@ const translations = {
     sections: {
       about: "درباره من",
       skills: "مهارت ها",
-      training: "آموزش / دوره",
+      training: "آموزش و تحصیلات",
       projects: "پروژه های پورتفولیو",
-      experience: "تجربه",
+      experience: "سوابق حرفه ای",
       contact: "تماس"
     },
     about: {
@@ -267,7 +421,57 @@ const translations = {
       date: "می 2026 - اکتبر 2026",
       description:
         "آموزش تمام وقت AWS و DevOps با تمرکز بر cloud infrastructure، Linux، networking، Terraform، Docker، Kubernetes، Jenkins، CI/CD، monitoring، automation و پروژه های portfolio-based.",
-      certHeading: "گواهی نامه های در حال آمادگی"
+      certHeading: "گواهی نامه های در حال آمادگی",
+      certAwsCp: "AWS Cloud Practitioner",
+      certAwsSaa: "AWS Solutions Architect Associate",
+      certAz900: "Microsoft Azure Fundamentals AZ-900",
+      certAz104: "Microsoft Azure Administrator AZ-104",
+      certIhk: "IHK Fachinformatiker für Anwendungsentwicklung"
+    },
+    education: {
+      heading: "تحصیلات و پیشینه",
+      businessInfo: {
+        date: "از اکتبر 2025",
+        title: "کارشناسی Business Informatics",
+        school: "FernUniversität in Hagen",
+        description:
+          "تحصیل پاره وقت با تمرکز بر پایگاه داده، IT management، تحلیل فرایند، بهینه سازی فرایند و فرایندهای دیجیتال کسب و کار."
+      },
+      ihk: {
+        date: "اوت 2021 - ژانویه 2024",
+        title: "دوره IHK در Application Development",
+        school: "FORUM Berufsbildung e.V., Berlin",
+        description:
+          "توسعه نرم افزار، پایگاه داده، برنامه ریزی پروژه و پروژه نهایی IHK برای مهاجرت یک SQL database server به محیط Azure cloud."
+      },
+      english: {
+        date: "فوریه 2024 - می 2024",
+        title: "دوره فشرده Business English",
+        school: "Berlin School of English",
+        description:
+          "Business English، ارتباط حرفه ای و نگارش برای محیط های کاری بین المللی."
+      },
+      electrical: {
+        date: "سپتامبر 2010 - ژوئن 2013",
+        title: "تحصیل در رشته Electrical Engineering",
+        school: "University of Science and Technology, Iran",
+        description:
+          "مبانی electronics صنعتی، مدارهای الکتریکی، automation technology، project management و quality management."
+      }
+    },
+    credentials: {
+      languagesHeading: "زبان ها",
+      german: "آلمانی C2",
+      english: "انگلیسی B2",
+      farsi: "فارسی C2",
+      dari: "دری C1",
+      kurdish: "کردی زبان مادری",
+      strengthsHeading: "نقاط قوت کاری",
+      strength1: "تفکر تحلیلی",
+      strength2: "پشتیبانی راه حل محور",
+      strength3: "یادگیری مداوم",
+      strength4: "ارتباط موثر",
+      strength5: "توانایی کار بین فرهنگی"
     },
     projects: {
       featured: "پروژه منتخب",
@@ -300,14 +504,41 @@ const translations = {
       }
     },
     experience: {
-      company: "ING DiBa AG",
-      role: "IT Support Engineer - Modern Workplace & Automation",
-      point1: "پشتیبانی از عملیات یک محیط بزرگ Modern Workplace با هزاران کاربر و endpoint.",
-      point2: "کار روی فرایندهای endpoint lifecycle شامل onboarding، reboarding، offboarding، آماده سازی دستگاه و پاک سازی امن داده ها.",
-      point3: "پشتیبانی از Microsoft 365، سخت افزار endpoint، دستگاه های موبایل، ابزارهای collaboration و فناوری های workplace در محیط enterprise banking.",
-      point4: "مشارکت در فرایندهای IT service management با ServiceNow در incident، request و change management.",
-      point5: "پشتیبانی از بهبود workflowها و فرایندهای مرتبط با automation با Microsoft 365، ServiceNow و Power Automate.",
-      point6: "کار با identity، user management، endpoint operations و troubleshooting فنی در محیط enterprise regulated."
+      ing: {
+        date: "از ژوئن 2024",
+        company: "ING DiBa AG, Berlin",
+        role: "IT Support Engineer - Modern Workplace & Automation",
+        point1: "پشتیبانی و عملیات یک محیط بزرگ Modern Workplace با بیش از 4,000 کاربر و 8,000 endpoint.",
+        point2: "پشتیبانی از Microsoft 365، Microsoft Teams Rooms، سخت افزار workplace، دستگاه های موبایل و collaboration technologies.",
+        point3: "کار با Intune compliance، ثبت دستگاه ها، device lifecycle processes و rollout support.",
+        point4: "پشتیبانی از identity و user management با Microsoft Entra ID و Active Directory.",
+        point5: "مشارکت در بهبود workflowهای onboarding و offboarding با ServiceNow و Power Automate."
+      },
+      internship: {
+        date: "فوریه 2023 - اوت 2023",
+        company: "IHK internship, Berlin",
+        role: "IT internship - Automation & Service Desk",
+        point1: "پیاده سازی Power Automate workflows و اتوماسیون فرایندهای تکراری عملیاتی.",
+        point2: "رسیدگی به ticketهای service desk و Jira با تمرکز بر بهبود فرایند.",
+        point3: "همکاری در تیم های agile Scrum در پروژه های IT support و operations.",
+        point4: "نصب، پیکربندی و نگهداری hardware، operating systems و network components."
+      },
+      majorel: {
+        date: "می 2019 - جولای 2021",
+        company: "Majorel, Berlin",
+        role: "IT Support Specialist",
+        point1: "ارائه 1st و 2nd level support برای hardware، operating systems، networks و peripherals.",
+        point2: "پشتیبانی از کاربران از طریق troubleshooting، تحلیل مشکل، راهنمایی برای حل مسئله و user training.",
+        point3: "مشارکت در documentation پشتیبانی و بهبود مداوم service processes."
+      },
+      earlier: {
+        date: "2005 - 2017",
+        company: "Sports center, Iran / Berliner Stadtmission",
+        role: "Trainer, coordinator & volunteer work",
+        point1: "رهبری فعالیت های گروهی و فردی شامل برنامه ریزی، سازماندهی و هماهنگی.",
+        point2: "همکاری با نهادهای محلی و تیم های چندفرهنگی و تقویت مهارت های ارتباطی و leadership.",
+        point3: "ایجاد پایه عملی در مسئولیت پذیری، service mindset و teamwork ساختارمند."
+      }
     },
     contact: {
       email: "ایمیل",
