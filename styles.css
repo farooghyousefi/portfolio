@@ -197,7 +197,7 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
   gap: clamp(24px, 5vw, 48px);
   align-items: center;
   margin-bottom: 32px;
@@ -320,19 +320,20 @@ h1 {
 .photo-card {
   position: relative;
   overflow: hidden;
-  width: min(100%, 300px);
+  z-index: 1;
+  width: min(100%, 380px);
+  aspect-ratio: 4 / 3;
   justify-self: end;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(88, 166, 255, 0.36);
   border-radius: 14px;
-  background:
-    linear-gradient(180deg, rgba(88, 166, 255, 0.14), transparent 58%),
-    rgba(21, 26, 34, 0.86);
-  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.34);
+  background: #0d1117;
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.46),
+    0 0 34px rgba(88, 166, 255, 0.13);
 }
 
 .photo-card::before {
-  display: block;
-  padding-top: 118%;
+  display: none;
   content: "";
 }
 
@@ -345,8 +346,10 @@ h1 {
 }
 
 .photo-card img {
+  z-index: 1;
   object-fit: cover;
   object-position: center;
+  filter: saturate(1.05) contrast(1.03);
 }
 
 .photo-fallback {
@@ -362,13 +365,16 @@ h1 {
 
 .photo-card span {
   position: absolute;
+  z-index: 3;
   right: 14px;
   bottom: 14px;
-  left: 14px;
+  left: auto;
+  width: fit-content;
+  max-width: calc(100% - 28px);
   padding: 10px 12px;
   border: 1px solid rgba(88, 166, 255, 0.36);
   border-radius: 8px;
-  background: rgba(13, 17, 23, 0.78);
+  background: rgba(7, 10, 15, 0.84);
   color: var(--text);
   font-size: 0.78rem;
   font-weight: 850;
@@ -703,7 +709,7 @@ html[dir="rtl"] .brand-text {
   }
 
   .photo-card {
-    width: min(100%, 260px);
+    width: min(100%, 360px);
     justify-self: start;
   }
 
