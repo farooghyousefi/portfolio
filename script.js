@@ -73,7 +73,7 @@ const translations = {
       date: "May 2026 - October 2026",
       description:
         "Full-time AWS and DevOps training focused on cloud infrastructure, Linux, networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, monitoring, automation, and portfolio-based projects.",
-      certHeading: "Certifications",
+      certHeading: "Certification roadmap",
       certCompletedHeading: "Completed",
       certPreparationHeading: "In preparation",
       certIhk: "IT Specialist for Application Development (IHK)",
@@ -291,7 +291,7 @@ const translations = {
       date: "Mai 2026 - Oktober 2026",
       description:
         "Vollzeittraining für AWS und DevOps mit Fokus auf Cloud-Infrastruktur, Linux, Networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, Monitoring, Automatisierung und portfolio-basierte Projekte.",
-      certHeading: "Zertifikate",
+      certHeading: "Zertifizierungsplan",
       certCompletedHeading: "Abgeschlossen",
       certPreparationHeading: "In Vorbereitung",
       certIhk: "Fachinformatiker für Anwendungsentwicklung (IHK)",
@@ -507,7 +507,7 @@ const translations = {
       date: "می 2026 - اکتبر 2026",
       description:
         "آموزش تمام وقت AWS و DevOps با تمرکز بر cloud infrastructure، Linux، networking، Terraform، Docker، Kubernetes، Jenkins، CI/CD، monitoring، automation و پروژه های portfolio-based.",
-      certHeading: "گواهی‌نامه‌ها",
+      certHeading: "برنامه گواهی‌نامه‌ها",
       certCompletedHeading: "تکمیل‌شده",
       certPreparationHeading: "در حال آمادگی",
       certAwsCp: "AWS Cloud Practitioner",
