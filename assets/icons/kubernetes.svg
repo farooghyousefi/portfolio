@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Kubernetes</title>
+  <rect width="96" height="96" rx="22" fill="#0b1d3a"/>
+  <path d="M48 12l29 16v40L48 84 19 68V28l29-16z" fill="#326ce5"/>
+  <circle cx="48" cy="48" r="15" fill="none" stroke="#f8fafc" stroke-width="5"/>
+  <path d="M48 24v13M48 59v13M24 48h13M59 48h13M31 31l9 9M56 56l9 9M65 31l-9 9M40 56l-9 9" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Azure</title>
+  <rect width="96" height="96" rx="22" fill="#082f49"/>
+  <path d="M52 18L28 70h18l5-13 15 13h18L57 18h-5z" fill="#38bdf8"/>
+  <path d="M51 57l12-31 11 39-23-8z" fill="#0ea5e9"/>
+  <path d="M46 70h28L51 57l-5 13z" fill="#7dd3fc"/>
+</svg>

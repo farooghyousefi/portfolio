@@ -47,6 +47,26 @@ const translations = {
       devops: "DevOps",
       platform: "Platform / Enterprise IT"
     },
+    stack: {
+      title: "Explore by Technology",
+      intro:
+        "Practical focus areas across cloud, DevOps, platform operations and AI-supported workflows.",
+      items: {
+        aws: "AWS",
+        azure: "Azure",
+        microsoft365: "Microsoft 365",
+        intune: "Intune",
+        entra: "Entra ID",
+        powerAutomate: "Power Automate",
+        terraform: "Terraform",
+        kubernetes: "Kubernetes",
+        docker: "Docker",
+        github: "GitHub",
+        linux: "Linux",
+        servicenow: "ServiceNow",
+        ai: "AI Workflows"
+      }
+    },
     training: {
       type: "Current full-time program",
       title: "AWS & DevOps Engineer Program",
@@ -231,6 +251,26 @@ const translations = {
       devops: "DevOps",
       platform: "Platform / Enterprise IT"
     },
+    stack: {
+      title: "Technologien im Fokus",
+      intro:
+        "Praktische Schwerpunkte in Cloud, DevOps, Platform Operations und KI-unterstuetzten Workflows.",
+      items: {
+        aws: "AWS",
+        azure: "Azure",
+        microsoft365: "Microsoft 365",
+        intune: "Intune",
+        entra: "Entra ID",
+        powerAutomate: "Power Automate",
+        terraform: "Terraform",
+        kubernetes: "Kubernetes",
+        docker: "Docker",
+        github: "GitHub",
+        linux: "Linux",
+        servicenow: "ServiceNow",
+        ai: "KI-Workflows"
+      }
+    },
     training: {
       type: "Aktuelles Vollzeitprogramm",
       title: "AWS & DevOps Engineer Program",
@@ -414,6 +454,26 @@ const translations = {
       cloud: "Cloud",
       devops: "DevOps",
       platform: "Platform / Enterprise IT"
+    },
+    stack: {
+      title: "تکنولوژی های مورد تمرکز",
+      intro:
+        "حوزه های عملی در Cloud، DevOps، Platform Operations و workflowهای پشتیبانی شده با هوش مصنوعی.",
+      items: {
+        aws: "AWS",
+        azure: "Azure",
+        microsoft365: "Microsoft 365",
+        intune: "Intune",
+        entra: "Entra ID",
+        powerAutomate: "Power Automate",
+        terraform: "Terraform",
+        kubernetes: "Kubernetes",
+        docker: "Docker",
+        github: "GitHub",
+        linux: "Linux",
+        servicenow: "ServiceNow",
+        ai: "AI Workflows"
+      }
     },
     training: {
       type: "برنامه تمام وقت فعلی",

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Power Automate</title>
+  <rect width="96" height="96" rx="22" fill="#08111f"/>
+  <path d="M20 26h35c9 0 16 7 16 16s-7 16-16 16H39" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M42 36l-18 18 18 18" fill="none" stroke="#2563eb" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M54 26l20 22-20 22" fill="none" stroke="#7c3aed" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
