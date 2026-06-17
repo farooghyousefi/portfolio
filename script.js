@@ -73,12 +73,12 @@ const translations = {
       date: "May 2026 - October 2026",
       description:
         "Full-time AWS and DevOps training focused on cloud infrastructure, Linux, networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, monitoring, automation, and portfolio-based projects.",
-      certHeading: "Certifications in preparation",
+      certHeading: "Completed certifications",
       certAwsCp: "AWS Cloud Practitioner",
       certAwsSaa: "AWS Solutions Architect Associate",
       certAz900: "Microsoft Azure Fundamentals AZ-900",
       certAz104: "Microsoft Azure Administrator AZ-104",
-      certIhk: "IHK Fachinformatiker for Application Development"
+      certIhk: "IT Specialist for Application Development (IHK)"
     },
     education: {
       heading: "Education & background",
@@ -91,7 +91,7 @@ const translations = {
       },
       ihk: {
         date: "August 2021 - January 2024",
-        title: "IHK retraining: Application Development",
+        title: "IT Specialist for Application Development (IHK)",
         school: "FORUM Berufsbildung e.V., Berlin",
         description:
           "Software development, databases, project planning and an IHK final project migrating a SQL database server into an Azure cloud environment."
@@ -282,7 +282,7 @@ const translations = {
       certAwsSaa: "AWS Solutions Architect Associate",
       certAz900: "Microsoft Azure Fundamentals AZ-900",
       certAz104: "Microsoft Azure Administrator AZ-104",
-      certIhk: "IHK Fachinformatiker für Anwendungsentwicklung"
+      certIhk: "Fachinformatiker für Anwendungsentwicklung (IHK)"
     },
     education: {
       heading: "Ausbildung & Hintergrund",
@@ -295,7 +295,7 @@ const translations = {
       },
       ihk: {
         date: "August 2021 - Januar 2024",
-        title: "Umschulung: Fachinformatiker für Anwendungsentwicklung",
+        title: "Fachinformatiker für Anwendungsentwicklung (IHK)",
         school: "FORUM Berufsbildung e.V., Berlin",
         description:
           "Softwareentwicklung, Datenbanken, Projektplanung und IHK-Abschlussprojekt zur Migration eines SQL-Datenbankservers in eine Azure-Cloudumgebung."
@@ -486,7 +486,7 @@ const translations = {
       certAwsSaa: "AWS Solutions Architect Associate",
       certAz900: "Microsoft Azure Fundamentals AZ-900",
       certAz104: "Microsoft Azure Administrator AZ-104",
-      certIhk: "IHK Fachinformatiker für Anwendungsentwicklung"
+      certIhk: "Fachinformatiker für Anwendungsentwicklung (IHK)"
     },
     education: {
       heading: "تحصیلات و پیشینه",
