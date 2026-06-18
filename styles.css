@@ -605,11 +605,6 @@ html[dir="rtl"] .stack-heading p:last-child {
   padding: 24px;
 }
 
-.training-date {
-  color: var(--text);
-  font-weight: 850;
-}
-
 .training-card p,
 .cert-card li {
   line-height: 1.7;
@@ -648,6 +643,8 @@ html[dir="rtl"] .stack-heading p:last-child {
   margin-top: 14px;
 }
 
+.training-card .company,
+.training-date,
 .education-card span,
 .timeline-meta span {
   display: block;
@@ -655,6 +652,7 @@ html[dir="rtl"] .stack-heading p:last-child {
   color: var(--blue);
   font-size: 0.82rem;
   font-weight: 850;
+  line-height: 1.7;
 }
 
 .education-card h4 {
