@@ -39,6 +39,16 @@ const translations = {
       experience: "Professional Experience",
       contact: "Contact",
     },
+    labels: {
+      hero: "Professional profile",
+      about: "Profile summary",
+      skills: "Core capabilities",
+      stack: "Technology focus",
+      training: "Current learning path",
+      projects: "Selected work",
+      experience: "Experience overview",
+      contact: "Contact options",
+    },
     about: {
       text: "I come from an Enterprise IT and Modern Workplace background and am now focused on Cloud, DevOps, and Platform Engineering.<br><br>My experience includes Microsoft 365 environments, endpoint operations, identity and access management, IT service management, and workflow automation. I am currently building hands-on portfolio projects with AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD, and automation technologies.",
     },
@@ -74,9 +84,11 @@ const translations = {
       description:
         "Full-time AWS and DevOps training focused on cloud infrastructure, Linux, networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, monitoring, automation, and portfolio-based projects.",
       certHeading: "Certification roadmap",
-      certCompletedHeading: "Completed",
       certPreparationHeading: "In preparation",
-      certIhk: "IT Specialist for Application Development (IHK)",
+      certAwsCp: "AWS Cloud Practitioner",
+      certAwsSolutions: "AWS Solutions Architect Associate",
+      certAz900: "Microsoft Azure Fundamentals AZ-900",
+      certAz104: "Microsoft Azure Administrator AZ-104",
     },
     education: {
       heading: "Education & background",
@@ -89,10 +101,10 @@ const translations = {
       },
       ihk: {
         date: "August 2021 - January 2024",
-        title: "IT Specialist for Application Development (IHK)",
+        title: "Fachinformatiker für Anwendungsentwicklung (IHK)",
         school: "FORUM Berufsbildung e.V., Berlin",
         description:
-          "Software development, databases, project planning and an IHK final project migrating a SQL database server into an Azure cloud environment.",
+          "Completed IHK qualification with a final project migrating a SQL database server into an Azure cloud environment.",
       },
       english: {
         date: "February 2024 - May 2024",
@@ -206,7 +218,8 @@ const translations = {
       },
     },
     contact: {
-      email: "Email",
+      primary: "Professional contact",
+      primaryText: "Message me on LinkedIn",
       linkedin: "LinkedIn",
       github: "GitHub",
       cv: "CV Download",
@@ -252,10 +265,20 @@ const translations = {
     sections: {
       about: "Über mich",
       skills: "Skills",
-      training: "Training & Ausbildung",
+      training: "Ausbildung & Weiterbildung",
       projects: "Portfolio-Projekte",
       experience: "Beruflicher Werdegang",
       contact: "Kontakt",
+    },
+    labels: {
+      hero: "Professionelles Profil",
+      about: "Kurzprofil",
+      skills: "Kernkompetenzen",
+      stack: "Technologiefokus",
+      training: "Aktueller Lernpfad",
+      projects: "Ausgewählte Arbeiten",
+      experience: "Beruflicher Überblick",
+      contact: "Kontaktmöglichkeiten",
     },
     about: {
       text: "Ich komme aus dem Enterprise-IT- und Modern-Workplace-Umfeld und fokussiere mich jetzt auf Cloud, DevOps und Platform Engineering. Meine Erfahrung umfasst Microsoft-365-Umgebungen, Endpoint Operations, Identity und Access Management, IT Service Management und Workflow-Automatisierung. Aktuell baue ich Portfolio-Projekte mit AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD und Automatisierung.",
@@ -292,9 +315,11 @@ const translations = {
       description:
         "Vollzeittraining für AWS und DevOps mit Fokus auf Cloud-Infrastruktur, Linux, Networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, Monitoring, Automatisierung und portfolio-basierte Projekte.",
       certHeading: "Zertifizierungsplan",
-      certCompletedHeading: "Abgeschlossen",
       certPreparationHeading: "In Vorbereitung",
-      certIhk: "Fachinformatiker für Anwendungsentwicklung (IHK)",
+      certAwsCp: "AWS Cloud Practitioner",
+      certAwsSolutions: "AWS Solutions Architect Associate",
+      certAz900: "Microsoft Azure Fundamentals AZ-900",
+      certAz104: "Microsoft Azure Administrator AZ-104",
     },
     education: {
       heading: "Ausbildung & Hintergrund",
@@ -310,7 +335,7 @@ const translations = {
         title: "Fachinformatiker für Anwendungsentwicklung (IHK)",
         school: "FORUM Berufsbildung e.V., Berlin",
         description:
-          "Softwareentwicklung, Datenbanken, Projektplanung und IHK-Abschlussprojekt zur Migration eines SQL-Datenbankservers in eine Azure-Cloudumgebung.",
+          "Abgeschlossene IHK-Qualifikation mit Abschlussprojekt zur Migration eines SQL-Datenbankservers in eine Azure-Cloudumgebung.",
       },
       english: {
         date: "Februar 2024 - Mai 2024",
@@ -424,7 +449,8 @@ const translations = {
       },
     },
     contact: {
-      email: "E-Mail",
+      primary: "Kontakt aufnehmen",
+      primaryText: "Nachricht über LinkedIn senden",
       linkedin: "LinkedIn",
       github: "GitHub",
       cv: "CV Download",
@@ -473,6 +499,16 @@ const translations = {
       experience: "سوابق حرفه ای",
       contact: "تماس",
     },
+    labels: {
+      hero: "پروفایل حرفه ای",
+      about: "خلاصه پروفایل",
+      skills: "توانمندی های اصلی",
+      stack: "تمرکز فناوری",
+      training: "مسیر یادگیری فعلی",
+      projects: "نمونه کارهای منتخب",
+      experience: "نمای کلی سوابق",
+      contact: "راه های تماس",
+    },
     about: {
       text: "من از زمینه Enterprise IT و Modern Workplace می آیم و اکنون روی Cloud، DevOps و Platform Engineering تمرکز دارم. تجربه من شامل محیط های Microsoft 365، عملیات endpoint، identity و access management، IT service management و workflow automation است. در حال حاضر پروژه های پورتفولیو با AWS، Azure، Linux، Terraform، Docker، Kubernetes، CI/CD و automation می سازم.",
     },
@@ -514,7 +550,6 @@ const translations = {
       certAwsSolutions: "AWS Solutions Architect Associate",
       certAz900: "Microsoft Azure Fundamentals AZ-900",
       certAz104: "Microsoft Azure Administrator AZ-104",
-      certIhk: "Fachinformatiker für Anwendungsentwicklung (IHK)",
     },
     education: {
       heading: "تحصیلات و پیشینه",
@@ -527,10 +562,10 @@ const translations = {
       },
       ihk: {
         date: "اوت 2021 - ژانویه 2024",
-        title: "دوره IHK در Application Development",
+        title: "Fachinformatiker für Anwendungsentwicklung (IHK)",
         school: "FORUM Berufsbildung e.V., Berlin",
         description:
-          "توسعه نرم افزار، پایگاه داده، برنامه ریزی پروژه و پروژه نهایی IHK برای مهاجرت یک SQL database server به محیط Azure cloud.",
+          "مدرک IHK تکمیل شده با پروژه نهایی برای انتقال یک SQL database server به محیط Azure cloud.",
       },
       english: {
         date: "فوریه 2024 - می 2024",
@@ -644,7 +679,8 @@ const translations = {
       },
     },
     contact: {
-      email: "ایمیل",
+      primary: "تماس حرفه ای",
+      primaryText: "ارسال پیام در LinkedIn",
       linkedin: "LinkedIn",
       github: "GitHub",
       cv: "دانلود CV",
