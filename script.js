@@ -1,9 +1,9 @@
 const translations = {
   en: {
     meta: {
-      title: "Faroogh Yousefi | Cloud & DevOps Engineer in Progress",
+      title: "Faroogh Yousefi | Junior Cloud & DevOps Engineer",
       description:
-        "Portfolio of Faroogh Yousefi, Berlin-based Cloud and DevOps Engineer in progress focused on AWS, Azure, automation and platform engineering.",
+        "Berlin-based Junior Cloud & DevOps Engineer focused on AWS, Azure, Linux, automation, CI/CD and Modern Workplace engineering.",
     },
     nav: {
       about: "About",
@@ -16,17 +16,17 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Cloud & DevOps Engineer in Progress | AWS, Azure, Automation & Platform Engineering",
-      text: "I build practical cloud and automation projects while developing hands-on skills in AWS, Azure, Linux, Infrastructure as Code, CI/CD, and modern platform operations.",
+        "Junior Cloud & DevOps Engineer | AWS, Azure, Automation & Modern Workplace",
+      text: "I build practical cloud and automation projects with hands-on focus on AWS, Azure, Linux, Infrastructure as Code, CI/CD, and modern workplace engineering.",
       viewProjects: "View Projects",
       viewCv: "View CV",
     },
     photo: {
-      caption: "Cloud & DevOps in progress",
+      caption: "Junior Cloud & DevOps Engineer",
     },
     status: {
       positioning: "Target positioning",
-      positioningValue: "Cloud & DevOps | Platform Engineering | Automation",
+      positioningValue: "Junior Cloud & DevOps | Modern Workplace | Automation",
       currentTraining: "Current training",
       trainingValue:
         "Full-time AWS & DevOps Engineer program at Clarusway GmbH",
@@ -51,7 +51,7 @@ const translations = {
       contact: "Contact options",
     },
     about: {
-      text: "I come from an Enterprise IT and Modern Workplace background and am now focused on Cloud, DevOps, and Platform Engineering.<br><br>My experience includes Microsoft 365 environments, endpoint operations, identity and access management, IT service management, and workflow automation. I am currently building hands-on portfolio projects with AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD, and automation technologies.",
+      text: "I am a Berlin-based IT engineer with a strong Enterprise IT and Modern Workplace background, now focused on junior Cloud and DevOps roles.<br><br>My experience includes Microsoft 365 environments, endpoint operations, identity and access management, IT service management, and workflow automation. I build hands-on portfolio projects with AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD, and automation technologies.",
     },
     skills: {
       cloud: "Cloud",
@@ -144,7 +144,7 @@ const translations = {
         description:
           "Personal finance and budgeting application focused on expense tracking, financial overview, and clean user experience.",
       },
-      inProgress: "In Progress",
+      inProgress: "Portfolio Lab",
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
         description:
@@ -232,9 +232,9 @@ const translations = {
   },
   de: {
     meta: {
-      title: "Faroogh Yousefi | Cloud & DevOps Engineer in Progress",
+      title: "Faroogh Yousefi | Junior Cloud & DevOps Engineer",
       description:
-        "Portfolio von Faroogh Yousefi, Cloud und DevOps Engineer in Progress aus Berlin mit Fokus auf AWS, Azure, Automatisierung und Platform Engineering.",
+        "Junior Cloud & DevOps Engineer aus Berlin mit Fokus auf AWS, Azure, Linux, Automatisierung, CI/CD und Modern Workplace Engineering.",
     },
     nav: {
       about: "Über mich",
@@ -247,18 +247,18 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Cloud & DevOps Engineer in Progress | AWS, Azure, Automatisierung & Platform Engineering",
-      text: "Ich baue praktische Cloud- und Automatisierungsprojekte und entwickle hands-on Fähigkeiten in AWS, Azure, Linux, Infrastructure as Code, CI/CD und modernen Platform Operations.",
+        "Junior Cloud & DevOps Engineer | AWS, Azure, Automatisierung & Modern Workplace",
+      text: "Ich baue praktische Cloud- und Automatisierungsprojekte mit hands-on Fokus auf AWS, Azure, Linux, Infrastructure as Code, CI/CD und Modern Workplace Engineering.",
       viewProjects: "Projekte ansehen",
       viewCv: "CV ansehen",
     },
     photo: {
-      caption: "Cloud & DevOps in Progress",
+      caption: "Junior Cloud & DevOps Engineer",
     },
     status: {
       positioning: "Zielpositionierung",
       positioningValue:
-        "Cloud & DevOps | Platform Engineering | Automatisierung",
+        "Junior Cloud & DevOps | Modern Workplace | Automatisierung",
       currentTraining: "Aktuelles Training",
       trainingValue:
         "Vollzeit AWS & DevOps Engineer Programm bei Clarusway GmbH",
@@ -283,7 +283,7 @@ const translations = {
       contact: "Kontaktmöglichkeiten",
     },
     about: {
-      text: "Ich komme aus dem Enterprise-IT- und Modern-Workplace-Umfeld und fokussiere mich jetzt auf Cloud, DevOps und Platform Engineering. Meine Erfahrung umfasst Microsoft-365-Umgebungen, Endpoint Operations, Identity und Access Management, IT Service Management und Workflow-Automatisierung. Aktuell baue ich Portfolio-Projekte mit AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD und Automatisierung.",
+      text: "Ich bin ein IT Engineer aus Berlin mit starkem Hintergrund in Enterprise IT und Modern Workplace und fokussiere mich jetzt auf Junior-Rollen im Bereich Cloud und DevOps.<br><br>Meine Erfahrung umfasst Microsoft-365-Umgebungen, Endpoint Operations, Identity und Access Management, IT Service Management und Workflow-Automatisierung. Ich baue praxisnahe Portfolio-Projekte mit AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD und Automatisierung.",
     },
     skills: {
       cloud: "Cloud",
@@ -376,7 +376,7 @@ const translations = {
         description:
           "Private Finanz- und Budget-App mit Fokus auf Ausgabentracking, finanziellen Überblick und eine saubere Nutzererfahrung.",
       },
-      inProgress: "In Arbeit",
+      inProgress: "Portfolio-Lab",
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
         description:
@@ -464,9 +464,9 @@ const translations = {
   },
   fa: {
     meta: {
-      title: "Faroogh Yousefi | Cloud & DevOps Engineer in Progress",
+      title: "Faroogh Yousefi | Junior Cloud & DevOps Engineer",
       description:
-        "پورتفولیوی Faroogh Yousefi، Cloud و DevOps Engineer in Progress ساکن برلین با تمرکز بر AWS، Azure، Automation و Platform Engineering.",
+        "Junior Cloud & DevOps Engineer ساکن برلین با تمرکز بر AWS، Azure، Linux، Automation، CI/CD و Modern Workplace Engineering.",
     },
     nav: {
       about: "درباره من",
@@ -479,17 +479,17 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Cloud & DevOps Engineer in Progress | AWS، Azure، Automation و Platform Engineering",
-      text: "من پروژه های عملی Cloud و Automation می سازم و هم زمان مهارت های hands-on خود را در AWS، Azure، Linux، Infrastructure as Code، CI/CD و Platform Operations مدرن توسعه می دهم.",
+        "Junior Cloud & DevOps Engineer | AWS، Azure، Automation و Modern Workplace",
+      text: "من پروژه های عملی Cloud و Automation می سازم و روی AWS، Azure، Linux، Infrastructure as Code، CI/CD و Modern Workplace Engineering به صورت hands-on کار می کنم.",
       viewProjects: "مشاهده پروژه ها",
       viewCv: "مشاهده CV",
     },
     photo: {
-      caption: "در مسیر Cloud و DevOps",
+      caption: "Junior Cloud & DevOps Engineer",
     },
     status: {
       positioning: "موقعیت هدف",
-      positioningValue: "Cloud & DevOps | Platform Engineering | Automation",
+      positioningValue: "Junior Cloud & DevOps | Modern Workplace | Automation",
       currentTraining: "آموزش فعلی",
       trainingValue: "برنامه تمام وقت AWS & DevOps Engineer در Clarusway GmbH",
     },
@@ -513,7 +513,7 @@ const translations = {
       contact: "راه های تماس",
     },
     about: {
-      text: "من از زمینه Enterprise IT و Modern Workplace می آیم و اکنون روی Cloud، DevOps و Platform Engineering تمرکز دارم. تجربه من شامل محیط های Microsoft 365، عملیات endpoint، identity و access management، IT service management و workflow automation است. در حال حاضر پروژه های پورتفولیو با AWS، Azure، Linux، Terraform، Docker، Kubernetes، CI/CD و automation می سازم.",
+      text: "من یک IT Engineer ساکن برلین هستم، با پیشینه قوی در Enterprise IT و Modern Workplace، و اکنون روی نقش های Junior Cloud و DevOps تمرکز دارم.<br><br>تجربه من شامل محیط های Microsoft 365، عملیات endpoint، identity و access management، IT service management و workflow automation است. من پروژه های عملی پورتفولیو با AWS، Azure، Linux، Terraform، Docker، Kubernetes، CI/CD و automation می سازم.",
     },
     skills: {
       cloud: "Cloud",
@@ -547,7 +547,6 @@ const translations = {
       description:
         "آموزش تمام وقت AWS و DevOps با تمرکز بر cloud infrastructure، Linux، networking، Terraform، Docker، Kubernetes، Jenkins، CI/CD، monitoring، automation و پروژه های portfolio-based.",
       certHeading: "برنامه گواهی‌نامه‌ها",
-      certCompletedHeading: "تکمیل‌شده",
       certPreparationHeading: "در حال آمادگی",
       certAwsCp: "AWS Cloud Practitioner",
       certAwsSolutions: "AWS Solutions Architect Associate",
@@ -607,7 +606,7 @@ const translations = {
         description:
           "اپلیکیشن مدیریت مالی و بودجه شخصی با تمرکز بر پیگیری هزینه ها، نمای کلی مالی و تجربه کاربری تمیز.",
       },
-      inProgress: "در حال انجام",
+      inProgress: "لابراتوار پورتفولیو",
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
         description:

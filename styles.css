@@ -1147,11 +1147,14 @@ html[dir="rtl"] .brand-text {
   }
 
   .photo-card {
+    align-self: flex-end;
     order: -1;
     width: 118px;
     max-width: 118px;
     aspect-ratio: 1;
     justify-self: start;
+    margin-right: 0;
+    margin-left: auto;
     margin-bottom: 2px;
     border-color: rgba(88, 166, 255, 0.54);
     border-radius: 30px;
