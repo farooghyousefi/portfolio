@@ -10,6 +10,7 @@
   --muted: #98a6b8;
   --blue: #58a6ff;
   --blue-soft: rgba(88, 166, 255, 0.12);
+  --violet: #c084fc;
   --green: #3fb950;
   --yellow: #d29922;
   --red: #f85149;
@@ -643,7 +644,6 @@ html[dir="rtl"] .stack-heading p:last-child {
   margin-top: 14px;
 }
 
-.training-card .company,
 .training-date,
 .education-card span,
 .timeline-meta span {
@@ -653,6 +653,12 @@ html[dir="rtl"] .stack-heading p:last-child {
   font-size: 0.82rem;
   font-weight: 850;
   line-height: 1.7;
+}
+
+.training-card .company,
+.company {
+  color: var(--violet);
+  font-weight: 850;
 }
 
 .education-card h4 {
@@ -745,11 +751,6 @@ html[dir="rtl"] .stack-heading p:last-child {
 
 .experience-card {
   padding: 24px;
-}
-
-.company {
-  color: var(--blue);
-  font-weight: 850;
 }
 
 .experience-card ul {
