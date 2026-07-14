@@ -633,6 +633,26 @@ section:not(.hero) {
   font-size: 1.15rem;
 }
 
+.skill-status {
+  display: inline-flex;
+  width: fit-content;
+  margin: -6px 0 16px;
+  padding: 6px 9px;
+  border: 1px solid rgba(88, 166, 255, 0.28);
+  border-radius: 8px;
+  background: rgba(88, 166, 255, 0.1);
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.skill-status.enterprise {
+  border-color: rgba(188, 140, 255, 0.3);
+  background: rgba(188, 140, 255, 0.09);
+  color: var(--violet);
+}
+
 .skill-group ul,
 .cert-card ul {
   display: flex;
@@ -645,6 +665,10 @@ section:not(.hero) {
 
 .skill-group li,
 .cert-card li {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
   padding: 8px 10px;
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -652,6 +676,17 @@ section:not(.hero) {
   color: var(--blue);
   font-size: 0.84rem;
   line-height: 1.35;
+}
+
+.inline-status {
+  display: inline-flex;
+  padding: 3px 6px;
+  border: 1px solid rgba(63, 185, 80, 0.3);
+  border-radius: 6px;
+  background: rgba(63, 185, 80, 0.1);
+  color: var(--green);
+  font-size: 0.68rem;
+  font-weight: 900;
 }
 
 .stack-section {
@@ -680,6 +715,32 @@ section:not(.hero) {
   gap: 10px;
 }
 
+.learning-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.learning-stack-group {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(21, 26, 34, 0.72);
+  padding: 16px;
+}
+
+.learning-stack-group h3 {
+  margin: 0 0 12px;
+  color: #f0f6fc;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.learning-card-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
 .icon-card {
   display: flex;
   min-height: 108px;
@@ -693,6 +754,13 @@ section:not(.hero) {
     inset 0 1px 0 rgba(255, 255, 255, 0.03);
   text-align: center;
   transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.learning-card {
+  min-height: 132px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .icon-card:hover {
@@ -711,6 +779,27 @@ section:not(.hero) {
   object-fit: contain;
 }
 
+.service-mark {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid rgba(88, 166, 255, 0.28);
+  border-radius: 9px;
+  background: rgba(88, 166, 255, 0.1);
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.hero-stack .service-mark {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  font-size: 0.48rem;
+}
+
 .icon-card span {
   min-height: 2.7em;
   color: var(--text);
@@ -719,8 +808,45 @@ section:not(.hero) {
   line-height: 1.35;
 }
 
+.icon-card .service-mark {
+  min-height: 44px;
+  color: var(--blue);
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.hero-stack li .service-mark {
+  min-height: 18px;
+  color: var(--blue);
+  font-size: 0.48rem;
+  line-height: 1;
+}
+
+.learning-card span:not(.service-mark) {
+  min-height: 0;
+}
+
+.learning-card small {
+  display: inline-flex;
+  margin-top: auto;
+  padding: 5px 7px;
+  border: 1px solid rgba(132, 148, 170, 0.22);
+  border-radius: 7px;
+  background: rgba(13, 17, 23, 0.72);
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 850;
+  line-height: 1.25;
+  text-align: left;
+}
+
 html[dir="rtl"] .stack-heading p:last-child {
   text-align: left;
+}
+
+html[dir="rtl"] .learning-card,
+html[dir="rtl"] .learning-card small {
+  text-align: right;
 }
 
 .training-layout {
@@ -1133,6 +1259,7 @@ html[dir="rtl"] .brand-text {
   .hero-grid,
   .two-column,
   .learning-grid,
+  .learning-stack-grid,
   .education-grid,
   .credentials-grid,
   .project-grid,
@@ -1159,6 +1286,10 @@ html[dir="rtl"] .brand-text {
 
   .icon-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .learning-card-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .photo-card {
@@ -1444,13 +1575,32 @@ html[dir="rtl"] .brand-text {
     padding: 12px 8px;
   }
 
+  .learning-stack-group {
+    padding: 14px;
+  }
+
+  .learning-card {
+    min-height: 116px;
+    padding: 11px 9px;
+  }
+
   .icon-card img {
     width: 38px;
     height: 38px;
   }
 
+  .service-mark {
+    width: 38px;
+    height: 38px;
+    font-size: 0.64rem;
+  }
+
   .icon-card span {
     font-size: 0.82rem;
+  }
+
+  .learning-card small {
+    font-size: 0.62rem;
   }
 
   section:not(.hero) {

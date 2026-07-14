@@ -1,9 +1,9 @@
 const translations = {
   en: {
     meta: {
-      title: "Faroogh Yousefi | Junior Cloud & DevOps Engineer",
+      title: "Faroogh Yousefi | Junior AWS Cloud Engineer",
       description:
-        "Berlin-based Junior Cloud & DevOps Engineer focused on AWS, Azure, Linux, automation, CI/CD and Modern Workplace engineering.",
+        "Berlin-based Junior AWS Cloud Engineer focused on AWS Cloud, Linux, networking, Terraform, cloud operations, and Enterprise IT experience.",
     },
     nav: {
       about: "About",
@@ -16,18 +16,18 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Junior Cloud & DevOps Engineer | AWS, Azure, Terraform & Automation",
+        "Junior AWS Cloud Engineer | Linux, Networking, Terraform & Automation",
       meta: "Berlin · Remote / Hybrid · German & English",
-      text: "IT specialist with several years of Enterprise IT experience and a current focus on Cloud, DevOps, and automation. I build hands-on projects with AWS, Azure, Linux, Terraform, Docker, Kubernetes, and CI/CD.",
-      viewProjects: "View Projects",
+      text: "IT specialist with several years of Enterprise IT experience and a current focus on AWS Cloud. Through full-time training and hands-on projects, I am developing practical skills in Linux, networking, IAM, EC2, S3, VPC, Terraform, and cloud operations.",
+      viewProjects: "View AWS Projects",
       viewCv: "Download CV",
     },
     photo: {
-      caption: "Junior Cloud & DevOps Engineer",
+      caption: "Junior AWS Cloud Engineer",
     },
     status: {
       role: "Role",
-      roleValue: "Junior Cloud & DevOps Engineer",
+      roleValue: "Junior AWS Cloud Engineer",
       location: "Location",
       locationValue: "Berlin",
       workModel: "Work model",
@@ -44,11 +44,12 @@ const translations = {
       contact: "Contact",
     },
     labels: {
-      shellState: "Berlin based · Cloud & Automation",
-      hero: "Junior Cloud & DevOps Portfolio",
-      about: "My Path into Cloud & DevOps",
+      terminalPath: "portfolio / aws-cloud",
+      shellState: "Berlin based · AWS Cloud · Automation",
+      hero: "AWS Cloud Portfolio",
+      about: "My Path into AWS Cloud",
       skills: "Core capabilities",
-      stack: "Technology focus",
+      stack: "Current learning path",
       coreStack: "Core stack",
       training: "Current learning path",
       projects: "Selected work",
@@ -56,39 +57,56 @@ const translations = {
       contact: "Contact options",
     },
     about: {
-      text: "My background is in Enterprise IT and Modern Workplace environments, where I gained several years of experience with Microsoft 365, endpoint operations, Microsoft Intune, Microsoft Entra ID, IT service management, and the automation of operational processes.<br><br>Building on this foundation, I am developing specifically toward a Junior Cloud & DevOps Engineer role. Through a full-time training program and personal portfolio projects, I am deepening my practical knowledge of AWS, Azure, Linux, networking, Terraform, Docker, Kubernetes, CI/CD, and monitoring.<br><br>My goal is a junior position where I can combine my operational experience with cloud infrastructure, Infrastructure as Code, and automation while continuing to grow systematically.",
+      text: "My professional background is in Enterprise IT and Modern Workplace environments. Over several years, I gained practical experience with Microsoft 365, endpoint operations, Microsoft Intune, Microsoft Entra ID, IT service management, and the automation of operational processes.<br><br>I am now specializing specifically in AWS Cloud. Through full-time training and hands-on projects, I am learning to build, secure, monitor, and provision cloud infrastructure using AWS, Linux, networking, and Terraform.<br><br>I am looking for an entry-level junior role in an AWS cloud environment where I can contribute my operational experience, work on real cloud tasks, and continue developing my technical skills systematically.",
       facts: {
         backgroundLabel: "Professional Background",
         backgroundValue: "Enterprise IT & Modern Workplace",
         focusLabel: "Current Focus",
-        focusValue: "AWS · DevOps · Infrastructure as Code",
-        targetRoleLabel: "Target Role",
-        targetRoleValue: "Junior Cloud / DevOps Engineer",
+        focusValue: "AWS Cloud & Cloud Operations",
+        targetRoleLabel: "Target Entry Role",
+        targetRoleValue: "Junior AWS Cloud Engineer",
       },
     },
     skills: {
-      cloud: "Cloud",
-      devops: "DevOps & Automation",
-      platform: "Platform & Enterprise IT",
+      cloud: "Current AWS Cloud Focus",
+      cloudStatus: "Currently developing through training and hands-on projects",
+      devops: "Infrastructure & Automation Foundations",
+      devopsStatus: "Foundations in development",
+      kubernetesStatus: "Currently in training",
+      platform: "Professional Enterprise IT Experience",
+      platformStatus: "Professional experience",
     },
     stack: {
-      title: "Explore by Technology",
+      title: "My AWS Cloud Learning Stack",
       intro:
-        "Practical focus areas across Cloud, DevOps, platform operations, and AI-supported workflows.",
+        "Technologies and AWS services I am currently learning and applying through full-time training and hands-on projects.",
+      groups: {
+        aws: "AWS Foundations",
+        technical: "Technical Foundations",
+        automation: "Infrastructure & Automation",
+      },
+      badges: {
+        training: "Currently in training",
+        projects: "In hands-on projects",
+        foundations: "Foundations in development",
+        laterTraining: "Later training module",
+      },
       items: {
         aws: "AWS",
-        azure: "Azure",
-        microsoft365: "Microsoft 365",
-        intune: "Intune",
-        entra: "Entra ID",
-        powerAutomate: "Power Automate",
+        iam: "IAM",
+        ec2: "EC2",
+        s3: "S3",
+        vpc: "VPC",
+        cloudwatch: "CloudWatch",
+        networking: "Networking",
+        git: "Git",
+        cicd: "CI/CD",
+        jenkins: "Jenkins",
         terraform: "Terraform",
         kubernetes: "Kubernetes",
         docker: "Docker",
         github: "GitHub",
         linux: "Linux",
-        servicenow: "ServiceNow",
-        ai: "AI Workflows",
       },
     },
     training: {
@@ -97,13 +115,11 @@ const translations = {
       title: "AWS & DevOps Engineer Program",
       date: "May 2026 – October 2026",
       description:
-        "Full-time AWS and DevOps training focused on cloud infrastructure, Linux, networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, monitoring, automation, and portfolio-based projects.",
+        "Ongoing full-time training with a current focus on AWS Cloud, Linux, networking, and cloud infrastructure. Additional modules cover Terraform, Docker, Jenkins, CI/CD, Kubernetes, monitoring, and automation.",
       certHeading: "Certification roadmap",
       certPreparationHeading: "In preparation",
       certAwsCp: "AWS Certified Cloud Practitioner",
       certAwsSolutions: "AWS Certified Solutions Architect – Associate",
-      certAz900: "Microsoft Azure Fundamentals AZ-900",
-      certAz104: "Microsoft Azure Administrator AZ-104",
     },
     education: {
       heading: "Education & background",
@@ -153,7 +169,7 @@ const translations = {
       strength7: "Intercultural collaboration",
     },
     projects: {
-      featured: "Featured Project",
+      featured: "Featured AWS Project",
       viewProject: "View Project",
       budgetup: {
         title: "BudgetUp",
@@ -169,7 +185,7 @@ const translations = {
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
         description:
-          "AWS infrastructure lab using VPC, public and private subnets, EC2, IAM, S3, and CloudWatch. The focus is on cloud foundations, network segmentation, access control, monitoring, and transparent infrastructure design.",
+          "Hands-on project for building AWS infrastructure with VPC, public and private subnets, EC2, IAM, S3, and CloudWatch. The project is designed to apply cloud foundations, network segmentation, access control, and monitoring in practice.",
       },
       cicd: {
         title: "DevOps CI/CD Pipeline Lab",
@@ -247,7 +263,7 @@ const translations = {
       cvText: "Open PDF resume",
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. Cloud, DevOps & Automation Portfolio.",
+      text: "© 2026 Faroogh Yousefi. AWS Cloud & Automation Portfolio.",
     },
     ui: {
       backToTop: "Back to top",
@@ -256,9 +272,9 @@ const translations = {
   },
   de: {
     meta: {
-      title: "Faroogh Yousefi | Junior Cloud & DevOps Engineer",
+      title: "Faroogh Yousefi | Junior AWS Cloud Engineer",
       description:
-        "Junior Cloud & DevOps Engineer aus Berlin mit Fokus auf AWS, Azure, Linux, Automatisierung, CI/CD und Modern Workplace Engineering.",
+        "Junior AWS Cloud Engineer aus Berlin mit Fokus auf AWS Cloud, Linux, Networking, Terraform, Cloud Operations und Enterprise-IT-Erfahrung.",
     },
     nav: {
       about: "Über mich",
@@ -271,18 +287,18 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Junior Cloud & DevOps Engineer | AWS, Azure, Terraform & Automatisierung",
+        "Junior AWS Cloud Engineer | Linux, Networking, Terraform & Automatisierung",
       meta: "Berlin · Remote / Hybrid · Deutsch & Englisch",
-      text: "IT-Spezialist mit mehrjähriger Enterprise-IT-Erfahrung und aktuellem Schwerpunkt auf Cloud, DevOps und Automatisierung. Ich entwickle praxisnahe Projekte mit AWS, Azure, Linux, Terraform, Docker, Kubernetes und CI/CD.",
-      viewProjects: "Projekte ansehen",
+      text: "IT-Spezialist mit mehrjähriger Erfahrung im Enterprise-Umfeld und aktuellem Schwerpunkt auf AWS Cloud. In meiner Vollzeitweiterbildung und eigenen Praxisprojekten vertiefe ich Linux, Networking, IAM, EC2, S3, VPC, Terraform und Cloud Operations.",
+      viewProjects: "AWS-Projekte ansehen",
       viewCv: "Lebenslauf herunterladen",
     },
     photo: {
-      caption: "Junior Cloud & DevOps Engineer",
+      caption: "Junior AWS Cloud Engineer",
     },
     status: {
       role: "Rolle",
-      roleValue: "Junior Cloud & DevOps Engineer",
+      roleValue: "Junior AWS Cloud Engineer",
       location: "Standort",
       locationValue: "Berlin",
       workModel: "Arbeitsmodell",
@@ -299,11 +315,12 @@ const translations = {
       contact: "Kontakt",
     },
     labels: {
-      shellState: "Berlin · Cloud & Automatisierung",
-      hero: "Junior Cloud & DevOps Portfolio",
-      about: "Mein Weg in Cloud & DevOps",
+      terminalPath: "portfolio / aws-cloud",
+      shellState: "Berlin · AWS Cloud · Automatisierung",
+      hero: "AWS Cloud Portfolio",
+      about: "Mein Weg in die AWS Cloud",
       skills: "Kernkompetenzen",
-      stack: "Technologiefokus",
+      stack: "Aktueller Lernpfad",
       coreStack: "Kern-Stack",
       training: "Aktueller Lernpfad",
       projects: "Ausgewählte Arbeiten",
@@ -311,39 +328,56 @@ const translations = {
       contact: "Kontaktmöglichkeiten",
     },
     about: {
-      text: "Ich komme aus dem Enterprise-IT- und Modern-Workplace-Umfeld und habe mehrere Jahre mit Microsoft 365, Endpoint Operations, Microsoft Intune, Microsoft Entra ID, IT Service Management und der Automatisierung operativer Prozesse gearbeitet.<br><br>Auf dieser Grundlage entwickle ich mich gezielt zum Junior Cloud & DevOps Engineer weiter. In einem Vollzeitprogramm und eigenen Portfolio-Projekten vertiefe ich AWS, Azure, Linux, Networking, Terraform, Docker, Kubernetes, CI/CD und Monitoring.<br><br>Mein Ziel ist eine Junior-Position, in der ich meine praktische Betriebserfahrung mit Cloud-Infrastruktur, Infrastructure as Code und Automatisierung verbinden und systematisch weiter ausbauen kann.",
+      text: "Mein beruflicher Hintergrund liegt im Enterprise-IT- und Modern-Workplace-Umfeld. Dort habe ich mehrere Jahre praktische Erfahrung mit Microsoft 365, Endpoint Operations, Microsoft Intune, Microsoft Entra ID, IT Service Management und der Automatisierung operativer Prozesse gesammelt.<br><br>Aktuell spezialisiere ich mich gezielt auf AWS Cloud. In einem Vollzeitprogramm und eigenen Praxisprojekten lerne ich, Cloud-Infrastrukturen mit AWS, Linux, Networking und Terraform aufzubauen, abzusichern, zu überwachen und reproduzierbar bereitzustellen.<br><br>Ich suche eine einsteigerfreundliche Junior-Position im AWS-Cloud-Umfeld, in der ich meine vorhandene Betriebserfahrung einbringen, reale Cloud-Aufgaben übernehmen und meine technischen Kenntnisse systematisch weiterentwickeln kann.",
       facts: {
         backgroundLabel: "Beruflicher Hintergrund",
         backgroundValue: "Enterprise IT & Modern Workplace",
-        focusLabel: "Aktueller Schwerpunkt",
-        focusValue: "AWS · DevOps · Infrastructure as Code",
-        targetRoleLabel: "Gesuchte Position",
-        targetRoleValue: "Junior Cloud / DevOps Engineer",
+        focusLabel: "Aktuelle Spezialisierung",
+        focusValue: "AWS Cloud & Cloud Operations",
+        targetRoleLabel: "Gesuchte Einstiegsrolle",
+        targetRoleValue: "Junior AWS Cloud Engineer",
       },
     },
     skills: {
-      cloud: "Cloud",
-      devops: "DevOps & Automatisierung",
-      platform: "Platform & Enterprise IT",
+      cloud: "Aktueller AWS-Cloud-Schwerpunkt",
+      cloudStatus: "Aktuell im Training und in Praxisprojekten",
+      devops: "Infrastructure & Automation Foundations",
+      devopsStatus: "Grundlagen im Aufbau",
+      kubernetesStatus: "Aktuell im Training",
+      platform: "Berufliche Enterprise-IT-Erfahrung",
+      platformStatus: "Berufserfahrung",
     },
     stack: {
-      title: "Technologien im Fokus",
+      title: "Mein AWS-Cloud-Lernstack",
       intro:
-        "Praktische Schwerpunkte in Cloud, DevOps, Platform Operations und KI-unterstützten Workflows.",
+        "Technologien und AWS-Services, die ich aktuell im Vollzeittraining und in eigenen Praxisprojekten lerne und anwende.",
+      groups: {
+        aws: "AWS-Grundlagen",
+        technical: "Technische Grundlagen",
+        automation: "Infrastruktur und Automatisierung",
+      },
+      badges: {
+        training: "Aktuell im Training",
+        projects: "In Praxisprojekten",
+        foundations: "Grundlagen im Aufbau",
+        laterTraining: "Späterer Trainingsabschnitt",
+      },
       items: {
         aws: "AWS",
-        azure: "Azure",
-        microsoft365: "Microsoft 365",
-        intune: "Intune",
-        entra: "Entra ID",
-        powerAutomate: "Power Automate",
+        iam: "IAM",
+        ec2: "EC2",
+        s3: "S3",
+        vpc: "VPC",
+        cloudwatch: "CloudWatch",
+        networking: "Networking",
+        git: "Git",
+        cicd: "CI/CD",
+        jenkins: "Jenkins",
         terraform: "Terraform",
         kubernetes: "Kubernetes",
         docker: "Docker",
         github: "GitHub",
         linux: "Linux",
-        servicenow: "ServiceNow",
-        ai: "KI-Workflows",
       },
     },
     training: {
@@ -352,13 +386,11 @@ const translations = {
       title: "AWS & DevOps Engineer Program",
       date: "Mai 2026 – Oktober 2026",
       description:
-        "Vollzeittraining für AWS und DevOps mit Fokus auf Cloud-Infrastruktur, Linux, Networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, Monitoring, Automatisierung und portfoliobasierte Projekte.",
+        "Laufendes Vollzeittraining mit aktuellem Schwerpunkt auf AWS Cloud, Linux, Networking und Cloud-Infrastruktur. Weitere Module behandeln Terraform, Docker, Jenkins, CI/CD, Kubernetes, Monitoring und Automatisierung.",
       certHeading: "Zertifizierungsplan",
       certPreparationHeading: "In Vorbereitung",
       certAwsCp: "AWS Certified Cloud Practitioner",
       certAwsSolutions: "AWS Certified Solutions Architect – Associate",
-      certAz900: "Microsoft Azure Fundamentals AZ-900",
-      certAz104: "Microsoft Azure Administrator AZ-104",
     },
     education: {
       heading: "Ausbildung & Hintergrund",
@@ -408,7 +440,7 @@ const translations = {
       strength7: "Interkulturelle Zusammenarbeit",
     },
     projects: {
-      featured: "Ausgewähltes Projekt",
+      featured: "Ausgewähltes AWS-Projekt",
       viewProject: "Projekt ansehen",
       budgetup: {
         title: "BudgetUp",
@@ -424,7 +456,7 @@ const translations = {
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
         description:
-          "Aufbau einer AWS-Testinfrastruktur mit VPC, öffentlichen und privaten Subnetzen, EC2, IAM, S3 und CloudWatch. Der Schwerpunkt liegt auf Cloud-Grundlagen, Netzwerksegmentierung, Zugriffssteuerung, Monitoring und nachvollziehbaren Infrastrukturkonzepten.",
+          "Praxisprojekt zum Aufbau einer AWS-Infrastruktur mit VPC, öffentlichen und privaten Subnetzen, EC2, IAM, S3 und CloudWatch. Das Projekt dient dazu, Cloud-Grundlagen, Netzwerksegmentierung, Zugriffssteuerung und Monitoring praktisch anzuwenden.",
       },
       cicd: {
         title: "DevOps CI/CD Pipeline Lab",
@@ -501,7 +533,7 @@ const translations = {
       cvText: "PDF-Lebenslauf öffnen",
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. Cloud-, DevOps- und Automation-Portfolio.",
+      text: "© 2026 Faroogh Yousefi. AWS-Cloud- und Automatisierungsportfolio.",
     },
     ui: {
       backToTop: "Zum Anfang",
@@ -510,9 +542,9 @@ const translations = {
   },
   fa: {
     meta: {
-      title: "Faroogh Yousefi | Junior Cloud & DevOps Engineer",
+      title: "Faroogh Yousefi | Junior AWS Cloud Engineer",
       description:
-        "Junior Cloud & DevOps Engineer ساکن برلین با تمرکز بر AWS، Azure، Linux، Automation، CI/CD و Modern Workplace Engineering.",
+        "Junior AWS Cloud Engineer ساکن برلین با تمرکز بر AWS Cloud، Linux، Networking، Terraform، Cloud Operations و تجربه Enterprise IT.",
     },
     nav: {
       about: "درباره من",
@@ -525,18 +557,18 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Junior Cloud & DevOps Engineer | AWS، Azure، Terraform و Automation",
+        "Junior AWS Cloud Engineer | Linux، Networking، Terraform و Automation",
       meta: "برلین · Remote / Hybrid · آلمانی و انگلیسی",
-      text: "متخصص IT با چندین سال تجربه در محیط‌های Enterprise IT و تمرکز فعلی بر Cloud، DevOps و Automation. پروژه‌های عملی با AWS، Azure، Linux، Terraform، Docker، Kubernetes و CI/CD می‌سازم.",
-      viewProjects: "مشاهده پروژه‌ها",
+      text: "متخصص IT با چندین سال تجربه در محیط‌های Enterprise IT و تمرکز فعلی بر AWS Cloud. در آموزش تمام‌وقت و پروژه‌های عملی، مهارت‌های کاربردی خود را در Linux، Networking، IAM، EC2، S3، VPC، Terraform و Cloud Operations توسعه می‌دهم.",
+      viewProjects: "مشاهده پروژه‌های AWS",
       viewCv: "دانلود رزومه",
     },
     photo: {
-      caption: "Junior Cloud & DevOps Engineer",
+      caption: "Junior AWS Cloud Engineer",
     },
     status: {
       role: "نقش",
-      roleValue: "Junior Cloud & DevOps Engineer",
+      roleValue: "Junior AWS Cloud Engineer",
       location: "موقعیت",
       locationValue: "برلین",
       workModel: "مدل کاری",
@@ -553,11 +585,12 @@ const translations = {
       contact: "تماس",
     },
     labels: {
-      shellState: "برلین · Cloud و Automation",
-      hero: "پورتفولیوی مهندسی کلاد و دواپس در سطح جونیور",
-      about: "مسیر من به سمت Cloud و DevOps",
+      terminalPath: "portfolio / aws-cloud",
+      shellState: "برلین · AWS Cloud · Automation",
+      hero: "پورتفولیوی AWS Cloud",
+      about: "مسیر من به سمت AWS Cloud",
       skills: "توانمندی‌های اصلی",
-      stack: "تمرکز فناوری",
+      stack: "مسیر یادگیری فعلی",
       coreStack: "استک اصلی",
       training: "مسیر یادگیری فعلی",
       projects: "نمونه‌کارهای منتخب",
@@ -565,39 +598,56 @@ const translations = {
       contact: "راه‌های تماس",
     },
     about: {
-      text: "پیشینه من در محیط‌های Enterprise IT و Modern Workplace است؛ جایی که چندین سال با Microsoft 365، Endpoint Operations، Microsoft Intune، Microsoft Entra ID، IT Service Management و خودکارسازی فرایندهای عملیاتی کار کرده‌ام.<br><br>بر پایه این تجربه، مسیر حرفه‌ای خود را به‌صورت هدفمند به سمت نقش Junior Cloud & DevOps Engineer توسعه می‌دهم. در یک برنامه آموزشی تمام‌وقت و پروژه‌های شخصی پورتفولیو، دانش عملی خود را در AWS، Azure، Linux، Networking، Terraform، Docker، Kubernetes، CI/CD و Monitoring عمیق‌تر می‌کنم.<br><br>هدف من یک موقعیت جونیور است که در آن بتوانم تجربه عملیاتی خود را با زیرساخت Cloud، Infrastructure as Code و Automation ترکیب کنم و به‌صورت منظم رشد کنم.",
+      text: "پیشینه حرفه‌ای من در محیط‌های Enterprise IT و Modern Workplace است. طی چندین سال، تجربه عملی با Microsoft 365، Endpoint Operations، Microsoft Intune، Microsoft Entra ID، IT Service Management و خودکارسازی فرایندهای عملیاتی به دست آورده‌ام.<br><br>اکنون به‌صورت هدفمند روی AWS Cloud تخصص‌سازی می‌کنم. در یک برنامه آموزشی تمام‌وقت و پروژه‌های عملی، یاد می‌گیرم زیرساخت Cloud را با AWS، Linux، Networking و Terraform بسازم، ایمن کنم، پایش کنم و به‌صورت قابل تکرار آماده‌سازی کنم.<br><br>به‌دنبال یک موقعیت جونیور و مناسب ورود در محیط AWS Cloud هستم؛ جایی که بتوانم تجربه عملیاتی خود را وارد کار کنم، روی وظایف واقعی Cloud کار کنم و مهارت‌های فنی خود را به‌صورت منظم توسعه دهم.",
       facts: {
         backgroundLabel: "پیشینه حرفه‌ای",
         backgroundValue: "Enterprise IT & Modern Workplace",
-        focusLabel: "تمرکز فعلی",
-        focusValue: "AWS · DevOps · Infrastructure as Code",
-        targetRoleLabel: "موقعیت هدف",
-        targetRoleValue: "Junior Cloud / DevOps Engineer",
+        focusLabel: "تخصص فعلی",
+        focusValue: "AWS Cloud & Cloud Operations",
+        targetRoleLabel: "نقش ورودی هدف",
+        targetRoleValue: "Junior AWS Cloud Engineer",
       },
     },
     skills: {
-      cloud: "Cloud",
-      devops: "DevOps & Automation",
-      platform: "Platform & Enterprise IT",
+      cloud: "تمرکز فعلی روی AWS Cloud",
+      cloudStatus: "در حال توسعه از طریق آموزش و پروژه‌های عملی",
+      devops: "مبانی Infrastructure و Automation",
+      devopsStatus: "مبانی در حال شکل‌گیری",
+      kubernetesStatus: "در حال آموزش",
+      platform: "تجربه حرفه‌ای Enterprise IT",
+      platformStatus: "تجربه کاری",
     },
     stack: {
-      title: "تکنولوژی‌های مورد تمرکز",
+      title: "استک یادگیری AWS Cloud من",
       intro:
-        "حوزه‌های عملی در Cloud، DevOps، Platform Operations و Workflowهای پشتیبانی‌شده با هوش مصنوعی.",
+        "تکنولوژی‌ها و سرویس‌های AWS که در حال حاضر در آموزش تمام‌وقت و پروژه‌های عملی یاد می‌گیرم و به کار می‌برم.",
+      groups: {
+        aws: "مبانی AWS",
+        technical: "مبانی فنی",
+        automation: "زیرساخت و Automation",
+      },
+      badges: {
+        training: "در حال آموزش",
+        projects: "در پروژه‌های عملی",
+        foundations: "مبانی در حال شکل‌گیری",
+        laterTraining: "بخش بعدی آموزش",
+      },
       items: {
         aws: "AWS",
-        azure: "Azure",
-        microsoft365: "Microsoft 365",
-        intune: "Intune",
-        entra: "Entra ID",
-        powerAutomate: "Power Automate",
+        iam: "IAM",
+        ec2: "EC2",
+        s3: "S3",
+        vpc: "VPC",
+        cloudwatch: "CloudWatch",
+        networking: "Networking",
+        git: "Git",
+        cicd: "CI/CD",
+        jenkins: "Jenkins",
         terraform: "Terraform",
         kubernetes: "Kubernetes",
         docker: "Docker",
         github: "GitHub",
         linux: "Linux",
-        servicenow: "ServiceNow",
-        ai: "AI Workflows",
       },
     },
     training: {
@@ -606,13 +656,11 @@ const translations = {
       title: "AWS & DevOps Engineer Program",
       date: "می 2026 – اکتبر 2026",
       description:
-        "آموزش تمام‌وقت AWS و DevOps با تمرکز بر Cloud Infrastructure، Linux، Networking، Terraform، Docker، Kubernetes، Jenkins، CI/CD، Monitoring، Automation و پروژه‌های پورتفولیو.",
+        "آموزش تمام‌وقت و در حال انجام با تمرکز فعلی بر AWS Cloud، Linux، Networking و Cloud Infrastructure. ماژول‌های بعدی شامل Terraform، Docker، Jenkins، CI/CD، Kubernetes، Monitoring و Automation هستند.",
       certHeading: "مسیر گواهی‌نامه‌ها",
       certPreparationHeading: "در حال آمادگی",
       certAwsCp: "AWS Certified Cloud Practitioner",
       certAwsSolutions: "AWS Certified Solutions Architect – Associate",
-      certAz900: "Microsoft Azure Fundamentals AZ-900",
-      certAz104: "Microsoft Azure Administrator AZ-104",
     },
     education: {
       heading: "تحصیلات و پیشینه",
@@ -662,7 +710,7 @@ const translations = {
       strength7: "همکاری بین‌فرهنگی",
     },
     projects: {
-      featured: "پروژه منتخب",
+      featured: "پروژه منتخب AWS",
       viewProject: "مشاهده پروژه",
       budgetup: {
         title: "BudgetUp",
@@ -678,7 +726,7 @@ const translations = {
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
         description:
-          "لابراتوار زیرساخت AWS با VPC، ساب‌نت‌های public و private، EC2، IAM، S3 و CloudWatch. تمرکز روی Cloud Foundations، Network Segmentation، Access Control، Monitoring و طراحی شفاف زیرساخت است.",
+          "پروژه عملی برای ساخت زیرساخت AWS با VPC، ساب‌نت‌های public و private، EC2، IAM، S3 و CloudWatch. هدف پروژه، به‌کارگیری عملی مبانی Cloud، بخش‌بندی شبکه، کنترل دسترسی و Monitoring است.",
       },
       cicd: {
         title: "DevOps CI/CD Pipeline Lab",
@@ -756,7 +804,7 @@ const translations = {
       cvText: "باز کردن رزومه PDF",
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. پورتفولیوی Cloud، DevOps و Automation.",
+      text: "© 2026 Faroogh Yousefi. پورتفولیوی AWS Cloud و Automation.",
     },
     ui: {
       backToTop: "بازگشت به بالا",
