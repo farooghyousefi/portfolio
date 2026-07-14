@@ -16,20 +16,21 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Junior Cloud & DevOps Engineer | AWS, Azure, Automation & Modern Workplace",
-      text: "I build practical cloud and automation projects with hands-on focus on AWS, Azure, Linux, Infrastructure as Code, CI/CD, and modern workplace engineering.",
+        "Cloud & DevOps Engineer | AWS, Azure, Terraform, Automation & Modern Workplace",
+      meta: "Berlin · Remote / Hybrid · German & English",
+      text: "Berlin-based IT specialist with several years of Enterprise IT experience in Microsoft 365, endpoint management, identity management, and workflow automation. I am currently expanding this background with AWS, Linux, Terraform, Docker, Kubernetes, and CI/CD to build and automate practical Cloud and DevOps environments.",
       viewProjects: "View Projects",
-      viewCv: "View CV",
+      viewCv: "Download CV",
     },
     photo: {
-      caption: "Junior Cloud & DevOps Engineer",
+      caption: "Junior-level Cloud & DevOps",
     },
     status: {
       positioning: "Target positioning",
-      positioningValue: "Junior Cloud & DevOps | Modern Workplace | Automation",
+      positioningValue: "Cloud & DevOps · Modern Workplace · Automation",
       currentTraining: "Current training",
       trainingValue:
-        "Full-time AWS & DevOps Engineer program at Clarusway GmbH",
+        "Full-time AWS & DevOps Engineer Program at Clarusway GmbH",
     },
     sections: {
       about: "About",
@@ -51,17 +52,27 @@ const translations = {
       contact: "Contact options",
     },
     about: {
-      text: "I am a Berlin-based IT engineer with a strong Enterprise IT and Modern Workplace background, now focused on junior Cloud and DevOps roles.<br><br>My experience includes Microsoft 365 environments, endpoint operations, identity and access management, IT service management, and workflow automation. I build hands-on portfolio projects with AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD, and automation technologies.",
+      text: "I am a Berlin-based IT specialist with several years of experience in Enterprise IT. My professional background includes Modern Workplace, endpoint operations, Microsoft 365, identity management, IT service management, and the automation of operational processes.<br><br>I am now developing my profile specifically toward Cloud and DevOps. Through a full-time training program and hands-on portfolio projects, I am deepening my knowledge of AWS, Azure, Linux, networking, Terraform, Docker, Kubernetes, CI/CD, and monitoring.<br><br>My goal is to combine experience from stable Enterprise environments with modern cloud, Infrastructure as Code, and automation practices.",
+      facts: {
+        positioningLabel: "Target positioning",
+        positioningValue: "Cloud & DevOps · Modern Workplace · Automation",
+        locationLabel: "Location",
+        locationValue: "Berlin",
+        workModelLabel: "Work model",
+        workModelValue: "Remote / Hybrid",
+        trainingLabel: "Current training",
+        trainingValue: "Full-time AWS & DevOps Engineer Program at Clarusway",
+      },
     },
     skills: {
       cloud: "Cloud",
-      devops: "DevOps",
-      platform: "Platform / Enterprise IT",
+      devops: "DevOps & Automation",
+      platform: "Platform & Enterprise IT",
     },
     stack: {
       title: "Explore by Technology",
       intro:
-        "Practical focus areas across cloud, DevOps, platform operations and AI-supported workflows.",
+        "Practical focus areas across Cloud, DevOps, platform operations, and AI-supported workflows.",
       items: {
         aws: "AWS",
         azure: "Azure",
@@ -80,14 +91,15 @@ const translations = {
     },
     training: {
       type: "Current full-time program",
+      status: "Ongoing",
       title: "AWS & DevOps Engineer Program",
-      date: "May 2026 - October 2026",
+      date: "May 2026 – October 2026",
       description:
         "Full-time AWS and DevOps training focused on cloud infrastructure, Linux, networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, monitoring, automation, and portfolio-based projects.",
       certHeading: "Certification roadmap",
       certPreparationHeading: "In preparation",
-      certAwsCp: "AWS Cloud Practitioner",
-      certAwsSolutions: "AWS Solutions Architect Associate",
+      certAwsCp: "AWS Certified Cloud Practitioner",
+      certAwsSolutions: "AWS Certified Solutions Architect – Associate",
       certAz900: "Microsoft Azure Fundamentals AZ-900",
       certAz104: "Microsoft Azure Administrator AZ-104",
     },
@@ -98,43 +110,45 @@ const translations = {
         title: "B.Sc. Business Informatics",
         school: "FernUniversität in Hagen",
         description:
-          "Part-time studies focused on databases, IT management, process analysis, process optimization and digital business processes.",
+          "Ongoing part-time studies focused on databases, IT management, process analysis, process optimization, and digital business processes.",
       },
       ihk: {
-        date: "August 2021 - January 2024",
+        date: "August 2021 – January 2024",
         title: "Fachinformatiker für Anwendungsentwicklung (IHK)",
         school: "FORUM Berufsbildung e.V., Berlin",
         description:
           "Completed IHK qualification with a final project migrating a SQL database server into an Azure cloud environment.",
       },
       english: {
-        date: "February 2024 - May 2024",
+        date: "February 2024 – May 2024",
         title: "Intensive Business English",
         school: "Berlin School of English",
         description:
-          "Business English, professional communication and writing for international workplace contexts.",
+          "Business English, professional communication, and writing for international workplace contexts.",
       },
       electrical: {
-        date: "September 2010 - June 2013",
+        date: "September 2010 – June 2013",
         title: "Electrical Engineering studies",
         school: "University of Science and Technology, Iran",
         description:
-          "Foundations in industrial electronics, electrical circuits, automation technology, project and quality management.",
+          "Study experience with foundations in industrial electronics, electrical circuits, automation technology, project management, and quality management.",
       },
     },
     credentials: {
       languagesHeading: "Languages",
-      german: "German C2",
-      english: "English B2",
-      farsi: "Farsi C2",
-      dari: "Dari C1",
-      kurdish: "Kurdish native",
+      german: "German – Professional proficiency",
+      english: "English – Good professional proficiency",
+      farsi: "Farsi – Native",
+      dari: "Dari – Very good proficiency",
+      kurdish: "Kurdish – Native",
       strengthsHeading: "Working strengths",
       strength1: "Analytical thinking",
-      strength2: "Solution-oriented support",
-      strength3: "Continuous learning",
-      strength4: "Communication",
-      strength5: "Intercultural competence",
+      strength2: "Structured problem solving",
+      strength3: "Solution-oriented support",
+      strength4: "Process and automation mindset",
+      strength5: "Continuous learning",
+      strength6: "Communication",
+      strength7: "Intercultural collaboration",
     },
     projects: {
       featured: "Featured Project",
@@ -142,80 +156,84 @@ const translations = {
       budgetup: {
         title: "BudgetUp",
         description:
-          "Personal finance and budgeting application focused on expense tracking, financial overview, and clean user experience.",
+          "Personal finance and budgeting application for managing income, expenses, and financial obligations. The project focuses on a clear financial overview, simple interaction, and a clean user experience.",
+      },
+      lifepilot: {
+        title: "LifePilot",
+        description:
+          "AI-assisted platform for personal administration, contracts, documents, reminders, and everyday bureaucracy. The project combines modern web technologies, automation, and cloud-native architecture concepts.",
       },
       inProgress: "Portfolio Lab",
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
         description:
-          "Designing and deploying AWS infrastructure using core services such as EC2, VPC, IAM, S3, and CloudWatch.",
+          "AWS infrastructure lab using VPC, public and private subnets, EC2, IAM, S3, and CloudWatch. The focus is on cloud foundations, network segmentation, access control, monitoring, and transparent infrastructure design.",
       },
       cicd: {
         title: "DevOps CI/CD Pipeline Lab",
         description:
-          "Building a CI/CD workflow with GitHub, Jenkins, Docker, and automated deployment concepts.",
+          "CI/CD workflow using GitHub, Jenkins, and Docker to automate build, test, and deployment processes.",
       },
       iac: {
         title: "Infrastructure as Code Project",
         description:
-          "Creating reproducible infrastructure using Terraform and cloud automation practices.",
+          "Reproducible cloud infrastructure provisioned with Terraform using Infrastructure as Code principles, modular configuration, and controlled infrastructure changes.",
       },
       workplace: {
         title: "Modern Workplace Automation",
         description:
-          "Automation-focused project based on Microsoft 365, Power Automate, endpoint workflows, and IT operations improvement.",
+          "Automation-focused portfolio project using Microsoft 365, Power Automate, and endpoint-related workflows to standardize and improve operational IT processes.",
       },
     },
     experience: {
       ing: {
-        date: "Since June 2024",
-        company: "ING DiBa AG, Berlin",
-        role: "IT Support Engineer - Modern Workplace & Automation",
+        date: "June 2024 – June 2026",
+        company: "ING-DiBa AG, Berlin",
+        role: "Modern Workplace & Endpoint Operations",
+        subtitle: "IT Support Engineer / Specialist End-User Hardware Support II",
         point1:
-          "Operated and supported a large Modern Workplace environment with more than 4,000 users and 8,000 endpoints.",
+          "Operated and supported an Enterprise Modern Workplace environment serving more than 4,000 users and 8,000 endpoints.",
         point2:
-          "Supported Microsoft 365, Microsoft Teams Rooms, workplace hardware, mobile devices and collaboration technologies.",
+          "Administered and supported Microsoft 365, Microsoft Teams Rooms, workplace hardware, mobile devices, and collaboration technologies.",
         point3:
-          "Worked with Intune compliance, endpoint registration, device lifecycle processes and rollout support.",
+          "Supported device lifecycle, enrollment, compliance, and rollout processes with Microsoft Intune.",
         point4:
-          "Supported identity and user management tasks with Microsoft Entra ID and Active Directory.",
+          "Supported identity and user management processes with Microsoft Entra ID and Active Directory.",
         point5:
-          "Contributed to onboarding and offboarding workflow improvements using ServiceNow and Power Automate.",
+          "Contributed to the optimization of onboarding, offboarding, and operational IT workflows using ServiceNow and Power Automate.",
+        point6:
+          "Coordinated incidents, service requests, and technical rollouts in a regulated Enterprise environment.",
+        point7:
+          "Collaborated with internal platform teams, business departments, and external service providers.",
       },
       internship: {
-        date: "February 2023 - August 2023",
+        date: "February 2023 – August 2023",
         company: "IHK internship, Berlin",
-        role: "IT internship - Automation & Service Desk",
+        role: "IT internship – Automation & Service Desk",
         point1:
-          "Implemented Power Automate workflows and automated recurring operational processes.",
+          "Implemented Power Automate workflows for recurring operational processes.",
         point2:
-          "Handled service desk and Jira tickets with a focus on process improvement.",
+          "Handled service desk and Jira tickets with a focus on structured problem solving and process improvement.",
         point3:
-          "Worked in agile Scrum teams on IT support and operations projects.",
+          "Contributed to Scrum teams in IT support and operations projects.",
         point4:
-          "Installed, configured and maintained hardware, operating systems and network components.",
+          "Installed and configured hardware, operating systems, and network components.",
       },
       majorel: {
-        date: "May 2019 - July 2021",
+        date: "May 2019 – July 2021",
         company: "Majorel, Berlin",
         role: "IT Support Specialist",
-        point1:
-          "Delivered 1st and 2nd level support for hardware, operating systems, networks and peripherals.",
-        point2:
-          "Supported users through troubleshooting, issue analysis, solution guidance and user training.",
+        point1: "Delivered 1st and 2nd level support.",
+        point2: "Troubleshot hardware, operating system, network, and peripheral issues.",
         point3:
-          "Contributed to support documentation and continuous improvement of service processes.",
+          "Supported users, maintained support documentation, and contributed to service process improvements.",
       },
       earlier: {
-        date: "2005 - 2017",
+        date: "2005 – 2017",
         company: "Sports center, Iran / Berliner Stadtmission",
         role: "Trainer, coordinator & volunteer work",
-        point1:
-          "Led group and individual activities, including planning, organization and coordination.",
-        point2:
-          "Worked with local institutions and multicultural teams, strengthening communication and leadership skills.",
-        point3:
-          "Built a practical foundation in responsibility, service mindset and structured teamwork.",
+        summary:
+          "Earlier experience in training, coordination, organization, communication, and collaboration with multicultural teams.",
       },
     },
     contact: {
@@ -251,21 +269,21 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Junior Cloud & DevOps Engineer | AWS, Azure, Automatisierung & Modern Workplace",
-      text: "Ich baue praktische Cloud- und Automatisierungsprojekte mit hands-on Fokus auf AWS, Azure, Linux, Infrastructure as Code, CI/CD und Modern Workplace Engineering.",
+        "Cloud & DevOps Engineer | AWS, Azure, Terraform, Automatisierung & Modern Workplace",
+      meta: "Berlin · Remote / Hybrid · Deutsch & Englisch",
+      text: "IT-Spezialist aus Berlin mit mehrjähriger Erfahrung im Enterprise-IT-Umfeld, insbesondere in Microsoft 365, Endpoint Management, Identity Management und Workflow-Automatisierung. Aktuell erweitere ich diesen Hintergrund gezielt um AWS, Linux, Terraform, Docker, Kubernetes und CI/CD, um Cloud- und DevOps-Infrastrukturen praxisnah aufzubauen und zu automatisieren.",
       viewProjects: "Projekte ansehen",
-      viewCv: "CV ansehen",
+      viewCv: "Lebenslauf herunterladen",
     },
     photo: {
-      caption: "Junior Cloud & DevOps Engineer",
+      caption: "Junior-Level Cloud & DevOps",
     },
     status: {
       positioning: "Zielpositionierung",
-      positioningValue:
-        "Junior Cloud & DevOps | Modern Workplace | Automatisierung",
+      positioningValue: "Cloud & DevOps · Modern Workplace · Automatisierung",
       currentTraining: "Aktuelles Training",
       trainingValue:
-        "Vollzeit AWS & DevOps Engineer Programm bei Clarusway GmbH",
+        "Vollzeit AWS & DevOps Engineer Program bei Clarusway GmbH",
     },
     sections: {
       about: "Über mich",
@@ -287,17 +305,27 @@ const translations = {
       contact: "Kontaktmöglichkeiten",
     },
     about: {
-      text: "Ich bin ein IT Engineer aus Berlin mit starkem Hintergrund in Enterprise IT und Modern Workplace und fokussiere mich jetzt auf Junior-Rollen im Bereich Cloud und DevOps.<br><br>Meine Erfahrung umfasst Microsoft-365-Umgebungen, Endpoint Operations, Identity und Access Management, IT Service Management und Workflow-Automatisierung. Ich baue praxisnahe Portfolio-Projekte mit AWS, Azure, Linux, Terraform, Docker, Kubernetes, CI/CD und Automatisierung.",
+      text: "Ich bin ein IT-Spezialist aus Berlin mit mehrjähriger Erfahrung im Enterprise-IT-Umfeld. Mein beruflicher Schwerpunkt lag bisher auf Modern Workplace, Endpoint Operations, Microsoft 365, Identity Management, IT Service Management und der Automatisierung operativer Prozesse.<br><br>Aktuell entwickle ich mich gezielt in Richtung Cloud und DevOps weiter. Dafür vertiefe ich AWS, Azure, Linux, Networking, Terraform, Docker, Kubernetes, CI/CD und Monitoring in einem Vollzeitprogramm sowie in eigenen praxisnahen Portfolio-Projekten.<br><br>Mein Ziel ist es, meine Erfahrung aus stabilen Enterprise-Umgebungen mit modernen Cloud-, Infrastructure-as-Code- und Automatisierungsansätzen zu verbinden.",
+      facts: {
+        positioningLabel: "Zielpositionierung",
+        positioningValue: "Cloud & DevOps · Modern Workplace · Automatisierung",
+        locationLabel: "Standort",
+        locationValue: "Berlin",
+        workModelLabel: "Arbeitsmodell",
+        workModelValue: "Remote / Hybrid",
+        trainingLabel: "Aktuelles Training",
+        trainingValue: "Vollzeit AWS & DevOps Engineer Program bei Clarusway",
+      },
     },
     skills: {
       cloud: "Cloud",
-      devops: "DevOps",
-      platform: "Platform / Enterprise IT",
+      devops: "DevOps & Automatisierung",
+      platform: "Platform & Enterprise IT",
     },
     stack: {
       title: "Technologien im Fokus",
       intro:
-        "Praktische Schwerpunkte in Cloud, DevOps, Platform Operations und KI-unterstuetzten Workflows.",
+        "Praktische Schwerpunkte in Cloud, DevOps, Platform Operations und KI-unterstützten Workflows.",
       items: {
         aws: "AWS",
         azure: "Azure",
@@ -316,14 +344,15 @@ const translations = {
     },
     training: {
       type: "Aktuelles Vollzeitprogramm",
+      status: "Laufend",
       title: "AWS & DevOps Engineer Program",
-      date: "Mai 2026 - Oktober 2026",
+      date: "Mai 2026 – Oktober 2026",
       description:
-        "Vollzeittraining für AWS und DevOps mit Fokus auf Cloud-Infrastruktur, Linux, Networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, Monitoring, Automatisierung und portfolio-basierte Projekte.",
+        "Vollzeittraining für AWS und DevOps mit Fokus auf Cloud-Infrastruktur, Linux, Networking, Terraform, Docker, Kubernetes, Jenkins, CI/CD, Monitoring, Automatisierung und portfoliobasierte Projekte.",
       certHeading: "Zertifizierungsplan",
       certPreparationHeading: "In Vorbereitung",
-      certAwsCp: "AWS Cloud Practitioner",
-      certAwsSolutions: "AWS Solutions Architect Associate",
+      certAwsCp: "AWS Certified Cloud Practitioner",
+      certAwsSolutions: "AWS Certified Solutions Architect – Associate",
       certAz900: "Microsoft Azure Fundamentals AZ-900",
       certAz104: "Microsoft Azure Administrator AZ-104",
     },
@@ -334,43 +363,45 @@ const translations = {
         title: "B.Sc. Wirtschaftsinformatik",
         school: "FernUniversität in Hagen",
         description:
-          "Berufsbegleitendes Studium mit Fokus auf Datenbanken, IT-Management, Prozessanalyse, Prozessoptimierung und digitale Geschäftsprozesse.",
+          "Laufendes berufsbegleitendes Studium mit Fokus auf Datenbanken, IT-Management, Prozessanalyse, Prozessoptimierung und digitale Geschäftsprozesse.",
       },
       ihk: {
-        date: "August 2021 - Januar 2024",
+        date: "August 2021 – Januar 2024",
         title: "Fachinformatiker für Anwendungsentwicklung (IHK)",
         school: "FORUM Berufsbildung e.V., Berlin",
         description:
           "Abgeschlossene IHK-Qualifikation mit Abschlussprojekt zur Migration eines SQL-Datenbankservers in eine Azure-Cloudumgebung.",
       },
       english: {
-        date: "Februar 2024 - Mai 2024",
+        date: "Februar 2024 – Mai 2024",
         title: "Intensivkurs Business English",
         school: "Berlin School of English",
         description:
           "Business English, professionelle Kommunikation und Schreiben für internationale Arbeitskontexte.",
       },
       electrical: {
-        date: "September 2010 - Juni 2013",
-        title: "Studium Elektrotechnik",
+        date: "September 2010 – Juni 2013",
+        title: "Studienerfahrung Elektrotechnik",
         school: "Universität für Wissenschaft und Technologie, Iran",
         description:
-          "Grundlagen in Industrieelektronik, elektrischen Schaltungen, Automatisierungstechnik, Projekt- und Qualitätsmanagement.",
+          "Studienerfahrung mit Grundlagen in Industrieelektronik, elektrischen Schaltungen, Automatisierungstechnik, Projekt- und Qualitätsmanagement.",
       },
     },
     credentials: {
       languagesHeading: "Sprachen",
-      german: "Deutsch C2",
-      english: "Englisch B2",
-      farsi: "Farsi C2",
-      dari: "Dari C1",
-      kurdish: "Kurdisch Muttersprache",
+      german: "Deutsch – verhandlungssicher",
+      english: "Englisch – gute berufliche Kenntnisse",
+      farsi: "Farsi – Muttersprache",
+      dari: "Dari – sehr gute Kenntnisse",
+      kurdish: "Kurdisch – Muttersprache",
       strengthsHeading: "Arbeitsstärken",
       strength1: "Analytisches Denken",
-      strength2: "Lösungsorientierter Support",
-      strength3: "Kontinuierliches Lernen",
-      strength4: "Kommunikationsstärke",
-      strength5: "Interkulturelle Kompetenz",
+      strength2: "Strukturierte Problemlösung",
+      strength3: "Lösungsorientierter Support",
+      strength4: "Prozess- und Automatisierungsdenken",
+      strength5: "Kontinuierliches Lernen",
+      strength6: "Kommunikationsstärke",
+      strength7: "Interkulturelle Zusammenarbeit",
     },
     projects: {
       featured: "Ausgewähltes Projekt",
@@ -378,80 +409,83 @@ const translations = {
       budgetup: {
         title: "BudgetUp",
         description:
-          "Private Finanz- und Budget-App mit Fokus auf Ausgabentracking, finanziellen Überblick und eine saubere Nutzererfahrung.",
+          "Private Finanz- und Budget-App zur strukturierten Erfassung von Einnahmen, Ausgaben und finanziellen Verpflichtungen. Der Fokus liegt auf einer verständlichen Übersicht, einfacher Bedienung und einer sauberen Nutzererfahrung.",
       },
-      inProgress: "Portfolio-Lab",
+      lifepilot: {
+        title: "LifePilot",
+        description:
+          "KI-gestützte Plattform für persönliche Administration, Verträge, Dokumente, Erinnerungen und alltägliche Bürokratie. Das Projekt verbindet moderne Webtechnologien, Automatisierung und cloud-native Architekturkonzepte.",
+      },
+      inProgress: "Portfolio Lab",
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
         description:
-          "Design und Deployment von AWS-Infrastruktur mit Kernservices wie EC2, VPC, IAM, S3 und CloudWatch.",
+          "Aufbau einer AWS-Testinfrastruktur mit VPC, öffentlichen und privaten Subnetzen, EC2, IAM, S3 und CloudWatch. Der Schwerpunkt liegt auf Cloud-Grundlagen, Netzwerksegmentierung, Zugriffssteuerung, Monitoring und nachvollziehbaren Infrastrukturkonzepten.",
       },
       cicd: {
         title: "DevOps CI/CD Pipeline Lab",
         description:
-          "Aufbau eines CI/CD-Workflows mit GitHub, Jenkins, Docker und Konzepten für automatisierte Deployments.",
+          "Aufbau eines CI/CD-Workflows mit GitHub, Jenkins und Docker zur Automatisierung von Build-, Test- und Deployment-Prozessen.",
       },
       iac: {
         title: "Infrastructure as Code Project",
         description:
-          "Erstellung reproduzierbarer Infrastruktur mit Terraform und Cloud-Automatisierungspraktiken.",
+          "Bereitstellung reproduzierbarer Cloud-Infrastruktur mit Terraform unter Anwendung von Infrastructure-as-Code-Prinzipien, modularen Konfigurationen und kontrollierten Änderungen.",
       },
       workplace: {
         title: "Modern Workplace Automation",
         description:
-          "Automatisierungsorientiertes Projekt auf Basis von Microsoft 365, Power Automate, Endpoint-Workflows und Verbesserungen im IT-Betrieb.",
+          "Automatisierungsorientiertes Portfolio-Projekt auf Basis von Microsoft 365, Power Automate und Endpoint-bezogenen Workflows zur Standardisierung und Verbesserung operativer IT-Prozesse.",
       },
     },
     experience: {
       ing: {
-        date: "Seit Juni 2024",
-        company: "ING DiBa AG, Berlin",
-        role: "IT Support Engineer - Modern Workplace & Automation",
+        date: "Juni 2024 – Juni 2026",
+        company: "ING-DiBa AG, Berlin",
+        role: "Modern Workplace & Endpoint Operations",
+        subtitle: "IT Support Engineer / Spezialist Enduser-Hardware-Support II",
         point1:
-          "Betrieb und Support einer großen Modern-Workplace-Umgebung mit über 4.000 Nutzern und 8.000 Endgeräten.",
+          "Betrieb und Support einer Enterprise-Modern-Workplace-Umgebung für mehr als 4.000 Nutzer und 8.000 Endgeräte.",
         point2:
-          "Support für Microsoft 365, Microsoft Teams Rooms, Workplace-Hardware, mobile Geräte und Collaboration-Technologien.",
+          "Administration und technischer Support für Microsoft 365, Microsoft Teams Rooms, Workplace-Hardware, mobile Endgeräte und Collaboration-Technologien.",
         point3:
-          "Mitarbeit bei Intune-Compliance, Geräteregistrierung, Device-Lifecycle-Prozessen und Rollout-Support.",
+          "Unterstützung von Device-Lifecycle-, Enrollment-, Compliance- und Rollout-Prozessen mit Microsoft Intune.",
         point4:
           "Unterstützung im Identity- und User-Management mit Microsoft Entra ID und Active Directory.",
         point5:
-          "Mitwirkung an Onboarding- und Offboarding-Workflow-Verbesserungen mit ServiceNow und Power Automate.",
+          "Mitwirkung an der Optimierung von Onboarding-, Offboarding- und operativen IT-Workflows mit ServiceNow und Power Automate.",
+        point6:
+          "Bearbeitung und Koordination von Incidents, Service Requests und technischen Rollouts in einer regulierten Enterprise-Umgebung.",
+        point7:
+          "Zusammenarbeit mit internen Platform-Teams, Fachbereichen und externen Dienstleistern.",
       },
       internship: {
-        date: "Februar 2023 - August 2023",
+        date: "Februar 2023 – August 2023",
         company: "IHK-Praktikum, Berlin",
-        role: "IT-Praktikum - Automation & Service Desk",
+        role: "IT-Praktikum – Automation & Service Desk",
         point1:
-          "Umsetzung von Power-Automate-Workflows und Automatisierung wiederkehrender operativer Prozesse.",
+          "Umsetzung von Power-Automate-Workflows für wiederkehrende operative Prozesse.",
         point2:
-          "Bearbeitung von Service-Desk- und Jira-Tickets mit Fokus auf Prozessverbesserung.",
-        point3:
-          "Mitarbeit in agilen Scrum-Teams an IT-Support- und Operations-Projekten.",
+          "Bearbeitung von Service-Desk- und Jira-Tickets mit Fokus auf strukturierte Problemlösung und Prozessverbesserung.",
+        point3: "Mitarbeit in Scrum-Teams an IT-Support- und Operations-Projekten.",
         point4:
-          "Installation, Konfiguration und Wartung von Hardware, Betriebssystemen und Netzwerkkomponenten.",
+          "Installation und Konfiguration von Hardware, Betriebssystemen und Netzwerkkomponenten.",
       },
       majorel: {
-        date: "Mai 2019 - Juli 2021",
+        date: "Mai 2019 – Juli 2021",
         company: "Majorel, Berlin",
         role: "IT Support Spezialist",
-        point1:
-          "1st- und 2nd-Level-Support für Hardware, Betriebssysteme, Netzwerke und Peripheriegeräte.",
-        point2:
-          "Benutzerbetreuung durch Troubleshooting, Problemanalyse, Lösungsbegleitung und Anwenderschulungen.",
+        point1: "1st- und 2nd-Level-Support.",
+        point2: "Troubleshooting von Hardware-, Betriebssystem-, Netzwerk- und Peripherieproblemen.",
         point3:
-          "Mitwirkung an Support-Dokumentation und kontinuierlicher Verbesserung von Serviceprozessen.",
+          "Anwenderbetreuung, Support-Dokumentation und Verbesserung von Serviceprozessen.",
       },
       earlier: {
-        date: "2005 - 2017",
+        date: "2005 – 2017",
         company: "Sportzentrum, Iran / Berliner Stadtmission",
         role: "Trainer, Koordinator & ehrenamtliche Arbeit",
-        point1:
-          "Leitung von Gruppen- und Einzelaktivitäten inklusive Planung, Organisation und Koordination.",
-        point2:
-          "Zusammenarbeit mit lokalen Institutionen und multikulturellen Teams zur Stärkung von Kommunikation und Leadership.",
-        point3:
-          "Praktische Grundlage in Verantwortung, Service-Mentalität und strukturierter Teamarbeit aufgebaut.",
+        summary:
+          "Frühere Erfahrung in Training, Koordination, Organisation, Kommunikation und Zusammenarbeit mit multikulturellen Teams.",
       },
     },
     contact: {
@@ -478,60 +512,71 @@ const translations = {
     },
     nav: {
       about: "درباره من",
-      skills: "مهارت ها",
+      skills: "مهارت‌ها",
       training: "آموزش",
-      projects: "پروژه ها",
+      projects: "پروژه‌ها",
       experience: "تجربه",
       contact: "تماس",
     },
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Junior Cloud & DevOps Engineer | AWS، Azure، Automation و Modern Workplace",
-      text: "من پروژه های عملی Cloud و Automation می سازم و روی AWS، Azure، Linux، Infrastructure as Code، CI/CD و Modern Workplace Engineering به صورت hands-on کار می کنم.",
-      viewProjects: "مشاهده پروژه ها",
-      viewCv: "مشاهده CV",
+        "Cloud & DevOps Engineer | AWS، Azure، Terraform، Automation و Modern Workplace",
+      meta: "برلین · Remote / Hybrid · آلمانی و انگلیسی",
+      text: "متخصص IT ساکن برلین با چندین سال تجربه در محیط‌های Enterprise IT، به‌ویژه در Microsoft 365، Endpoint Management، Identity Management و Workflow Automation. در حال حاضر این پیشینه را با AWS، Linux، Terraform، Docker، Kubernetes و CI/CD گسترش می‌دهم تا محیط‌های Cloud و DevOps را به‌صورت عملی طراحی و خودکارسازی کنم.",
+      viewProjects: "مشاهده پروژه‌ها",
+      viewCv: "دانلود رزومه",
     },
     photo: {
-      caption: "Junior Cloud & DevOps Engineer",
+      caption: "Junior-Level Cloud & DevOps",
     },
     status: {
       positioning: "موقعیت هدف",
-      positioningValue: "Junior Cloud & DevOps | Modern Workplace | Automation",
+      positioningValue: "Cloud & DevOps · Modern Workplace · Automation",
       currentTraining: "آموزش فعلی",
-      trainingValue: "برنامه تمام وقت AWS & DevOps Engineer در Clarusway GmbH",
+      trainingValue: "برنامه تمام‌وقت AWS & DevOps Engineer در Clarusway GmbH",
     },
     sections: {
       about: "درباره من",
-      skills: "مهارت ها",
+      skills: "مهارت‌ها",
       training: "آموزش و تحصیلات",
-      projects: "پروژه های پورتفولیو",
-      experience: "سوابق حرفه ای",
+      projects: "پروژه‌های پورتفولیو",
+      experience: "سوابق حرفه‌ای",
       contact: "تماس",
     },
     labels: {
-      hero: "پروفایل حرفه ای",
+      hero: "پروفایل حرفه‌ای",
       about: "خلاصه پروفایل",
-      skills: "توانمندی های اصلی",
+      skills: "توانمندی‌های اصلی",
       stack: "تمرکز فناوری",
       coreStack: "استک اصلی",
       training: "مسیر یادگیری فعلی",
-      projects: "نمونه کارهای منتخب",
+      projects: "نمونه‌کارهای منتخب",
       experience: "نمای کلی سوابق",
-      contact: "راه های تماس",
+      contact: "راه‌های تماس",
     },
     about: {
-      text: "من یک IT Engineer ساکن برلین هستم، با پیشینه قوی در Enterprise IT و Modern Workplace، و اکنون روی نقش های Junior Cloud و DevOps تمرکز دارم.<br><br>تجربه من شامل محیط های Microsoft 365، عملیات endpoint، identity و access management، IT service management و workflow automation است. من پروژه های عملی پورتفولیو با AWS، Azure، Linux، Terraform، Docker، Kubernetes، CI/CD و automation می سازم.",
+      text: "من یک متخصص IT ساکن برلین هستم و چندین سال تجربه در محیط‌های Enterprise IT دارم. تمرکز حرفه‌ای من تاکنون روی Modern Workplace، Endpoint Operations، Microsoft 365، Identity Management، IT Service Management و خودکارسازی فرایندهای عملیاتی بوده است.<br><br>اکنون پروفایل خود را به‌صورت هدفمند به سمت Cloud و DevOps توسعه می‌دهم. از طریق یک برنامه آموزشی تمام‌وقت و پروژه‌های عملی پورتفولیو، دانش خود را در AWS، Azure، Linux، Networking، Terraform، Docker، Kubernetes، CI/CD و Monitoring عمیق‌تر می‌کنم.<br><br>هدف من ترکیب تجربه محیط‌های پایدار Enterprise با روش‌های مدرن Cloud، Infrastructure as Code و Automation است.",
+      facts: {
+        positioningLabel: "موقعیت هدف",
+        positioningValue: "Cloud & DevOps · Modern Workplace · Automation",
+        locationLabel: "موقعیت",
+        locationValue: "برلین",
+        workModelLabel: "مدل کاری",
+        workModelValue: "Remote / Hybrid",
+        trainingLabel: "آموزش فعلی",
+        trainingValue: "برنامه تمام‌وقت AWS & DevOps Engineer در Clarusway",
+      },
     },
     skills: {
       cloud: "Cloud",
-      devops: "DevOps",
-      platform: "Platform / Enterprise IT",
+      devops: "DevOps & Automation",
+      platform: "Platform & Enterprise IT",
     },
     stack: {
-      title: "تکنولوژی های مورد تمرکز",
+      title: "تکنولوژی‌های مورد تمرکز",
       intro:
-        "حوزه های عملی در Cloud، DevOps، Platform Operations و workflowهای پشتیبانی شده با هوش مصنوعی.",
+        "حوزه‌های عملی در Cloud، DevOps، Platform Operations و Workflowهای پشتیبانی‌شده با هوش مصنوعی.",
       items: {
         aws: "AWS",
         azure: "Azure",
@@ -549,15 +594,16 @@ const translations = {
       },
     },
     training: {
-      type: "برنامه تمام وقت فعلی",
+      type: "برنامه تمام‌وقت فعلی",
+      status: "در حال انجام",
       title: "AWS & DevOps Engineer Program",
-      date: "می 2026 - اکتبر 2026",
+      date: "می 2026 – اکتبر 2026",
       description:
-        "آموزش تمام وقت AWS و DevOps با تمرکز بر cloud infrastructure، Linux، networking، Terraform، Docker، Kubernetes، Jenkins، CI/CD، monitoring، automation و پروژه های portfolio-based.",
-      certHeading: "برنامه گواهی‌نامه‌ها",
+        "آموزش تمام‌وقت AWS و DevOps با تمرکز بر Cloud Infrastructure، Linux، Networking، Terraform، Docker، Kubernetes، Jenkins، CI/CD، Monitoring، Automation و پروژه‌های پورتفولیو.",
+      certHeading: "مسیر گواهی‌نامه‌ها",
       certPreparationHeading: "در حال آمادگی",
-      certAwsCp: "AWS Cloud Practitioner",
-      certAwsSolutions: "AWS Solutions Architect Associate",
+      certAwsCp: "AWS Certified Cloud Practitioner",
+      certAwsSolutions: "AWS Certified Solutions Architect – Associate",
       certAz900: "Microsoft Azure Fundamentals AZ-900",
       certAz104: "Microsoft Azure Administrator AZ-104",
     },
@@ -568,43 +614,45 @@ const translations = {
         title: "کارشناسی Business Informatics",
         school: "FernUniversität in Hagen",
         description:
-          "تحصیل پاره وقت با تمرکز بر پایگاه داده، IT management، تحلیل فرایند، بهینه سازی فرایند و فرایندهای دیجیتال کسب و کار.",
+          "تحصیل پاره‌وقت و در حال انجام با تمرکز بر پایگاه داده، IT Management، تحلیل فرایند، بهینه‌سازی فرایند و فرایندهای دیجیتال کسب‌وکار.",
       },
       ihk: {
-        date: "اوت 2021 - ژانویه 2024",
+        date: "اوت 2021 – ژانویه 2024",
         title: "Fachinformatiker für Anwendungsentwicklung (IHK)",
         school: "FORUM Berufsbildung e.V., Berlin",
         description:
-          "مدرک IHK تکمیل شده با پروژه نهایی برای انتقال یک SQL database server به محیط Azure cloud.",
+          "مدرک IHK تکمیل‌شده با پروژه نهایی برای انتقال یک SQL database server به محیط Azure cloud.",
       },
       english: {
-        date: "فوریه 2024 - می 2024",
+        date: "فوریه 2024 – می 2024",
         title: "دوره فشرده Business English",
         school: "Berlin School of English",
         description:
-          "Business English، ارتباط حرفه ای و نگارش برای محیط های کاری بین المللی.",
+          "Business English، ارتباط حرفه‌ای و نگارش برای محیط‌های کاری بین‌المللی.",
       },
       electrical: {
-        date: "سپتامبر 2010 - ژوئن 2013",
-        title: "تحصیل در رشته Electrical Engineering",
+        date: "سپتامبر 2010 – ژوئن 2013",
+        title: "تجربه تحصیل در Electrical Engineering",
         school: "University of Science and Technology, Iran",
         description:
-          "مبانی electronics صنعتی، مدارهای الکتریکی، automation technology، project management و quality management.",
+          "تجربه تحصیلی با مبانی الکترونیک صنعتی، مدارهای الکتریکی، Automation Technology، Project Management و Quality Management.",
       },
     },
     credentials: {
-      languagesHeading: "زبان ها",
-      german: "آلمانی C2",
-      english: "انگلیسی B2",
-      farsi: "فارسی C2",
-      dari: "دری C1",
-      kurdish: "کردی زبان مادری",
+      languagesHeading: "زبان‌ها",
+      german: "آلمانی – تسلط حرفه‌ای",
+      english: "انگلیسی – توانایی خوب حرفه‌ای",
+      farsi: "فارسی – زبان مادری",
+      dari: "دری – تسلط بسیار خوب",
+      kurdish: "کردی – زبان مادری",
       strengthsHeading: "نقاط قوت کاری",
       strength1: "تفکر تحلیلی",
-      strength2: "پشتیبانی راه حل محور",
-      strength3: "یادگیری مداوم",
-      strength4: "ارتباط موثر",
-      strength5: "توانایی کار بین فرهنگی",
+      strength2: "حل مسئله ساختاریافته",
+      strength3: "پشتیبانی راه‌حل‌محور",
+      strength4: "نگاه فرایندی و اتوماسیون",
+      strength5: "یادگیری مداوم",
+      strength6: "ارتباط موثر",
+      strength7: "همکاری بین‌فرهنگی",
     },
     projects: {
       featured: "پروژه منتخب",
@@ -612,84 +660,88 @@ const translations = {
       budgetup: {
         title: "BudgetUp",
         description:
-          "اپلیکیشن مدیریت مالی و بودجه شخصی با تمرکز بر پیگیری هزینه ها، نمای کلی مالی و تجربه کاربری تمیز.",
+          "اپلیکیشن مدیریت مالی و بودجه شخصی برای مدیریت درآمدها، هزینه‌ها و تعهدات مالی. تمرکز پروژه روی نمای مالی شفاف، تعامل ساده و تجربه کاربری تمیز است.",
       },
-      inProgress: "لابراتوار پورتفولیو",
+      lifepilot: {
+        title: "LifePilot",
+        description:
+          "پلتفرم پشتیبانی‌شده با هوش مصنوعی برای مدیریت امور شخصی، قراردادها، اسناد، یادآورها و کارهای اداری روزمره. این پروژه فناوری‌های مدرن وب، Automation و مفاهیم معماری Cloud-native را ترکیب می‌کند.",
+      },
+      inProgress: "Portfolio Lab",
       awsInfra: {
         title: "AWS Cloud Infrastructure Lab",
         description:
-          "طراحی و پیاده سازی زیرساخت AWS با سرویس های اصلی مانند EC2، VPC، IAM، S3 و CloudWatch.",
+          "لابراتوار زیرساخت AWS با VPC، ساب‌نت‌های public و private، EC2، IAM، S3 و CloudWatch. تمرکز روی Cloud Foundations، Network Segmentation، Access Control، Monitoring و طراحی شفاف زیرساخت است.",
       },
       cicd: {
         title: "DevOps CI/CD Pipeline Lab",
         description:
-          "ساخت workflow برای CI/CD با GitHub، Jenkins، Docker و مفاهیم automated deployment.",
+          "Workflow مربوط به CI/CD با GitHub، Jenkins و Docker برای خودکارسازی فرایندهای build، test و deployment.",
       },
       iac: {
         title: "Infrastructure as Code Project",
         description:
-          "ایجاد زیرساخت قابل تکرار با Terraform و روش های cloud automation.",
+          "زیرساخت Cloud قابل تکرار با Terraform بر اساس اصول Infrastructure as Code، پیکربندی ماژولار و تغییرات کنترل‌شده زیرساخت.",
       },
       workplace: {
         title: "Modern Workplace Automation",
         description:
-          "پروژه متمرکز بر automation بر پایه Microsoft 365، Power Automate، endpoint workflows و بهبود IT operations.",
+          "پروژه پورتفولیوی متمرکز بر Automation با Microsoft 365، Power Automate و Workflowهای مرتبط با Endpoint برای استانداردسازی و بهبود فرایندهای عملیاتی IT.",
       },
     },
     experience: {
       ing: {
-        date: "از ژوئن 2024",
-        company: "ING DiBa AG, Berlin",
-        role: "IT Support Engineer - Modern Workplace & Automation",
+        date: "ژوئن 2024 – ژوئن 2026",
+        company: "ING-DiBa AG, Berlin",
+        role: "Modern Workplace & Endpoint Operations",
+        subtitle: "IT Support Engineer / Specialist End-User Hardware Support II",
         point1:
-          "پشتیبانی و عملیات یک محیط بزرگ Modern Workplace با بیش از 4,000 کاربر و 8,000 endpoint.",
+          "عملیات و پشتیبانی محیط Enterprise Modern Workplace برای بیش از 4,000 کاربر و 8,000 Endpoint.",
         point2:
-          "پشتیبانی از Microsoft 365، Microsoft Teams Rooms، سخت افزار workplace، دستگاه های موبایل و collaboration technologies.",
+          "Administration و پشتیبانی فنی از Microsoft 365، Microsoft Teams Rooms، Workplace Hardware، دستگاه‌های موبایل و Collaboration Technologies.",
         point3:
-          "کار با Intune compliance، ثبت دستگاه ها، device lifecycle processes و rollout support.",
+          "پشتیبانی از فرایندهای Device Lifecycle، Enrollment، Compliance و Rollout با Microsoft Intune.",
         point4:
-          "پشتیبانی از identity و user management با Microsoft Entra ID و Active Directory.",
+          "پشتیبانی از فرایندهای Identity و User Management با Microsoft Entra ID و Active Directory.",
         point5:
-          "مشارکت در بهبود workflowهای onboarding و offboarding با ServiceNow و Power Automate.",
+          "مشارکت در بهینه‌سازی Workflowهای Onboarding، Offboarding و IT Operations با ServiceNow و Power Automate.",
+        point6:
+          "هماهنگی Incidents، Service Requests و Rolloutهای فنی در یک محیط Enterprise قانون‌مند.",
+        point7:
+          "همکاری با Platform Teams داخلی، بخش‌های کسب‌وکار و ارائه‌دهندگان سرویس خارجی.",
       },
       internship: {
-        date: "فوریه 2023 - اوت 2023",
+        date: "فوریه 2023 – اوت 2023",
         company: "IHK internship, Berlin",
-        role: "IT internship - Automation & Service Desk",
+        role: "IT internship – Automation & Service Desk",
         point1:
-          "پیاده سازی Power Automate workflows و اتوماسیون فرایندهای تکراری عملیاتی.",
+          "پیاده‌سازی Power Automate workflows برای فرایندهای عملیاتی تکراری.",
         point2:
-          "رسیدگی به ticketهای service desk و Jira با تمرکز بر بهبود فرایند.",
-        point3:
-          "همکاری در تیم های agile Scrum در پروژه های IT support و operations.",
+          "رسیدگی به Service Desk و Jira Tickets با تمرکز بر حل مسئله ساختاریافته و بهبود فرایند.",
+        point3: "همکاری در تیم‌های Scrum در پروژه‌های IT Support و Operations.",
         point4:
-          "نصب، پیکربندی و نگهداری hardware، operating systems و network components.",
+          "نصب و پیکربندی Hardware، Operating Systems و Network Components.",
       },
       majorel: {
-        date: "می 2019 - جولای 2021",
+        date: "می 2019 – جولای 2021",
         company: "Majorel, Berlin",
         role: "IT Support Specialist",
-        point1:
-          "ارائه 1st و 2nd level support برای hardware، operating systems، networks و peripherals.",
+        point1: "ارائه 1st و 2nd Level Support.",
         point2:
-          "پشتیبانی از کاربران از طریق troubleshooting، تحلیل مشکل، راهنمایی برای حل مسئله و user training.",
+          "Troubleshooting مشکلات Hardware، Operating Systems، Network و Peripherals.",
         point3:
-          "مشارکت در documentation پشتیبانی و بهبود مداوم service processes.",
+          "پشتیبانی کاربران، نگهداری Support Documentation و مشارکت در بهبود Service Processes.",
       },
       earlier: {
-        date: "2005 - 2017",
+        date: "2005 – 2017",
         company: "Sports center, Iran / Berliner Stadtmission",
         role: "Trainer, coordinator & volunteer work",
-        point1:
-          "رهبری فعالیت های گروهی و فردی شامل برنامه ریزی، سازماندهی و هماهنگی.",
-        point2:
-          "همکاری با نهادهای محلی و تیم های چندفرهنگی و تقویت مهارت های ارتباطی و leadership.",
-        point3:
-          "ایجاد پایه عملی در مسئولیت پذیری، service mindset و teamwork ساختارمند.",
+        summary:
+          "تجربه پیشین در آموزش، هماهنگی، سازماندهی، ارتباطات و همکاری با تیم‌های چندفرهنگی.",
       },
     },
     contact: {
-      primary: "تماس حرفه ای",
+      primary: "تماس حرفه‌ای",
       primaryText: "ارسال پیام در LinkedIn",
       linkedin: "LinkedIn",
       github: "GitHub",
