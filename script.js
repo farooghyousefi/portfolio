@@ -229,6 +229,10 @@ const translations = {
     footer: {
       text: "© 2026 Faroogh Yousefi. Cloud, DevOps & Automation Portfolio.",
     },
+    ui: {
+      backToTop: "Back to top",
+      top: "Top",
+    },
   },
   de: {
     meta: {
@@ -461,6 +465,10 @@ const translations = {
     footer: {
       text: "© 2026 Faroogh Yousefi. Cloud-, DevOps- und Automation-Portfolio.",
     },
+    ui: {
+      backToTop: "Zum Anfang",
+      top: "Anfang",
+    },
   },
   fa: {
     meta: {
@@ -691,6 +699,10 @@ const translations = {
     footer: {
       text: "© 2026 Faroogh Yousefi. پورتفولیوی Cloud، DevOps و Automation.",
     },
+    ui: {
+      backToTop: "بازگشت به بالا",
+      top: "بالا",
+    },
   },
 };
 
@@ -698,7 +710,10 @@ const defaultLanguage = "en";
 const storageKey = "portfolio-language";
 const languageButtons = document.querySelectorAll("[data-lang]");
 const translatableElements = document.querySelectorAll("[data-i18n]");
+const ariaLabelElements = document.querySelectorAll("[data-i18n-aria-label]");
+const titleElements = document.querySelectorAll("[data-i18n-title]");
 const metaDescription = document.querySelector('meta[name="description"]');
+const backToTopButton = document.querySelector("[data-back-to-top]");
 
 function getNestedTranslation(language, key) {
   return key
@@ -736,6 +751,28 @@ function setLanguage(language) {
     }
   });
 
+  ariaLabelElements.forEach((element) => {
+    const translation = getNestedTranslation(
+      selectedLanguage,
+      element.dataset.i18nAriaLabel,
+    );
+
+    if (translation !== undefined) {
+      element.setAttribute("aria-label", translation);
+    }
+  });
+
+  titleElements.forEach((element) => {
+    const translation = getNestedTranslation(
+      selectedLanguage,
+      element.dataset.i18nTitle,
+    );
+
+    if (translation !== undefined) {
+      element.setAttribute("title", translation);
+    }
+  });
+
   languageButtons.forEach((button) => {
     const isActive = button.dataset.lang === selectedLanguage;
 
@@ -746,10 +783,40 @@ function setLanguage(language) {
   localStorage.setItem(storageKey, selectedLanguage);
 }
 
+function updateBackToTopVisibility() {
+  if (!backToTopButton) {
+    return;
+  }
+
+  const shouldShow = window.scrollY > 520;
+
+  backToTopButton.classList.toggle("is-visible", shouldShow);
+  backToTopButton.setAttribute("aria-hidden", String(!shouldShow));
+  backToTopButton.tabIndex = shouldShow ? 0 : -1;
+}
+
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     setLanguage(button.dataset.lang);
   });
 });
+
+if (backToTopButton) {
+  backToTopButton.addEventListener("click", () => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+    });
+  });
+
+  updateBackToTopVisibility();
+  window.addEventListener("scroll", updateBackToTopVisibility, {
+    passive: true,
+  });
+}
 
 setLanguage(localStorage.getItem(storageKey) || defaultLanguage);
