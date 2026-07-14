@@ -253,6 +253,11 @@ button:focus-visible {
   text-align: left;
 }
 
+html[dir="rtl"] .command-line {
+  direction: rtl;
+  text-align: right;
+}
+
 .eyebrow {
   margin: 0 0 10px;
   color: var(--muted);
