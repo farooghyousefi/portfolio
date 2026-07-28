@@ -1,3 +1,8 @@
+/* =========================================================
+   Faroogh Yousefi — Portfolio
+   Layout: single-column sections, content at full width.
+   ========================================================= */
+
 :root {
   color-scheme: dark;
   --bg: #0b0f14;
@@ -15,6 +20,13 @@
   --yellow: #d29922;
   --red: #f85149;
   --shadow: 0 28px 90px rgba(0, 0, 0, 0.48);
+
+  /* One deliberate system stack. Inter is no longer named here: it was never
+     loaded, so it silently changed the typography per visitor (see F14). */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
 }
 
 * {
@@ -26,14 +38,14 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0;
   background:
     radial-gradient(circle at 18% 0%, rgba(88, 166, 255, 0.12), transparent 30rem),
     radial-gradient(circle at 85% 12%, rgba(63, 185, 80, 0.07), transparent 24rem),
     linear-gradient(180deg, #0b0f14 0%, #070a0f 100%);
   color: var(--text);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-sans);
 }
 
 button,
@@ -60,10 +72,53 @@ a {
   color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
 .section-shell {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
 }
+
+/* ---------- skip link ---------- */
+
+.skip-link {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 100;
+  padding: 12px 20px;
+  border: 1px solid var(--blue);
+  border-radius: 0 0 10px 10px;
+  background: var(--terminal);
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  transform: translate(-50%, -110%);
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus-visible {
+  transform: translate(-50%, 0);
+  outline-offset: 2px;
+}
+
+#main-content {
+  scroll-margin-top: 92px;
+}
+
+/* ---------- header / navigation ---------- */
 
 .site-header {
   position: sticky;
@@ -109,7 +164,6 @@ a {
   color: var(--blue);
   font-size: 0.82rem;
   font-weight: 900;
-  letter-spacing: 0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
@@ -118,53 +172,34 @@ a {
   font-weight: 800;
 }
 
-.terminal-dot {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-}
-
-.terminal-dot.red {
-  background: #ff5f56;
-}
-
-.terminal-dot.yellow {
-  background: #ffbd2e;
-}
-
-.terminal-dot.green {
-  background: #27c93f;
-}
-
 .nav-actions {
   gap: 20px;
 }
 
 .nav-links {
-  gap: 18px;
+  gap: 4px;
   color: var(--muted);
   font-size: 0.9rem;
 }
 
 .nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 10px;
+  border-radius: 8px;
   text-decoration: none;
-  transition: color 160ms ease;
+  transition: color 160ms ease, background 160ms ease;
 }
 
 .nav-links a:hover {
+  background: var(--blue-soft);
   color: var(--blue);
 }
 
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--blue);
-  outline-offset: 4px;
-}
-
 .language-switcher {
-  gap: 7px;
-  padding: 6px 8px;
+  gap: 2px;
+  padding: 4px 6px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(13, 17, 23, 0.92);
@@ -172,8 +207,10 @@ button:focus-visible {
   direction: ltr;
 }
 
+/* The visible chip stays small; the hit area is expanded to 44px via ::after. */
 .language-button {
-  padding: 5px 7px;
+  position: relative;
+  padding: 6px 8px;
   border: 0;
   border-radius: 6px;
   appearance: none;
@@ -181,8 +218,18 @@ button:focus-visible {
   color: var(--muted);
   cursor: pointer;
   font: inherit;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 800;
+}
+
+.language-button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(100%, 44px);
+  height: 44px;
+  content: "";
+  transform: translate(-50%, -50%);
 }
 
 .language-button:hover,
@@ -190,6 +237,8 @@ button:focus-visible {
   background: var(--blue-soft);
   color: var(--blue);
 }
+
+/* ---------- hero ---------- */
 
 .hero {
   padding: 54px 0 36px;
@@ -217,14 +266,15 @@ button:focus-visible {
 
 .terminal-path {
   color: var(--blue);
+  font-family: var(--font-mono);
   font-size: 0.78rem;
-  font-weight: 850;
+  font-weight: 700;
 }
 
 .shell-state {
   color: var(--muted);
   font-size: 0.78rem;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .terminal-body {
@@ -247,9 +297,9 @@ button:focus-visible {
   margin: 0 0 12px;
   color: var(--blue);
   direction: ltr;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-family: var(--font-mono);
   font-size: 0.9rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: left;
 }
 
@@ -258,30 +308,14 @@ html[dir="rtl"] .command-line {
   text-align: right;
 }
 
-.eyebrow {
-  margin: 0 0 10px;
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
-}
-
 h1 {
   max-width: 980px;
   margin-bottom: 14px;
   color: #f0f6fc;
   font-size: clamp(2.35rem, 6.4vw, 4.25rem);
-  line-height: 0.98;
-  font-weight: 850;
-  letter-spacing: 0;
-  white-space: normal;
-  word-spacing: normal;
+  line-height: 1.02;
+  font-weight: 800;
+  text-wrap: balance;
 }
 
 .hero-role {
@@ -289,7 +323,7 @@ h1 {
   margin-bottom: 10px;
   color: var(--blue);
   font-size: clamp(1rem, 2.5vw, 1.35rem);
-  font-weight: 850;
+  font-weight: 800;
   line-height: 1.5;
 }
 
@@ -303,42 +337,92 @@ h1 {
   background: rgba(13, 17, 23, 0.78);
   color: var(--text);
   font-size: 0.84rem;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.35;
 }
 
 .hero-text {
-  max-width: 900px;
-  margin-bottom: 24px;
+  max-width: 66ch;
+  margin-bottom: 22px;
   color: var(--muted);
-  font-size: clamp(0.98rem, 2.1vw, 1.12rem);
+  font-size: clamp(1rem, 2.1vw, 1.12rem);
   line-height: 1.75;
 }
 
-.tech-pills {
+/* ---------- proof points ---------- */
+
+.proof-points {
   display: flex;
   flex-wrap: wrap;
-  gap: 9px;
+  gap: 10px;
   padding: 0;
-  margin: 0 0 32px;
+  margin: 0 0 24px;
   list-style: none;
 }
 
-.tech-pills li {
-  padding: 7px 10px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--blue-soft);
-  color: var(--blue);
-  font-size: 0.84rem;
-  line-height: 1;
+.proof-points li {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 140px;
+  flex-direction: column;
+  gap: 3px;
+  padding: 12px 14px;
+  border: 1px solid rgba(88, 166, 255, 0.22);
+  border-radius: 10px;
+  background: rgba(88, 166, 255, 0.06);
 }
+
+.proof-points strong {
+  color: var(--blue);
+  font-family: var(--font-mono);
+  font-size: 1.32rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+
+.proof-points span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+/* ---------- buttons ---------- */
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--terminal-soft);
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: none;
+  transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.button:hover {
+  border-color: rgba(88, 166, 255, 0.68);
+  color: var(--blue);
+  transform: translateY(-1px);
+}
+
+.button.primary {
+  border-color: rgba(88, 166, 255, 0.48);
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
+/* ---------- hero stack + portrait ---------- */
 
 .hero-stack {
   display: grid;
@@ -349,7 +433,7 @@ h1 {
 .hero-stack > span {
   color: var(--muted);
   font-size: 0.76rem;
-  font-weight: 850;
+  font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -383,43 +467,13 @@ h1 {
   object-fit: contain;
 }
 
-.hero-stack li span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  padding: 0 16px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--terminal-soft);
-  color: var(--text);
-  font-weight: 800;
-  text-decoration: none;
-  transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
-}
-
-.button:hover {
-  border-color: rgba(88, 166, 255, 0.68);
-  color: var(--blue);
-  transform: translateY(-1px);
-}
-
-.button.primary {
-  border-color: rgba(88, 166, 255, 0.48);
-  background: var(--blue-soft);
-  color: var(--blue);
-}
-
-.status-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+.hero-stack .service-mark {
+  width: 18px;
+  min-height: 18px;
+  height: 18px;
+  border-radius: 5px;
+  font-size: 0.48rem;
+  line-height: 1;
 }
 
 .photo-card {
@@ -435,11 +489,6 @@ h1 {
   box-shadow:
     0 30px 90px rgba(0, 0, 0, 0.46),
     0 0 34px rgba(88, 166, 255, 0.13);
-}
-
-.photo-card::before {
-  display: none;
-  content: "";
 }
 
 .photo-card img,
@@ -482,22 +531,33 @@ h1 {
   background: rgba(7, 10, 15, 0.84);
   color: var(--text);
   font-size: 0.78rem;
-  font-weight: 850;
+  font-weight: 800;
   line-height: 1.4;
   backdrop-filter: blur(10px);
 }
 
+/* ---------- shared surfaces ---------- */
+
 .status-card,
 .prose-panel,
 .about-facts article,
-.terminal-card,
-.icon-card,
 .project-card,
 .experience-card,
-.contact-card {
+.contact-card,
+.proficiency-group,
+.training-card,
+.cert-card,
+.education-card,
+.credential-card {
   border: 1px solid var(--line);
   border-radius: 10px;
   background: rgba(21, 26, 34, 0.78);
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
 }
 
 .status-card {
@@ -514,20 +574,15 @@ h1 {
   font-size: 0.84rem;
 }
 
-.status-card strong,
-.project-card a {
+.status-card strong {
   color: var(--blue);
 }
+
+/* ---------- sections ---------- */
 
 section:not(.hero) {
   scroll-margin-top: 92px;
   padding: 56px 0;
-}
-
-.two-column {
-  display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
-  gap: 24px;
 }
 
 .section-heading {
@@ -539,20 +594,40 @@ section:not(.hero) {
   color: #f0f6fc;
   font-size: clamp(1.7rem, 4vw, 2.8rem);
   line-height: 1.05;
+  text-wrap: balance;
+}
+
+.section-intro {
+  max-width: 62ch;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+/* ---------- about ---------- */
+
+.about-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(260px, 1fr);
+  gap: 14px;
+  align-items: start;
 }
 
 .prose-panel {
   padding: 24px;
 }
 
-.about-panel {
-  display: grid;
-  gap: 14px;
+.prose-panel p,
+.project-card p,
+.experience-card li,
+.footer {
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .about-facts {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -565,7 +640,7 @@ section:not(.hero) {
   margin-bottom: 8px;
   color: var(--muted);
   font-size: 0.78rem;
-  font-weight: 850;
+  font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -576,283 +651,125 @@ section:not(.hero) {
   line-height: 1.5;
 }
 
-.prose-panel p,
-.terminal-card p,
-.project-card p,
-.experience-card li,
-.footer {
-  color: var(--muted);
-  line-height: 1.7;
-}
+/* ---------- skills: grouped by proficiency ---------- */
 
-.skill-list {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.skill-list li {
-  min-height: 52px;
-  padding: 16px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(13, 17, 23, 0.76);
-  color: var(--text);
-  font-weight: 800;
-}
-
-.skill-groups {
+.proficiency-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
+  align-items: start;
 }
 
-.skill-group,
-.training-card,
-.cert-card,
-.education-card,
-.credential-card {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: rgba(21, 26, 34, 0.78);
+.proficiency-group {
+  padding: 20px;
+  border-top: 3px solid var(--line);
 }
 
-.skill-group {
-  padding: 22px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+.proficiency-group.is-professional {
+  border-top-color: var(--violet);
 }
 
-.skill-group h3,
-.training-card h3,
-.cert-card h3 {
+.proficiency-group.is-training {
+  border-top-color: var(--blue);
+}
+
+.proficiency-group.is-foundation {
+  border-top-color: rgba(132, 148, 170, 0.55);
+}
+
+.proficiency-group header {
   margin-bottom: 16px;
+}
+
+.proficiency-group h3 {
+  margin: 0 0 6px;
   color: #f0f6fc;
-  font-size: 1.15rem;
-}
-
-.skill-status {
-  display: inline-flex;
-  width: fit-content;
-  margin: -6px 0 16px;
-  padding: 6px 9px;
-  border: 1px solid rgba(88, 166, 255, 0.28);
-  border-radius: 8px;
-  background: rgba(88, 166, 255, 0.1);
-  color: var(--blue);
-  font-size: 0.72rem;
-  font-weight: 900;
+  font-size: 1.08rem;
   line-height: 1.35;
 }
 
-.skill-status.enterprise {
-  border-color: rgba(188, 140, 255, 0.3);
-  background: rgba(188, 140, 255, 0.09);
-  color: var(--violet);
-}
-
-.skill-group ul,
-.cert-card ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.skill-group li,
-.cert-card li {
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px;
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--blue-soft);
-  color: var(--blue);
-  font-size: 0.84rem;
-  line-height: 1.35;
-}
-
-.inline-status {
-  display: inline-flex;
-  padding: 3px 6px;
-  border: 1px solid rgba(63, 185, 80, 0.3);
-  border-radius: 6px;
-  background: rgba(63, 185, 80, 0.1);
-  color: var(--green);
-  font-size: 0.68rem;
-  font-weight: 900;
-}
-
-.stack-section {
-  padding-top: 28px;
-}
-
-.stack-heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.stack-heading p:last-child {
-  max-width: 520px;
+.proficiency-group header p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.7;
-  text-align: right;
+  font-size: 0.82rem;
+  line-height: 1.5;
 }
 
-.icon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(126px, 1fr));
-  gap: 10px;
-}
-
-.learning-stack-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.learning-stack-group {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: rgba(21, 26, 34, 0.72);
-  padding: 16px;
-}
-
-.learning-stack-group h3 {
-  margin: 0 0 12px;
-  color: #f0f6fc;
-  font-size: 1rem;
-  line-height: 1.35;
-}
-
-.learning-card-list {
+.tech-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.icon-card {
+.tech-list li {
   display: flex;
-  min-height: 108px;
+  min-width: 0;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  padding: 14px 12px;
-  box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.03);
-  text-align: center;
-  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  gap: 9px;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(13, 17, 23, 0.72);
 }
 
-.learning-card {
-  min-height: 132px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
+.tech-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
-.icon-card:hover {
-  border-color: rgba(88, 166, 255, 0.66);
-  box-shadow:
-    0 16px 36px rgba(0, 0, 0, 0.28),
-    0 0 26px rgba(88, 166, 255, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  background: rgba(21, 26, 34, 0.92);
+/* One geometry for every mark, whether it holds a logo or a typographic
+   abbreviation — that is what makes the mixed set read as one system (F10). */
+.tech-mark,
+.service-mark {
+  display: grid;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(88, 166, 255, 0.26);
+  border-radius: 9px;
+  background: rgba(88, 166, 255, 0.09);
+  color: var(--blue);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
-.icon-card img {
-  display: block;
-  width: 44px;
-  height: 44px;
+.tech-mark img {
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 
-.service-mark {
-  display: grid;
-  width: 44px;
-  height: 44px;
-  place-items: center;
-  border: 1px solid rgba(88, 166, 255, 0.28);
-  border-radius: 9px;
-  background: rgba(88, 166, 255, 0.1);
-  color: var(--blue);
-  font-size: 0.72rem;
-  font-weight: 950;
-  line-height: 1;
+.is-professional .tech-mark,
+.is-professional .service-mark {
+  border-color: rgba(192, 132, 252, 0.26);
+  background: rgba(192, 132, 252, 0.09);
+  color: var(--violet);
 }
 
-.hero-stack .service-mark {
-  width: 18px;
-  height: 18px;
-  border-radius: 5px;
-  font-size: 0.48rem;
-}
-
-.icon-card span {
-  min-height: 2.7em;
-  color: var(--text);
-  font-size: 0.92rem;
-  font-weight: 850;
-  line-height: 1.35;
-}
-
-.icon-card .service-mark {
-  min-height: 44px;
-  color: var(--blue);
-  font-size: 0.72rem;
-  line-height: 1;
-}
-
-.hero-stack li .service-mark {
-  min-height: 18px;
-  color: var(--blue);
-  font-size: 0.48rem;
-  line-height: 1;
-}
-
-.learning-card span:not(.service-mark) {
-  min-height: 0;
-}
-
-.learning-card small {
-  display: inline-flex;
-  margin-top: auto;
-  padding: 5px 7px;
-  border: 1px solid rgba(132, 148, 170, 0.22);
-  border-radius: 7px;
-  background: rgba(13, 17, 23, 0.72);
+.is-foundation .tech-mark,
+.is-foundation .service-mark {
+  border-color: rgba(132, 148, 170, 0.26);
+  background: rgba(132, 148, 170, 0.09);
   color: var(--muted);
-  font-size: 0.68rem;
-  font-weight: 850;
-  line-height: 1.25;
-  text-align: left;
 }
 
-html[dir="rtl"] .stack-heading p:last-child {
-  text-align: left;
-}
-
-html[dir="rtl"] .learning-card,
-html[dir="rtl"] .learning-card small {
-  text-align: right;
-}
+/* ---------- training ---------- */
 
 .training-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
   gap: 14px;
+  align-items: start;
 }
 
 .training-card,
@@ -860,6 +777,13 @@ html[dir="rtl"] .learning-card small {
 .education-card,
 .credential-card {
   padding: 24px;
+}
+
+.training-card h3,
+.cert-card h3 {
+  margin-bottom: 16px;
+  color: #f0f6fc;
+  font-size: 1.15rem;
 }
 
 .status-badge {
@@ -872,22 +796,55 @@ html[dir="rtl"] .learning-card small {
   background: rgba(63, 185, 80, 0.1);
   color: var(--green);
   font-size: 0.74rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.04em;
   line-height: 1;
   text-transform: uppercase;
 }
 
-.training-card p,
-.cert-card li {
+.training-card p:not(.company):not(.training-date) {
+  color: var(--muted);
   line-height: 1.7;
 }
 
-.training-card p:not(.company):not(.training-date),
-.cert-card,
-.education-card,
-.credential-card {
-  color: var(--muted);
+/* Certifications get the same badge language as the rest of the page — they
+   were the only list falling back to browser bullets (F19). */
+.cert-list {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cert-list li {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid rgba(88, 166, 255, 0.22);
+  border-radius: 9px;
+  background: rgba(88, 166, 255, 0.06);
+}
+
+.cert-name {
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.cert-state {
+  width: fit-content;
+  padding: 4px 8px;
+  border: 1px solid rgba(210, 153, 34, 0.34);
+  border-radius: 7px;
+  background: rgba(210, 153, 34, 0.1);
+  color: var(--yellow);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .education-block {
@@ -905,6 +862,7 @@ html[dir="rtl"] .learning-card small {
 .credentials-grid {
   display: grid;
   gap: 14px;
+  align-items: start;
 }
 
 .education-grid {
@@ -923,15 +881,14 @@ html[dir="rtl"] .learning-card small {
   margin-bottom: 8px;
   color: var(--blue);
   font-size: 0.76rem;
-  font-weight: 850;
+  font-weight: 800;
   line-height: 1.55;
 }
 
-.training-card .company,
 .company {
   color: var(--violet);
   font-size: 0.9rem;
-  font-weight: 850;
+  font-weight: 800;
   line-height: 1.55;
 }
 
@@ -941,6 +898,11 @@ html[dir="rtl"] .learning-card small {
   font-size: 1.08rem;
   font-weight: 800;
   line-height: 1.4;
+}
+
+.education-card,
+.credential-card {
+  color: var(--muted);
 }
 
 .education-card p,
@@ -973,26 +935,20 @@ html[dir="rtl"] .learning-card small {
   transform: translateY(-50%);
 }
 
-.learning-grid,
-.project-grid,
-.contact-grid {
+/* ---------- projects ---------- */
+
+.project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
+  align-items: start;
 }
 
-.terminal-card,
 .project-card {
-  min-height: 230px;
+  display: flex;
+  min-height: 240px;
+  flex-direction: column;
   padding: 22px;
-}
-
-.project-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.project-card {
-  min-height: 260px;
   transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }
 
@@ -1003,7 +959,42 @@ html[dir="rtl"] .learning-card small {
     0 0 22px rgba(88, 166, 255, 0.1);
 }
 
-.terminal-card h3,
+.project-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.project-head .card-index {
+  margin-bottom: 0;
+}
+
+.project-state {
+  flex: 0 0 auto;
+  padding: 4px 8px;
+  border-radius: 7px;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.project-state.is-live {
+  border: 1px solid rgba(63, 185, 80, 0.34);
+  background: rgba(63, 185, 80, 0.1);
+  color: var(--green);
+}
+
+.project-state.is-progress {
+  border: 1px solid rgba(210, 153, 34, 0.34);
+  background: rgba(210, 153, 34, 0.1);
+  color: var(--yellow);
+}
+
 .project-card h3,
 .experience-card h3 {
   margin-bottom: 12px;
@@ -1011,29 +1002,55 @@ html[dir="rtl"] .learning-card small {
   font-size: 1.15rem;
 }
 
-.role-subtitle {
-  margin: -4px 0 14px;
-  color: var(--violet);
-  font-size: 0.92rem;
-  font-weight: 850;
-  line-height: 1.5;
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  margin: auto 0 0;
+  list-style: none;
+}
+
+.project-tags li {
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(13, 17, 23, 0.7);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  line-height: 1.4;
 }
 
 .featured-project {
   background: linear-gradient(135deg, rgba(88, 166, 255, 0.16), rgba(21, 26, 34, 0.86));
 }
 
-.project-card a {
-  display: inline-flex;
-  width: fit-content;
-  margin-top: 8px;
-  font-weight: 850;
-  text-decoration: none;
+.project-links {
+  margin-top: 14px;
 }
 
-.project-card a:hover {
-  text-decoration: underline;
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid rgba(88, 166, 255, 0.34);
+  border-radius: 8px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: border-color 160ms ease, background 160ms ease;
 }
+
+.project-links a:hover {
+  border-color: rgba(88, 166, 255, 0.7);
+  background: rgba(88, 166, 255, 0.18);
+}
+
+/* ---------- experience ---------- */
 
 .experience-list {
   display: grid;
@@ -1052,6 +1069,14 @@ html[dir="rtl"] .learning-card small {
   margin-bottom: 0;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.role-subtitle {
+  margin: -4px 0 14px;
+  color: var(--violet);
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.5;
 }
 
 .experience-card ul {
@@ -1092,24 +1117,36 @@ html[dir="rtl"] .learning-card small {
   text-align: right;
 }
 
-html[dir="rtl"] .credential-card li {
-  padding-right: 18px;
-  padding-left: 0;
+/* ---------- contact ---------- */
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--text);
+  font-size: 0.94rem;
+  font-weight: 700;
 }
 
-html[dir="rtl"] .credential-card li::before {
-  right: 0;
-  left: auto;
+.availability-dot {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--green);
+  box-shadow: 0 0 12px rgba(63, 185, 80, 0.6);
 }
 
-html[dir="rtl"] .timeline-meta .company {
-  text-align: left;
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
 }
 
 .contact-card {
   display: flex;
   min-width: 0;
-  min-height: 0;
+  min-height: 44px;
   flex-direction: column;
   gap: 8px;
   justify-content: flex-start;
@@ -1123,11 +1160,54 @@ html[dir="rtl"] .timeline-meta .company {
   transform: translateY(-2px);
 }
 
+.contact-card.is-primary {
+  border-color: rgba(88, 166, 255, 0.44);
+  background: linear-gradient(135deg, rgba(88, 166, 255, 0.14), rgba(21, 26, 34, 0.86));
+  cursor: pointer;
+}
+
 .contact-card strong {
   color: var(--text);
   font-size: 0.96rem;
   line-height: 1.55;
   overflow-wrap: break-word;
+}
+
+.contact-card.is-primary strong {
+  color: var(--blue);
+}
+
+/* The address is stored reversed in the HTML source and flipped back visually
+   by the bidi override, so plain regex harvesters read "moc.…" instead of an
+   address. It stays readable and selectable without JavaScript; script.js
+   additionally builds the real mailto: href at runtime. */
+.mail-address {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
+  overflow-wrap: anywhere;
+}
+
+.mail-obf {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.mail-obf.is-resolved {
+  direction: ltr;
+  unicode-bidi: normal;
+}
+
+/* ---------- footer + back to top ---------- */
+
+.footer {
+  padding: 28px 0 42px;
+  border-top: 1px solid var(--line-soft);
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
 }
 
 .back-to-top {
@@ -1177,11 +1257,6 @@ html[dir="rtl"] .timeline-meta .company {
   color: var(--blue);
 }
 
-.back-to-top:focus-visible {
-  outline: 2px solid var(--blue);
-  outline-offset: 4px;
-}
-
 .back-to-top svg {
   width: 18px;
   height: 18px;
@@ -1195,23 +1270,20 @@ html[dir="rtl"] .timeline-meta .company {
 .back-to-top span {
   color: currentColor;
   font-size: 0.78rem;
-  font-weight: 850;
-  letter-spacing: 0;
+  font-weight: 800;
   white-space: nowrap;
 }
 
-.contact-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+/* ---------- RTL adjustments ---------- */
+
+html[dir="rtl"] .credential-card li {
+  padding-right: 18px;
+  padding-left: 0;
 }
 
-.footer {
-  padding: 28px 0 42px;
-  border-top: 1px solid var(--line-soft);
-  font-size: 0.9rem;
-}
-
-.footer p {
-  margin: 0;
+html[dir="rtl"] .credential-card li::before {
+  right: 0;
+  left: auto;
 }
 
 html[dir="rtl"] .experience-card li {
@@ -1224,6 +1296,10 @@ html[dir="rtl"] .experience-card li::before {
   left: auto;
 }
 
+html[dir="rtl"] .timeline-meta .company {
+  text-align: left;
+}
+
 html[dir="rtl"] .terminal-path {
   margin-right: auto;
   margin-left: 0;
@@ -1233,6 +1309,10 @@ html[dir="rtl"] .brand-text {
   margin-right: 8px;
   margin-left: 0;
 }
+
+/* =========================================================
+   Breakpoints
+   ========================================================= */
 
 @media (max-width: 920px) {
   .terminal-nav {
@@ -1251,45 +1331,18 @@ html[dir="rtl"] .brand-text {
   .nav-links {
     width: 100%;
     flex-wrap: wrap;
-    overflow-x: visible;
-    padding-bottom: 4px;
   }
 
   .status-grid,
   .hero-grid,
-  .two-column,
-  .learning-grid,
-  .learning-stack-grid,
+  .about-panel,
   .education-grid,
   .credentials-grid,
   .project-grid,
-  .skill-groups,
+  .proficiency-grid,
   .training-layout,
   .contact-grid {
     grid-template-columns: 1fr;
-  }
-
-  .stack-heading {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .stack-heading p:last-child,
-  html[dir="rtl"] .stack-heading p:last-child {
-    max-width: 100%;
-    text-align: left;
-  }
-
-  html[dir="rtl"] .stack-heading p:last-child {
-    text-align: right;
-  }
-
-  .icon-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .learning-card-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .photo-card {
@@ -1310,14 +1363,6 @@ html[dir="rtl"] .brand-text {
   html[dir="rtl"] .timeline-meta .company {
     text-align: right;
   }
-
-  .skill-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .about-facts {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 560px) {
@@ -1334,19 +1379,20 @@ html[dir="rtl"] .brand-text {
     grid-template-columns: minmax(0, 1fr) auto;
     min-height: auto;
     align-items: center;
-    gap: 8px 10px;
-    padding: 8px 0 10px;
+    gap: 6px 10px;
+    padding: 6px 0 8px;
   }
 
   .brand {
     min-width: 0;
+    min-height: 44px;
   }
 
   .brand-text {
     display: block;
     overflow: hidden;
     margin-left: 6px;
-    font-size: 0.84rem;
+    font-size: 0.86rem;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -1367,14 +1413,17 @@ html[dir="rtl"] .brand-text {
     margin-left: 0;
   }
 
+  /* One scrollable row instead of two wrapped rows — `wrap` from the 920px
+     rule was never reset here, which cost ~35px above the fold (F07). */
   .nav-links {
     display: flex;
     grid-column: 1 / -1;
     grid-row: 2;
     width: 100%;
+    flex-wrap: nowrap;
     gap: 6px;
     overflow-x: auto;
-    padding: 2px 0 1px;
+    padding: 2px 0;
     color: var(--text);
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
@@ -1386,38 +1435,25 @@ html[dir="rtl"] .brand-text {
 
   .nav-links a {
     flex: 0 0 auto;
-    min-height: 30px;
-    padding: 7px 9px;
+    min-height: 44px;
+    padding: 0 11px;
     border: 1px solid rgba(132, 148, 170, 0.22);
-    border-radius: 8px;
     background: rgba(13, 17, 23, 0.76);
     color: var(--muted);
-    font-size: 0.72rem;
+    font-size: 0.82rem;
     font-weight: 800;
-    line-height: 1;
-  }
-
-  .nav-links a:hover {
-    color: var(--blue);
   }
 
   .language-switcher {
     grid-column: 2;
     grid-row: 1;
     justify-self: end;
-    gap: 4px;
-    padding: 4px 5px;
     border-color: rgba(88, 166, 255, 0.3);
     background: rgba(13, 17, 23, 0.76);
   }
 
-  .language-button {
-    padding: 4px 6px;
-    font-size: 0.72rem;
-  }
-
   .hero {
-    padding: 10px 0 18px;
+    padding: 12px 0 18px;
   }
 
   .terminal-window {
@@ -1428,12 +1464,12 @@ html[dir="rtl"] .brand-text {
   }
 
   .terminal-titlebar {
-    min-height: 28px;
+    min-height: 30px;
     padding-inline: 14px;
   }
 
   .terminal-path {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
   }
 
   .shell-state {
@@ -1441,7 +1477,7 @@ html[dir="rtl"] .brand-text {
   }
 
   .terminal-body {
-    padding: 12px 16px 14px;
+    padding: 14px 16px 16px;
   }
 
   .hero-grid {
@@ -1449,7 +1485,7 @@ html[dir="rtl"] .brand-text {
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
 
   .photo-card {
@@ -1458,7 +1494,6 @@ html[dir="rtl"] .brand-text {
     width: 118px;
     max-width: 118px;
     aspect-ratio: 1;
-    justify-self: start;
     margin-right: 0;
     margin-left: auto;
     margin-bottom: 2px;
@@ -1488,119 +1523,87 @@ html[dir="rtl"] .brand-text {
 
   .command-line {
     margin-bottom: 8px;
-    font-size: 0.78rem;
+    font-size: 0.82rem;
+  }
+
+  /* `nowrap` removed: it only just fitted at 375px and clipped below that. */
+  h1 {
+    margin-bottom: 8px;
+    font-size: clamp(1.9rem, 8vw, 2.1rem);
+    line-height: 1.08;
   }
 
   .hero-role {
     margin-bottom: 8px;
-    font-size: 0.9rem;
-    line-height: 1.36;
+    font-size: 0.98rem;
+    line-height: 1.4;
   }
 
   .hero-meta {
-    margin-bottom: 8px;
-    padding: 6px 8px;
-    font-size: 0.7rem;
-    line-height: 1.3;
-  }
-
-  .hero-text {
-    max-width: 32rem;
     margin-bottom: 10px;
-    font-size: 0.82rem;
-    line-height: 1.45;
+    padding: 6px 9px;
+    font-size: 0.76rem;
+    line-height: 1.35;
   }
 
-  .hero-actions,
-  .button {
-    width: 100%;
+  /* Body copy back to 16px — 13.1px was below the mobile minimum (F13). */
+  .hero-text {
+    margin-bottom: 14px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .proof-points {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .proof-points li {
+    flex: 1 1 100px;
+    padding: 10px 11px;
+  }
+
+  .proof-points strong {
+    font-size: 1.14rem;
+  }
+
+  .proof-points span {
+    font-size: 0.72rem;
   }
 
   .hero-actions {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 9px;
   }
 
   .button {
-    min-height: 39px;
+    width: 100%;
+    min-height: 44px;
     padding: 0 10px;
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     line-height: 1.25;
   }
 
+  /* Kept on mobile as a compact 2-up grid instead of display:none (F09). */
   .status-grid {
-    display: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
   }
 
   .status-card {
-    padding: 12px 14px;
+    padding: 11px 12px;
   }
 
   .status-card span {
-    font-size: 0.74rem;
+    margin-bottom: 4px;
+    font-size: 0.76rem;
   }
 
   .status-card strong {
-    font-size: 0.78rem;
-    line-height: 1.4;
-  }
-
-  h1 {
-    max-width: 980px;
-    margin-bottom: 7px;
-    color: #f0f6fc;
-    font-size: clamp(1.82rem, 7.75vw, 1.95rem);
-    line-height: 1;
-    font-weight: 850;
-    letter-spacing: 0;
-    white-space: nowrap;
-    word-spacing: normal;
-  }
-
-  .skill-list {
-    grid-template-columns: 1fr;
-  }
-
-  .icon-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    overflow-x: visible;
-    gap: 9px;
-    padding-bottom: 2px;
-  }
-
-  .icon-card {
-    min-height: 96px;
-    padding: 12px 8px;
-  }
-
-  .learning-stack-group {
-    padding: 14px;
-  }
-
-  .learning-card {
-    min-height: 116px;
-    padding: 11px 9px;
-  }
-
-  .icon-card img {
-    width: 38px;
-    height: 38px;
-  }
-
-  .service-mark {
-    width: 38px;
-    height: 38px;
-    font-size: 0.64rem;
-  }
-
-  .icon-card span {
     font-size: 0.82rem;
-  }
-
-  .learning-card small {
-    font-size: 0.62rem;
+    line-height: 1.35;
   }
 
   section:not(.hero) {
@@ -1608,40 +1611,55 @@ html[dir="rtl"] .brand-text {
   }
 
   .hero-stack {
-    margin-top: 12px;
+    margin-top: 14px;
   }
 
   .hero-stack ul {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    flex-wrap: initial;
-    overflow-x: visible;
-    padding-bottom: 1px;
   }
 
   .hero-stack li {
     min-width: 0;
-    min-height: 31px;
+    min-height: 34px;
     gap: 5px;
-    padding: 5px 6px;
-    font-size: 0.65rem;
+    padding: 5px 7px;
+    font-size: 0.7rem;
+  }
+
+  .hero-stack li span:not(.service-mark) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .hero-stack img {
     width: 16px;
     height: 16px;
   }
-}
 
-@media (hover: none) and (pointer: coarse) {
-  .button:hover,
-  .contact-card:hover,
-  .icon-card:hover {
-    transform: none;
+  .proficiency-group,
+  .prose-panel,
+  .training-card,
+  .cert-card,
+  .education-card,
+  .credential-card,
+  .experience-card {
+    padding: 18px;
   }
-}
 
-@media (max-width: 560px) {
+  .tech-list {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-name {
+    font-size: 0.86rem;
+  }
+
+  .project-tags li {
+    font-size: 0.76rem;
+  }
+
   .back-to-top {
     top: auto;
     right: 14px;
@@ -1664,38 +1682,145 @@ html[dir="rtl"] .brand-text {
     width: 1px;
     height: 1px;
     overflow: hidden;
-    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
     white-space: nowrap;
   }
 }
 
-/* Fix: prevent Training/Education cards from stretching to the height of the tallest neighbor */
-.training-grid,
-.education-grid,
-.training-layout,
-.education-layout {
-  align-items: start;
+@media (hover: none) and (pointer: coarse) {
+  .button:hover,
+  .contact-card:hover,
+  .project-card:hover {
+    transform: none;
+  }
 }
 
-.training-card,
-.cert-card,
-.education-card {
-  align-self: start;
-  height: auto;
-  min-height: 0;
+/* =========================================================
+   Reduced motion — the CSS had no such rule at all before (F15).
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .button:hover,
+  .contact-card:hover,
+  .back-to-top {
+    transform: none;
+  }
+
+  .back-to-top.is-visible {
+    transform: none;
+  }
 }
 
-/* Training certifications are intentionally placed inside the current program card */
-.training-certifications {
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(148, 163, 184, 0.22);
-}
+/* =========================================================
+   Print — recruiters save portfolios as PDF (F22).
+   ========================================================= */
 
-.training-certifications h3 {
-  margin: 0 0 0.9rem;
-}
+@media print {
+  :root {
+    color-scheme: light;
+  }
 
-.training-certifications .cert-group + .cert-group {
-  margin-top: 1rem;
+  body {
+    background: #fff;
+    color: #111;
+    font-size: 11pt;
+  }
+
+  body::before,
+  .site-header,
+  .back-to-top,
+  .skip-link,
+  .language-switcher,
+  .photo-card span {
+    display: none !important;
+  }
+
+  .section-shell {
+    width: 100%;
+  }
+
+  section:not(.hero) {
+    padding: 12pt 0;
+    break-inside: avoid;
+  }
+
+  .terminal-window,
+  .status-card,
+  .prose-panel,
+  .about-facts article,
+  .project-card,
+  .experience-card,
+  .contact-card,
+  .proficiency-group,
+  .training-card,
+  .cert-card,
+  .education-card,
+  .credential-card,
+  .tech-list li,
+  .proof-points li,
+  .cert-list li {
+    border-color: #bbb;
+    background: #fff;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  h1,
+  .section-heading h2,
+  .project-card h3,
+  .experience-card h3,
+  .education-card h4,
+  .proficiency-group h3,
+  .contact-card strong,
+  .status-card strong,
+  .about-facts strong,
+  .tech-name,
+  .cert-name {
+    color: #111;
+  }
+
+  .command-line,
+  .hero-role,
+  .training-date,
+  .timeline-meta span,
+  .proof-points strong,
+  .status-card strong,
+  .contact-card.is-primary strong {
+    color: #1a4d8f;
+  }
+
+  .company,
+  .role-subtitle {
+    color: #5b3a8e;
+  }
+
+  .hero-text,
+  .prose-panel p,
+  .project-card p,
+  .experience-card li,
+  .section-intro,
+  .footer {
+    color: #333;
+  }
+
+  /* Print the destination of external links next to the label. */
+  .contact-card[href^="http"]::after,
+  .project-links a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    word-break: break-all;
+  }
 }
