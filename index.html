@@ -3,19 +3,89 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Set language + direction before first paint so a stored language does not flash English (F20). -->
+<script>
+(function () {
+  try {
+    var stored = localStorage.getItem("portfolio-language");
+    if (stored === "de" || stored === "en" || stored === "fa") {
+      document.documentElement.lang = stored;
+      document.documentElement.dir = stored === "fa" ? "rtl" : "ltr";
+    }
+  } catch (e) {}
+})();
+</script>
+
+<title>Faroogh Yousefi | IT Engineer — Automation, Cloud &amp; Modern Workplace</title>
 <meta
 name="description"
-content="Berlin-based Junior AWS Cloud Engineer focused on AWS Cloud, Linux, networking, Terraform, cloud operations, and Enterprise IT experience."
+content="Berlin-based IT engineer with enterprise experience in Modern Workplace, endpoint and identity operations. Focused on automation with PowerShell, Power Automate and APIs, currently deepening AWS, Linux and networking."
 />
-<title>Faroogh Yousefi | Junior AWS Cloud Engineer</title>
 <link rel="canonical" href="https://farooghyousefi.com/" />
-<link rel="stylesheet" href="styles.css?v=20260714-aws-focus" />
+
+<meta name="theme-color" content="#0b0f14" />
+<meta name="color-scheme" content="dark light" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Faroogh Yousefi" />
+<meta property="og:url" content="https://farooghyousefi.com/" />
+<meta property="og:title" content="Faroogh Yousefi | IT Engineer — Automation, Cloud &amp; Modern Workplace" />
+<meta
+property="og:description"
+content="IT engineer in Berlin. Two years running a regulated Modern Workplace environment with 4,000+ users. Automation with PowerShell, Power Automate and APIs; currently deepening AWS, Linux and networking."
+/>
+<meta property="og:image" content="https://farooghyousefi.com/assets/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Faroogh Yousefi — IT Engineer, Automation &amp; Cloud, Berlin" />
+<meta property="profile:first_name" content="Faroogh" />
+<meta property="profile:last_name" content="Yousefi" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Faroogh Yousefi | IT Engineer — Automation, Cloud &amp; Modern Workplace" />
+<meta
+name="twitter:description"
+content="IT engineer in Berlin. Two years running a regulated Modern Workplace environment with 4,000+ users. Automation with PowerShell, Power Automate and APIs; currently deepening AWS, Linux and networking."
+/>
+<meta name="twitter:image" content="https://farooghyousefi.com/assets/og-image.jpg" />
+
+<link rel="preload" as="image" href="assets/profile-photo-380.jpg" imagesrcset="assets/profile-photo-240.jpg 240w, assets/profile-photo-380.jpg 380w, assets/profile-photo-760.jpg 760w" imagesizes="(max-width: 560px) 118px, 380px" />
+<link rel="stylesheet" href="styles.css?v=20260728-privacy" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Faroogh Yousefi",
+  "url": "https://farooghyousefi.com/",
+  "image": "https://farooghyousefi.com/assets/og-image.jpg",
+  "jobTitle": "IT Engineer — Automation, Cloud &amp; Modern Workplace",
+  "description": "IT engineer with several years of enterprise IT and Modern Workplace experience, specialising in automation and currently deepening AWS, Linux and networking.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE" },
+  "knowsLanguage": ["de", "en", "fa", "ku"],
+  "knowsAbout": ["Automation", "PowerShell", "Power Automate", "n8n", "REST APIs", "AWS", "Linux", "Networking", "Terraform", "Docker", "Infrastructure as Code", "Microsoft 365", "Microsoft Intune", "Microsoft Entra ID", "Active Directory", "ServiceNow"],
+  "alumniOf": [
+    { "@type": "EducationalOrganization", "name": "FernUniversität in Hagen" },
+    { "@type": "EducationalOrganization", "name": "FORUM Berufsbildung e.V., Berlin" }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/farooghyousefi/",
+    "https://github.com/farooghyousefi"
+  ]
+}
+</script>
+
 <script>
 window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content" data-i18n="ui.skipLink">Skip to main content</a>
+
 <header class="site-header">
 <nav class="terminal-nav section-shell" aria-label="Primary navigation">
 <a class="brand" href="#top" aria-label="Faroogh Yousefi home">
@@ -34,72 +104,90 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
 </div>
 
 <div class="language-switcher" aria-label="Language selector">
-<button class="language-button" type="button" data-lang="de">DE</button>
+<button class="language-button" type="button" data-lang="de" lang="de">DE</button>
 <span aria-hidden="true">|</span>
-<button class="language-button is-active" type="button" data-lang="en">EN</button>
+<button class="language-button is-active" type="button" data-lang="en" lang="en">EN</button>
 <span aria-hidden="true">|</span>
-<button class="language-button" type="button" data-lang="fa">FA</button>
+<button class="language-button" type="button" data-lang="fa" lang="fa">FA</button>
 </div>
 </div>
 </nav>
 </header>
 
 <main id="top">
+<div id="main-content" tabindex="-1"></div>
 <section class="hero section-shell" aria-labelledby="hero-title">
 <div class="terminal-window">
 <div class="terminal-titlebar" aria-hidden="true">
-<span class="terminal-path" data-i18n="labels.terminalPath">portfolio / aws-cloud</span>
-<span class="shell-state" data-i18n="labels.shellState">Berlin based · AWS Cloud · Automation</span>
+<span class="terminal-path" data-i18n="labels.terminalPath">portfolio / cloud-automation</span>
+<span class="shell-state" data-i18n="labels.shellState">Berlin · Automation · Cloud · Modern Workplace</span>
 </div>
 
 <div class="terminal-body">
 <div class="hero-grid">
 <div class="hero-copy">
-<p class="command-line" data-i18n="labels.hero">AWS Cloud Portfolio</p>
+<p class="command-line" data-i18n="labels.hero">IT &amp; Cloud Portfolio</p>
 <h1 id="hero-title" data-i18n="hero.name">Faroogh Yousefi</h1>
-<p class="hero-role" data-i18n="hero.subtitle">Junior AWS Cloud Engineer | Linux, Networking, Terraform & Automation</p>
-<p class="hero-meta" data-i18n="hero.meta">Berlin · Remote / Hybrid · German & English</p>
+<p class="hero-role" data-i18n="hero.subtitle">IT Engineer | Automation, AWS Cloud &amp; Modern Workplace</p>
+<p class="hero-meta" data-i18n="hero.meta">Berlin · Remote / Hybrid · German &amp; English</p>
 <p class="hero-text" data-i18n="hero.text">
-IT specialist with several years of Enterprise IT experience and a current focus on AWS Cloud.
-Through full-time training and hands-on projects, I am developing practical skills in Linux,
-networking, IAM, EC2, S3, VPC, Terraform, and cloud operations.
+IT engineer with several years of experience in enterprise IT and modern workplace environments. At ING I supported a regulated environment with more than 4,000 users and 8,000 endpoints and automated recurring processes with Power Automate, PowerShell and API integrations. I am currently deepening AWS, Linux, networking, Terraform and CI/CD.
 </p>
 
+<ul class="proof-points" aria-label="Key facts">
+<li>
+<strong>4.000+</strong>
+<span data-i18n="proof.users">users supported in Enterprise IT</span>
+</li>
+<li>
+<strong>8.000+</strong>
+<span data-i18n="proof.endpoints">managed endpoints</span>
+</li>
+<li>
+<strong data-i18n="proof.sinceValue">Since 2019</strong>
+<span data-i18n="proof.since">in professional IT</span>
+</li>
+</ul>
+
 <div class="hero-actions" aria-label="Hero actions">
-<a class="button primary" href="#projects" data-i18n="hero.viewProjects">View AWS Projects</a>
-<a class="button secondary" href="assets/Faroogh-Yousefi-CV.pdf" target="_blank" rel="noopener noreferrer" data-i18n="hero.viewCv">Download CV</a>
-<a class="button secondary" href="https://www.linkedin.com/in/farooghyousefi/" target="_blank" rel="noreferrer">LinkedIn</a>
-<a class="button secondary" href="https://github.com/farooghyousefi" target="_blank" rel="noreferrer">GitHub</a>
+<a class="button primary" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
+<a class="button secondary" href="assets/Faroogh-Yousefi-CV.pdf" target="_blank" rel="noopener noreferrer nofollow" data-i18n="hero.viewCv">Download CV</a>
+<a class="button secondary" href="https://www.linkedin.com/in/farooghyousefi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="button secondary" href="https://github.com/farooghyousefi" target="_blank" rel="noopener noreferrer">GitHub</a>
 </div>
 
 <div class="hero-stack" aria-label="Core technology stack">
 <span data-i18n="labels.coreStack">Core stack</span>
 <ul>
-<li><img src="assets/icons/aws.svg" alt="" aria-hidden="true" /><span data-i18n="stack.items.aws">AWS</span></li>
-<li><img src="assets/icons/linux.svg" alt="" aria-hidden="true" /><span data-i18n="stack.items.linux">Linux</span></li>
+<li><span class="service-mark" aria-hidden="true">PS</span><span>PowerShell</span></li>
+<li><img src="assets/icons/power-automate.svg" alt="" width="18" height="18" aria-hidden="true" /><span>Power Automate</span></li>
+<li><span class="service-mark" aria-hidden="true">API</span><span>REST APIs</span></li>
+<li><img src="assets/icons/aws.svg" alt="" width="18" height="18" aria-hidden="true" /><span data-i18n="stack.items.aws">AWS</span></li>
+<li><img src="assets/icons/linux.svg" alt="" width="18" height="18" aria-hidden="true" /><span data-i18n="stack.items.linux">Linux</span></li>
 <li><span class="service-mark" aria-hidden="true">NET</span><span data-i18n="stack.items.networking">Networking</span></li>
-<li><img src="assets/icons/terraform.svg" alt="" aria-hidden="true" /><span data-i18n="stack.items.terraform">Terraform</span></li>
-<li><img src="assets/icons/docker.svg" alt="" aria-hidden="true" /><span data-i18n="stack.items.docker">Docker</span></li>
-<li><img src="assets/icons/github.svg" alt="" aria-hidden="true" /><span data-i18n="stack.items.github">GitHub</span></li>
 </ul>
 </div>
 </div>
 
 <aside class="photo-card" aria-label="Portrait of Faroogh Yousefi">
 <img
-src="assets/profile-photo.jpg"
+src="assets/profile-photo-380.jpg"
+srcset="assets/profile-photo-240.jpg 240w, assets/profile-photo-380.jpg 380w, assets/profile-photo-760.jpg 760w"
+sizes="(max-width: 560px) 118px, 380px"
+width="380"
+height="285"
 alt="Portrait of Faroogh Yousefi"
 onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
 />
 <div class="photo-fallback" hidden>FY</div>
-<span data-i18n="photo.caption">Junior AWS Cloud Engineer</span>
+<span data-i18n="photo.caption">IT Engineer — Automation &amp; Cloud</span>
 </aside>
 </div>
 
 <div class="status-grid">
 <article class="status-card">
 <span data-i18n="status.role">Role</span>
-<strong data-i18n="status.roleValue">Junior AWS Cloud Engineer</strong>
+<strong data-i18n="status.roleValue">IT Engineer — Automation &amp; Cloud</strong>
 </article>
 <article class="status-card">
 <span data-i18n="status.location">Location</span>
@@ -118,31 +206,31 @@ onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
 </div>
 </section>
 
-<section class="section-shell two-column" id="about" aria-labelledby="about-title">
+<section class="section-shell" id="about" aria-labelledby="about-title">
 <div class="section-heading">
-<p class="command-line" data-i18n="labels.about">My Path into AWS Cloud</p>
+<p class="command-line" data-i18n="labels.about">From Enterprise IT into the Cloud</p>
 <h2 id="about-title" data-i18n="sections.about">About Me</h2>
 </div>
 <div class="about-panel">
 <div class="prose-panel">
 <p data-i18n="about.text" data-i18n-html="true">
-My professional background is in Enterprise IT and Modern Workplace environments. Over several years, I gained practical experience with Microsoft 365, endpoint operations, Microsoft Intune, Microsoft Entra ID, IT service management, and the automation of operational processes.<br><br>
-I am now specializing specifically in AWS Cloud. Through full-time training and hands-on projects, I am learning to build, secure, monitor, and provision cloud infrastructure using AWS, Linux, networking, and Terraform.<br><br>
-I am looking for an entry-level junior role in an AWS cloud environment where I can contribute my operational experience, work on real cloud tasks, and continue developing my technical skills systematically.
+IT engineer with several years of experience in enterprise IT, modern workplace and technical service environments. I combine hands-on Windows and Microsoft 365 operations with endpoint management, identity processes, ITSM and automation.<br><br>
+What motivates me most is simplifying recurring work — making processes faster and more traceable with Power Automate, PowerShell, n8n and API-based integrations. At ING I worked in a regulated environment with more than 4,000 users and 8,000 endpoints, supporting Windows workplaces, Intune and MDM-related processes, Active Directory and IAM processes, and technical documentation.<br><br>
+I am currently deepening AWS, Linux, networking, Windows Server, Terraform, Docker, Kubernetes and CI/CD. I work analytically, with a service mindset and high quality standards.
 </p>
 </div>
 <div class="about-facts" aria-label="Professional profile facts">
 <article>
 <span data-i18n="about.facts.backgroundLabel">Professional Background</span>
-<strong data-i18n="about.facts.backgroundValue">Enterprise IT & Modern Workplace</strong>
+<strong data-i18n="about.facts.backgroundValue">Enterprise IT &amp; Modern Workplace</strong>
 </article>
 <article>
 <span data-i18n="about.facts.focusLabel">Current Focus</span>
-<strong data-i18n="about.facts.focusValue">AWS Cloud & Cloud Operations</strong>
+<strong data-i18n="about.facts.focusValue">Automation, AWS Cloud &amp; Infrastructure</strong>
 </article>
 <article>
 <span data-i18n="about.facts.targetRoleLabel">Target Entry Role</span>
-<strong data-i18n="about.facts.targetRoleValue">Junior AWS Cloud Engineer</strong>
+<strong data-i18n="about.facts.targetRoleValue">Junior role in cloud, automation or IT operations</strong>
 </article>
 </div>
 </div>
@@ -151,181 +239,125 @@ I am looking for an entry-level junior role in an AWS cloud environment where I 
 <section class="section-shell" id="skills" aria-labelledby="skills-title">
 <div class="section-heading">
 <p class="command-line" data-i18n="labels.skills">Core capabilities</p>
-<h2 id="skills-title" data-i18n="sections.skills">Skills</h2>
-</div>
-
-<div class="skill-groups">
-<article class="skill-group">
-<h3 data-i18n="skills.cloud">Current AWS Cloud Focus</h3>
-<p class="skill-status" data-i18n="skills.cloudStatus">Currently developing through training and hands-on projects</p>
-<ul>
-<li>AWS Cloud Foundations</li>
-<li>IAM</li>
-<li>EC2</li>
-<li>S3</li>
-<li>VPC</li>
-<li>Subnets</li>
-<li>Route Tables</li>
-<li>Security Groups</li>
-<li>CloudWatch</li>
-<li>Linux</li>
-<li>Networking</li>
-</ul>
-</article>
-
-<article class="skill-group">
-<h3 data-i18n="skills.devops">Infrastructure & Automation Foundations</h3>
-<p class="skill-status" data-i18n="skills.devopsStatus">Foundations in development</p>
-<ul>
-<li>Terraform</li>
-<li>Infrastructure as Code</li>
-<li>Docker</li>
-<li>Git</li>
-<li>GitHub</li>
-<li>CI/CD Foundations</li>
-<li>Jenkins Foundations</li>
-<li>Monitoring Foundations</li>
-<li>Kubernetes <span class="inline-status" data-i18n="skills.kubernetesStatus">Currently in training</span></li>
-</ul>
-</article>
-
-<article class="skill-group">
-<h3 data-i18n="skills.platform">Professional Enterprise IT Experience</h3>
-<p class="skill-status enterprise" data-i18n="skills.platformStatus">Professional experience</p>
-<ul>
-<li>Microsoft 365</li>
-<li>Microsoft Intune</li>
-<li>Microsoft Entra ID</li>
-<li>Active Directory</li>
-<li>Endpoint Management</li>
-<li>Microsoft Teams Rooms</li>
-<li>ServiceNow</li>
-<li>Jira</li>
-<li>ITSM</li>
-<li>Power Automate</li>
-<li>Platform Operations</li>
-</ul>
-</article>
-</div>
-</section>
-
-<section class="section-shell stack-section" aria-labelledby="stack-title">
-<div class="section-heading stack-heading">
-<div>
-<p class="command-line" data-i18n="labels.stack">Current learning path</p>
-<h2 id="stack-title" data-i18n="stack.title">My AWS Cloud Learning Stack</h2>
-</div>
-<p data-i18n="stack.intro">
-Technologies and AWS services I am currently learning and applying through full-time training and hands-on projects.
+<h2 id="skills-title" data-i18n="sections.skills">Skills &amp; Stack</h2>
+<p class="section-intro" data-i18n="skills.intro">
+Grouped the way I actually work: automation and scripting first, then the infrastructure and cloud layers I am building on top of eight years in IT.
 </p>
 </div>
 
-<div class="learning-stack-grid" aria-label="AWS Cloud learning stack">
-<article class="learning-stack-group">
-<h3 data-i18n="stack.groups.aws">AWS Foundations</h3>
-<div class="learning-card-list">
-<article class="icon-card learning-card">
-<img src="assets/icons/aws.svg" alt="" aria-hidden="true" />
-<span data-i18n="stack.items.aws">AWS</span>
-<small data-i18n="stack.badges.training">Currently in training</small>
-</article>
-<article class="icon-card learning-card">
-<span class="service-mark" aria-hidden="true">IAM</span>
-<span data-i18n="stack.items.iam">IAM</span>
-<small data-i18n="stack.badges.projects">In hands-on projects</small>
-</article>
-<article class="icon-card learning-card">
-<span class="service-mark" aria-hidden="true">EC2</span>
-<span data-i18n="stack.items.ec2">EC2</span>
-<small data-i18n="stack.badges.projects">In hands-on projects</small>
-</article>
-<article class="icon-card learning-card">
-<span class="service-mark" aria-hidden="true">S3</span>
-<span data-i18n="stack.items.s3">S3</span>
-<small data-i18n="stack.badges.projects">In hands-on projects</small>
-</article>
-<article class="icon-card learning-card">
-<span class="service-mark" aria-hidden="true">VPC</span>
-<span data-i18n="stack.items.vpc">VPC</span>
-<small data-i18n="stack.badges.projects">In hands-on projects</small>
-</article>
-<article class="icon-card learning-card">
-<span class="service-mark" aria-hidden="true">CW</span>
-<span data-i18n="stack.items.cloudwatch">CloudWatch</span>
-<small data-i18n="stack.badges.foundations">Foundations in development</small>
-</article>
-</div>
+<div class="proficiency-grid">
+<article class="proficiency-group is-professional">
+<header>
+<h3 data-i18n="skills.groups.automation">Automation &amp; Scripting</h3>
+<p data-i18n="skills.groups.automationNote">Used daily in Enterprise IT operations</p>
+</header>
+<ul class="tech-list">
+<li><span class="tech-mark service-mark" aria-hidden="true">PS</span><span class="tech-name">PowerShell</span></li>
+<li><span class="tech-mark"><img src="assets/icons/power-automate.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">Power Automate</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">n8n</span><span class="tech-name">n8n</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">API</span><span class="tech-name">REST APIs</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">{ }</span><span class="tech-name">JSON / YAML</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">SH</span><span class="tech-name">Bash / Shell</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">PY</span><span class="tech-name">Python</span></li>
+<li><span class="tech-mark"><img src="assets/icons/github.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">Git / GitHub</span></li>
+</ul>
 </article>
 
-<article class="learning-stack-group">
-<h3 data-i18n="stack.groups.technical">Technical Foundations</h3>
-<div class="learning-card-list">
-<article class="icon-card learning-card">
-<img src="assets/icons/linux.svg" alt="" aria-hidden="true" />
-<span data-i18n="stack.items.linux">Linux</span>
-<small data-i18n="stack.badges.training">Currently in training</small>
-</article>
-<article class="icon-card learning-card">
-<span class="service-mark" aria-hidden="true">NET</span>
-<span data-i18n="stack.items.networking">Networking</span>
-<small data-i18n="stack.badges.training">Currently in training</small>
-</article>
-<article class="icon-card learning-card">
-<span class="service-mark" aria-hidden="true">GIT</span>
-<span data-i18n="stack.items.git">Git</span>
-<small data-i18n="stack.badges.foundations">Foundations in development</small>
-</article>
-<article class="icon-card learning-card">
-<img src="assets/icons/github.svg" alt="" aria-hidden="true" />
-<span data-i18n="stack.items.github">GitHub</span>
-<small data-i18n="stack.badges.foundations">Foundations in development</small>
-</article>
-</div>
+<article class="proficiency-group is-training">
+<header>
+<h3 data-i18n="skills.groups.network">Networking &amp; Infrastructure</h3>
+<p data-i18n="skills.groups.networkNote">Practical base, deepened in current training</p>
+</header>
+<ul class="tech-list">
+<li><span class="tech-mark service-mark" aria-hidden="true">NET</span><span class="tech-name" data-i18n="stack.items.networking">Networking</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">DNS</span><span class="tech-name">TCP/IP &amp; DNS</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">RT</span><span class="tech-name">Routing &amp; Subnetting</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">FW</span><span class="tech-name">Firewalls &amp; Security Groups</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">VPN</span><span class="tech-name">VPN</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">LB</span><span class="tech-name">Load Balancing</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">WSV</span><span class="tech-name">Windows Server</span></li>
+<li><span class="tech-mark"><img src="assets/icons/linux.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">Linux</span></li>
+</ul>
 </article>
 
-<article class="learning-stack-group">
-<h3 data-i18n="stack.groups.automation">Infrastructure & Automation</h3>
-<div class="learning-card-list">
-<article class="icon-card learning-card">
-<img src="assets/icons/terraform.svg" alt="" aria-hidden="true" />
-<span data-i18n="stack.items.terraform">Terraform</span>
-<small data-i18n="stack.badges.projects">In hands-on projects</small>
+<article class="proficiency-group is-training">
+<header>
+<h3 data-i18n="skills.groups.cloud">AWS &amp; Cloud</h3>
+<p data-i18n="skills.groups.cloudNote">Full-time program and hands-on projects</p>
+</header>
+<ul class="tech-list">
+<li><span class="tech-mark"><img src="assets/icons/aws.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">AWS</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">IAM</span><span class="tech-name">IAM</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">EC2</span><span class="tech-name">EC2</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">S3</span><span class="tech-name">S3</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">VPC</span><span class="tech-name">VPC</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">LMB</span><span class="tech-name">Lambda &amp; API Gateway</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">CW</span><span class="tech-name">CloudWatch</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">CFN</span><span class="tech-name">CloudFormation</span></li>
+</ul>
 </article>
-<article class="icon-card learning-card">
-<img src="assets/icons/docker.svg" alt="" aria-hidden="true" />
-<span data-i18n="stack.items.docker">Docker</span>
-<small data-i18n="stack.badges.foundations">Foundations in development</small>
+
+<article class="proficiency-group is-foundation">
+<header>
+<h3 data-i18n="skills.groups.devops">DevOps &amp; Infrastructure as Code</h3>
+<p data-i18n="skills.groups.devopsNote">Foundations in development, later program modules</p>
+</header>
+<ul class="tech-list">
+<li><span class="tech-mark"><img src="assets/icons/terraform.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">Terraform</span></li>
+<li><span class="tech-mark"><img src="assets/icons/docker.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">Docker</span></li>
+<li><span class="tech-mark"><img src="assets/icons/kubernetes.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">Kubernetes</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">JNK</span><span class="tech-name">Jenkins</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">CI</span><span class="tech-name">CI/CD</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">ANS</span><span class="tech-name">Ansible</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">MON</span><span class="tech-name" data-i18n="skills.items.monitoring">Monitoring</span></li>
+</ul>
 </article>
-<article class="icon-card learning-card">
-<span class="service-mark" aria-hidden="true">CI</span>
-<span data-i18n="stack.items.cicd">CI/CD</span>
-<small data-i18n="stack.badges.foundations">Foundations in development</small>
+
+<article class="proficiency-group is-professional">
+<header>
+<h3 data-i18n="skills.groups.workplace">Modern Workplace &amp; Identity</h3>
+<p data-i18n="skills.groups.workplaceNote">Two years in a regulated banking environment</p>
+</header>
+<ul class="tech-list">
+<li><span class="tech-mark"><img src="assets/icons/microsoft-365.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">Microsoft 365</span></li>
+<li><span class="tech-mark"><img src="assets/icons/intune.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">Microsoft Intune</span></li>
+<li><span class="tech-mark"><img src="assets/icons/entra-id.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">Microsoft Entra ID</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">AD</span><span class="tech-name">Active Directory</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">WIN</span><span class="tech-name">Windows 10 / 11</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">EXO</span><span class="tech-name">Exchange Online</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">EP</span><span class="tech-name" data-i18n="skills.items.endpoint">Endpoint Management</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">IAM</span><span class="tech-name" data-i18n="skills.items.onboarding">On- / Re- / Offboarding</span></li>
+</ul>
 </article>
-<article class="icon-card learning-card">
-<span class="service-mark" aria-hidden="true">JNK</span>
-<span data-i18n="stack.items.jenkins">Jenkins</span>
-<small data-i18n="stack.badges.training">Currently in training</small>
+
+<article class="proficiency-group is-professional">
+<header>
+<h3 data-i18n="skills.groups.itsm">ITSM &amp; Documentation</h3>
+<p data-i18n="skills.groups.itsmNote">Incident, request and change processes under SLA</p>
+</header>
+<ul class="tech-list">
+<li><span class="tech-mark"><img src="assets/icons/servicenow.svg" alt="" width="26" height="26" loading="lazy" aria-hidden="true" /></span><span class="tech-name">ServiceNow</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">JRA</span><span class="tech-name">Jira</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">ITS</span><span class="tech-name">Incident &amp; Change</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">TS</span><span class="tech-name" data-i18n="skills.items.troubleshooting">Troubleshooting</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">DOC</span><span class="tech-name" data-i18n="skills.items.documentation">Process documentation</span></li>
+<li><span class="tech-mark service-mark" aria-hidden="true">SQL</span><span class="tech-name">SQL</span></li>
+</ul>
 </article>
-<article class="icon-card learning-card">
-<img src="assets/icons/kubernetes.svg" alt="" aria-hidden="true" />
-<span data-i18n="stack.items.kubernetes">Kubernetes</span>
-<small data-i18n="stack.badges.laterTraining">Later training module</small>
-</article>
-</div>
-</article>
+
 </div>
 </section>
 
 <section class="section-shell" id="training" aria-labelledby="training-title">
 <div class="section-heading">
 <p class="command-line" data-i18n="labels.training">Current learning path</p>
-<h2 id="training-title" data-i18n="sections.training">Training & Education</h2>
+<h2 id="training-title" data-i18n="sections.training">Training &amp; Education</h2>
 </div>
 
 <div class="training-layout">
 <article class="training-card">
 <span class="card-index" data-i18n="training.type">Current full-time program</span>
-<h3 data-i18n="training.title">AWS & DevOps Engineer Program</h3>
+<h3 data-i18n="training.title">AWS &amp; DevOps Engineer Program</h3>
 <span class="status-badge" data-i18n="training.status">Ongoing</span>
 <p class="company">Clarusway GmbH</p>
 <span class="training-date" data-i18n="training.date">May 2026 – October 2026</span>
@@ -333,24 +365,26 @@ Technologies and AWS services I am currently learning and applying through full-
 Ongoing full-time training with a current focus on AWS Cloud, Linux, networking, and cloud infrastructure.
 Additional modules cover Terraform, Docker, Jenkins, CI/CD, Kubernetes, monitoring, and automation.
 </p>
-
-<div class="training-certifications">
-<h3 data-i18n="training.certHeading">Certification roadmap</h3>
-
-<div class="cert-group">
-<h4 data-i18n="training.certPreparationHeading">In preparation</h4>
-<ul>
-<li data-i18n="training.certAwsCp">AWS Certified Cloud Practitioner</li>
-<li data-i18n="training.certAwsSolutions">AWS Certified Solutions Architect – Associate</li>
-</ul>
-</div>
-</div>
 </article>
 
+<article class="cert-card">
+<span class="card-index" data-i18n="training.certType">Certification roadmap</span>
+<h3 data-i18n="training.certHeading">Planned certifications</h3>
+<ul class="cert-list">
+<li>
+<span class="cert-name" data-i18n="training.certAwsCp">AWS Certified Cloud Practitioner</span>
+<span class="cert-state" data-i18n="training.certPreparationHeading">In preparation</span>
+</li>
+<li>
+<span class="cert-name" data-i18n="training.certAwsSolutions">AWS Certified Solutions Architect – Associate</span>
+<span class="cert-state" data-i18n="training.certPreparationHeading">In preparation</span>
+</li>
+</ul>
+</article>
 </div>
 
 <div class="education-block">
-<h3 data-i18n="education.heading">Education & background</h3>
+<h3 data-i18n="education.heading">Education &amp; background</h3>
 <div class="education-grid">
 <article class="education-card">
 <span data-i18n="education.businessInfo.date">Since October 2025</span>
@@ -417,66 +451,97 @@ Additional modules cover Terraform, Docker, Jenkins, CI/CD, Kubernetes, monitori
 
 <div class="project-grid">
 <article class="project-card featured-project">
+<div class="project-head">
 <span class="card-index" data-i18n="projects.featured">Featured AWS Project</span>
+<span class="project-state is-progress" data-i18n="projects.stateProgress">In progress</span>
+</div>
 <h3 data-i18n="projects.awsInfra.title">AWS Cloud Infrastructure Lab</h3>
 <p data-i18n="projects.awsInfra.description">Hands-on project for building AWS infrastructure with VPC, public and private subnets, EC2, IAM, S3, and CloudWatch. The project is designed to apply cloud foundations, network segmentation, access control, and monitoring in practice.</p>
+<ul class="project-tags" aria-label="Technologies used">
+<li>VPC</li><li>EC2</li><li>IAM</li><li>S3</li><li>CloudWatch</li>
+</ul>
 </article>
 
 <article class="project-card">
+<div class="project-head">
 <span class="card-index" data-i18n="projects.inProgress">Portfolio Lab</span>
+<span class="project-state is-progress" data-i18n="projects.stateProgress">In progress</span>
+</div>
 <h3 data-i18n="projects.iac.title">Infrastructure as Code Project</h3>
 <p data-i18n="projects.iac.description">Reproducible cloud infrastructure provisioned with Terraform using Infrastructure as Code principles, modular configuration, and controlled infrastructure changes.</p>
+<ul class="project-tags" aria-label="Technologies used">
+<li>Terraform</li><li>IaC</li><li>AWS</li>
+</ul>
 </article>
 
 <article class="project-card">
+<div class="project-head">
 <span class="card-index" data-i18n="projects.inProgress">Portfolio Lab</span>
+<span class="project-state is-progress" data-i18n="projects.stateProgress">In progress</span>
+</div>
 <h3 data-i18n="projects.cicd.title">DevOps CI/CD Pipeline Lab</h3>
 <p data-i18n="projects.cicd.description">CI/CD workflow using GitHub, Jenkins, and Docker to automate build, test, and deployment processes.</p>
+<ul class="project-tags" aria-label="Technologies used">
+<li>GitHub</li><li>Jenkins</li><li>Docker</li>
+</ul>
 </article>
 
 <article class="project-card">
+<div class="project-head">
 <span class="card-index" data-i18n="projects.inProgress">Portfolio Lab</span>
+<span class="project-state is-live" data-i18n="projects.stateLive">Live</span>
+</div>
 <h3 data-i18n="projects.lifepilot.title">LifePilot</h3>
 <p data-i18n="projects.lifepilot.description">
 AI-assisted platform for personal administration, contracts, documents,
 reminders, and everyday bureaucracy. The project combines modern web
 technologies, automation, and cloud-native architecture concepts.
 </p>
-<a
-href="https://lifepilot.farooghyousefi.com"
-target="_blank"
-rel="noreferrer"
->
+<ul class="project-tags" aria-label="Technologies used">
+<li>Web</li><li>Automation</li><li>Cloud-native</li>
+</ul>
+<div class="project-links">
+<a href="https://lifepilot.farooghyousefi.com" target="_blank" rel="noopener noreferrer">
 <span data-i18n="projects.viewProject">View Project</span>
 </a>
+</div>
 </article>
 
 <article class="project-card">
+<div class="project-head">
 <span class="card-index" data-i18n="projects.inProgress">Portfolio Lab</span>
+<span class="project-state is-live" data-i18n="projects.stateLive">Live</span>
+</div>
 <h3 data-i18n="projects.budgetup.title">BudgetUp</h3>
 <p data-i18n="projects.budgetup.description">
 Personal finance and budgeting application for managing income, expenses,
 and financial obligations. The project focuses on a clear financial overview,
 simple interaction, and a clean user experience.
 </p>
-<a
-href="https://budget.farooghyousefi.com"
-target="_blank"
-rel="noreferrer"
->
+<ul class="project-tags" aria-label="Technologies used">
+<li>Web</li><li>UX</li></ul>
+<div class="project-links">
+<a href="https://budget.farooghyousefi.com" target="_blank" rel="noopener noreferrer">
 <span data-i18n="projects.viewProject">View Project</span>
 </a>
+</div>
 </article>
 
 <article class="project-card">
+<div class="project-head">
 <span class="card-index" data-i18n="projects.inProgress">Portfolio Lab</span>
+<span class="project-state is-progress" data-i18n="projects.stateProgress">In progress</span>
+</div>
 <h3 data-i18n="projects.workplace.title">Modern Workplace Automation</h3>
 <p data-i18n="projects.workplace.description">Automation-focused portfolio project using Microsoft 365, Power Automate, and endpoint-related workflows to standardize and improve operational IT processes.</p>
+<ul class="project-tags" aria-label="Technologies used">
+<li>Microsoft 365</li><li>Power Automate</li>
+</ul>
 </article>
 </div>
 </section>
 
-<section class="section-shell two-column" id="experience" aria-labelledby="experience-title">
+<section class="section-shell" id="experience" aria-labelledby="experience-title">
 <div class="section-heading">
 <p class="command-line" data-i18n="labels.experience">Experience overview</p>
 <h2 id="experience-title" data-i18n="sections.experience">Professional Experience</h2>
@@ -488,7 +553,7 @@ rel="noreferrer"
 <span data-i18n="experience.ing.date">June 2024 – June 2026</span>
 <p class="company" data-i18n="experience.ing.company">ING-DiBa AG, Berlin</p>
 </div>
-<h3 data-i18n="experience.ing.role">Modern Workplace & Endpoint Operations</h3>
+<h3 data-i18n="experience.ing.role">Modern Workplace &amp; Endpoint Operations</h3>
 <p class="role-subtitle" data-i18n="experience.ing.subtitle">IT Support Engineer / Specialist End-User Hardware Support II</p>
 <ul>
 <li data-i18n="experience.ing.point1">Operated and supported an Enterprise Modern Workplace environment serving more than 4,000 users and 8,000 endpoints.</li>
@@ -506,7 +571,7 @@ rel="noreferrer"
 <span data-i18n="experience.internship.date">February 2023 - August 2023</span>
 <p class="company" data-i18n="experience.internship.company">IHK internship, Berlin</p>
 </div>
-<h3 data-i18n="experience.internship.role">IT internship - Automation & Service Desk</h3>
+<h3 data-i18n="experience.internship.role">IT internship - Automation &amp; Service Desk</h3>
 <ul>
 <li data-i18n="experience.internship.point1">Implemented Power Automate workflows and automated recurring operational processes.</li>
 <li data-i18n="experience.internship.point2">Handled service desk and Jira tickets with a focus on process improvement.</li>
@@ -533,7 +598,7 @@ rel="noreferrer"
 <span data-i18n="experience.earlier.date">2005 - 2017</span>
 <p class="company" data-i18n="experience.earlier.company">Sports center, Iran / Berliner Stadtmission</p>
 </div>
-<h3 data-i18n="experience.earlier.role">Trainer, coordinator & volunteer work</h3>
+<h3 data-i18n="experience.earlier.role">Trainer, coordinator &amp; volunteer work</h3>
 <p data-i18n="experience.earlier.summary">Earlier experience in training, coordination, organization, communication, and collaboration with multicultural teams.</p>
 </article>
 </div>
@@ -543,23 +608,31 @@ rel="noreferrer"
 <div class="section-heading">
 <p class="command-line" data-i18n="labels.contact">Contact options</p>
 <h2 id="contact-title" data-i18n="sections.contact">Contact</h2>
+<p class="section-intro availability">
+<span class="availability-dot" aria-hidden="true"></span>
+<span data-i18n="contact.availability">Open to junior AWS cloud roles from November 2026 — Berlin, remote or hybrid.</span>
+</p>
 </div>
 
 <div class="contact-grid">
+<a class="contact-card is-primary" data-mail-link>
+<span data-i18n="contact.email">Email</span>
+<strong class="mail-address"><span class="mail-obf">moc.ifesuoyhgooraf@reerac</span></strong>
+</a>
 <a
 class="contact-card"
 href="https://www.linkedin.com/in/farooghyousefi/"
 target="_blank"
-rel="noreferrer"
+rel="noopener noreferrer"
 >
 <span data-i18n="contact.primary">Professional contact</span>
 <strong data-i18n="contact.primaryText">Message me on LinkedIn</strong>
 </a>
-<a class="contact-card" href="https://github.com/farooghyousefi" target="_blank" rel="noreferrer">
+<a class="contact-card" href="https://github.com/farooghyousefi" target="_blank" rel="noopener noreferrer">
 <span data-i18n="contact.github">GitHub</span>
 <strong>github.com/farooghyousefi</strong>
 </a>
-<a class="contact-card" href="assets/Faroogh-Yousefi-CV.pdf" target="_blank" rel="noopener noreferrer">
+<a class="contact-card" href="assets/Faroogh-Yousefi-CV.pdf" target="_blank" rel="noopener noreferrer nofollow">
 <span data-i18n="contact.cv">CV Download</span>
 <strong data-i18n="contact.cvText">Open PDF resume</strong>
 </a>
@@ -568,7 +641,7 @@ rel="noreferrer"
 </main>
 
 <footer class="footer section-shell">
-<p data-i18n="footer.text">© 2026 Faroogh Yousefi. AWS Cloud & Automation Portfolio.</p>
+<p data-i18n="footer.text">© 2026 Faroogh Yousefi. IT, Cloud &amp; Automation Portfolio.</p>
 </footer>
 
 <button
@@ -588,6 +661,6 @@ tabindex="-1"
 <span data-i18n="ui.top">Top</span>
 </button>
 
-<script src="script.js?v=20260714-aws-focus"></script>
+<script src="script.js?v=20260728-privacy"></script>
 </body>
 </html>

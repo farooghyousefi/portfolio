@@ -1,9 +1,9 @@
 const translations = {
   en: {
     meta: {
-      title: "Faroogh Yousefi | Junior AWS Cloud Engineer",
+      title: "Faroogh Yousefi | IT Engineer — Automation, Cloud & Modern Workplace",
       description:
-        "Berlin-based Junior AWS Cloud Engineer focused on AWS Cloud, Linux, networking, Terraform, cloud operations, and Enterprise IT experience.",
+        "Berlin-based IT engineer with enterprise experience in Modern Workplace, endpoint and identity operations. Focused on automation with PowerShell, Power Automate and APIs, currently deepening AWS, Linux and networking.",
     },
     nav: {
       about: "About",
@@ -16,18 +16,24 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Junior AWS Cloud Engineer | Linux, Networking, Terraform & Automation",
+        "IT Engineer | Automation, AWS Cloud & Modern Workplace",
       meta: "Berlin · Remote / Hybrid · German & English",
-      text: "IT specialist with several years of Enterprise IT experience and a current focus on AWS Cloud. Through full-time training and hands-on projects, I am developing practical skills in Linux, networking, IAM, EC2, S3, VPC, Terraform, and cloud operations.",
-      viewProjects: "View AWS Projects",
+      text: "IT engineer with several years of experience in enterprise IT and modern workplace environments. At ING I supported a regulated environment with more than 4,000 users and 8,000 endpoints and automated recurring processes with Power Automate, PowerShell and API integrations. I am currently deepening AWS, Linux, networking, Terraform and CI/CD.",
+      viewProjects: "View Projects",
       viewCv: "Download CV",
     },
+    proof: {
+      users: "users supported in Enterprise IT",
+      endpoints: "managed endpoints",
+      since: "in professional IT",
+      sinceValue: "Since 2019",
+    },
     photo: {
-      caption: "Junior AWS Cloud Engineer",
+      caption: "IT Engineer — Automation & Cloud",
     },
     status: {
       role: "Role",
-      roleValue: "Junior AWS Cloud Engineer",
+      roleValue: "IT Engineer — Automation & Cloud",
       location: "Location",
       locationValue: "Berlin",
       workModel: "Work model",
@@ -37,19 +43,18 @@ const translations = {
     },
     sections: {
       about: "About Me",
-      skills: "Skills",
+      skills: "Skills & Stack",
       training: "Training & Education",
       projects: "Portfolio Projects",
       experience: "Professional Experience",
       contact: "Contact",
     },
     labels: {
-      terminalPath: "portfolio / aws-cloud",
-      shellState: "Berlin based · AWS Cloud · Automation",
-      hero: "AWS Cloud Portfolio",
-      about: "My Path into AWS Cloud",
+      terminalPath: "portfolio / cloud-automation",
+      shellState: "Berlin · Automation · Cloud · Modern Workplace",
+      hero: "IT & Cloud Portfolio",
+      about: "From Enterprise IT into the Cloud",
       skills: "Core capabilities",
-      stack: "Current learning path",
       coreStack: "Core stack",
       training: "Current learning path",
       projects: "Selected work",
@@ -57,40 +62,42 @@ const translations = {
       contact: "Contact options",
     },
     about: {
-      text: "My professional background is in Enterprise IT and Modern Workplace environments. Over several years, I gained practical experience with Microsoft 365, endpoint operations, Microsoft Intune, Microsoft Entra ID, IT service management, and the automation of operational processes.<br><br>I am now specializing specifically in AWS Cloud. Through full-time training and hands-on projects, I am learning to build, secure, monitor, and provision cloud infrastructure using AWS, Linux, networking, and Terraform.<br><br>I am looking for an entry-level junior role in an AWS cloud environment where I can contribute my operational experience, work on real cloud tasks, and continue developing my technical skills systematically.",
+      text: "IT engineer with several years of experience in enterprise IT, modern workplace and technical service environments. I combine hands-on Windows and Microsoft 365 operations with endpoint management, identity processes, ITSM and automation.<br><br>What motivates me most is simplifying recurring work — making processes faster and more traceable with Power Automate, PowerShell, n8n and API-based integrations. At ING I worked in a regulated environment with more than 4,000 users and 8,000 endpoints, supporting Windows workplaces, Intune and MDM-related processes, Active Directory and IAM processes, and technical documentation.<br><br>I am currently deepening AWS, Linux, networking, Windows Server, Terraform, Docker, Kubernetes and CI/CD. I work analytically, with a service mindset and high quality standards.",
       facts: {
         backgroundLabel: "Professional Background",
         backgroundValue: "Enterprise IT & Modern Workplace",
         focusLabel: "Current Focus",
-        focusValue: "AWS Cloud & Cloud Operations",
+        focusValue: "Automation, AWS Cloud & Infrastructure",
         targetRoleLabel: "Target Entry Role",
-        targetRoleValue: "Junior AWS Cloud Engineer",
+        targetRoleValue: "Junior role in cloud, automation or IT operations",
       },
     },
     skills: {
-      cloud: "Current AWS Cloud Focus",
-      cloudStatus: "Currently developing through training and hands-on projects",
-      devops: "Infrastructure & Automation Foundations",
-      devopsStatus: "Foundations in development",
-      kubernetesStatus: "Currently in training",
-      platform: "Professional Enterprise IT Experience",
-      platformStatus: "Professional experience",
+      intro: "Grouped the way I actually work: automation and scripting first, then the infrastructure and cloud layers I am building on top of eight years in IT.",
+      groups: {
+        automation: "Automation & Scripting",
+        automationNote: "Used daily in Enterprise IT operations",
+        network: "Networking & Infrastructure",
+        networkNote: "Practical base, deepened in current training",
+        cloud: "AWS & Cloud",
+        cloudNote: "Full-time program and hands-on projects",
+        devops: "DevOps & Infrastructure as Code",
+        devopsNote: "Foundations in development, later program modules",
+        workplace: "Modern Workplace & Identity",
+        workplaceNote: "Two years in a regulated banking environment",
+        itsm: "ITSM & Documentation",
+        itsmNote: "Incident, request and change processes under SLA",
+      },
+      items: {
+        endpoint: "Endpoint Management",
+        monitoring: "Monitoring",
+        iac: "Infrastructure as Code",
+        onboarding: "On- / Re- / Offboarding",
+        troubleshooting: "Troubleshooting",
+        documentation: "Process documentation",
+      },
     },
     stack: {
-      title: "My AWS Cloud Learning Stack",
-      intro:
-        "Technologies and AWS services I am currently learning and applying through full-time training and hands-on projects.",
-      groups: {
-        aws: "AWS Foundations",
-        technical: "Technical Foundations",
-        automation: "Infrastructure & Automation",
-      },
-      badges: {
-        training: "Currently in training",
-        projects: "In hands-on projects",
-        foundations: "Foundations in development",
-        laterTraining: "Later training module",
-      },
       items: {
         aws: "AWS",
         iam: "IAM",
@@ -116,7 +123,8 @@ const translations = {
       date: "May 2026 – October 2026",
       description:
         "Ongoing full-time training with a current focus on AWS Cloud, Linux, networking, and cloud infrastructure. Additional modules cover Terraform, Docker, Jenkins, CI/CD, Kubernetes, monitoring, and automation.",
-      certHeading: "Certification roadmap",
+      certType: "Certification roadmap",
+      certHeading: "Planned certifications",
       certPreparationHeading: "In preparation",
       certAwsCp: "AWS Certified Cloud Practitioner",
       certAwsSolutions: "AWS Certified Solutions Architect – Associate",
@@ -156,7 +164,7 @@ const translations = {
       languagesHeading: "Languages",
       german: "German – Professional proficiency",
       english: "English – Good professional proficiency",
-      farsi: "Farsi – Native",
+      farsi: "Farsi – Full professional proficiency",
       dari: "Dari – Very good proficiency",
       kurdish: "Kurdish – Native",
       strengthsHeading: "Working strengths",
@@ -170,6 +178,8 @@ const translations = {
     },
     projects: {
       featured: "Featured AWS Project",
+      stateProgress: "In progress",
+      stateLive: "Live",
       viewProject: "View Project",
       budgetup: {
         title: "BudgetUp",
@@ -255,6 +265,8 @@ const translations = {
       },
     },
     contact: {
+      email: "Email",
+      availability: "Open to junior roles in cloud, automation and IT operations from November 2026 — Berlin, remote or hybrid.",
       primary: "Professional contact",
       primaryText: "Message me on LinkedIn",
       linkedin: "LinkedIn",
@@ -263,18 +275,19 @@ const translations = {
       cvText: "Open PDF resume",
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. AWS Cloud & Automation Portfolio.",
+      text: "© 2026 Faroogh Yousefi. IT, Cloud & Automation Portfolio.",
     },
     ui: {
+      skipLink: "Skip to main content",
       backToTop: "Back to top",
       top: "Top",
     },
   },
   de: {
     meta: {
-      title: "Faroogh Yousefi | Junior AWS Cloud Engineer",
+      title: "Faroogh Yousefi | IT-Engineer — Automation, Cloud & Modern Workplace",
       description:
-        "Junior AWS Cloud Engineer aus Berlin mit Fokus auf AWS Cloud, Linux, Networking, Terraform, Cloud Operations und Enterprise-IT-Erfahrung.",
+        "IT-Engineer aus Berlin mit Enterprise-Erfahrung in Modern Workplace, Endpoint- und Identity-Betrieb. Schwerpunkt Automatisierung mit PowerShell, Power Automate und APIs, aktuell mit Vertiefung in AWS, Linux und Networking.",
     },
     nav: {
       about: "Über mich",
@@ -287,18 +300,24 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Junior AWS Cloud Engineer | Linux, Networking, Terraform & Automatisierung",
+        "IT-Engineer | Automation, AWS Cloud & Modern Workplace",
       meta: "Berlin · Remote / Hybrid · Deutsch & Englisch",
-      text: "IT-Spezialist mit mehrjähriger Erfahrung im Enterprise-Umfeld und aktuellem Schwerpunkt auf AWS Cloud. In meiner Vollzeitweiterbildung und eigenen Praxisprojekten vertiefe ich Linux, Networking, IAM, EC2, S3, VPC, Terraform und Cloud Operations.",
-      viewProjects: "AWS-Projekte ansehen",
+      text: "IT-Engineer mit mehrjähriger Erfahrung im Enterprise-IT- und Modern-Workplace-Umfeld. Bei der ING habe ich eine regulierte Umgebung mit über 4.000 Nutzern und 8.000 Endgeräten betreut und wiederkehrende Abläufe mit Power Automate, PowerShell und API-Integrationen automatisiert. Aktuell vertiefe ich AWS, Linux, Networking, Terraform und CI/CD.",
+      viewProjects: "Projekte ansehen",
       viewCv: "Lebenslauf herunterladen",
     },
+    proof: {
+      users: "betreute Nutzer in der Enterprise-IT",
+      endpoints: "verwaltete Endgeräte",
+      since: "in der IT tätig",
+      sinceValue: "Seit 2019",
+    },
     photo: {
-      caption: "Junior AWS Cloud Engineer",
+      caption: "IT-Engineer — Automation & Cloud",
     },
     status: {
       role: "Rolle",
-      roleValue: "Junior AWS Cloud Engineer",
+      roleValue: "IT-Engineer — Automation & Cloud",
       location: "Standort",
       locationValue: "Berlin",
       workModel: "Arbeitsmodell",
@@ -308,19 +327,18 @@ const translations = {
     },
     sections: {
       about: "Über mich",
-      skills: "Skills",
+      skills: "Skills & Stack",
       training: "Ausbildung & Weiterbildung",
       projects: "Portfolio-Projekte",
       experience: "Beruflicher Werdegang",
       contact: "Kontakt",
     },
     labels: {
-      terminalPath: "portfolio / aws-cloud",
-      shellState: "Berlin · AWS Cloud · Automatisierung",
-      hero: "AWS Cloud Portfolio",
-      about: "Mein Weg in die AWS Cloud",
+      terminalPath: "portfolio / cloud-automation",
+      shellState: "Berlin · Automation · Cloud · Modern Workplace",
+      hero: "IT- & Cloud-Portfolio",
+      about: "Von der Enterprise-IT in die Cloud",
       skills: "Kernkompetenzen",
-      stack: "Aktueller Lernpfad",
       coreStack: "Kern-Stack",
       training: "Aktueller Lernpfad",
       projects: "Ausgewählte Arbeiten",
@@ -328,40 +346,42 @@ const translations = {
       contact: "Kontaktmöglichkeiten",
     },
     about: {
-      text: "Mein beruflicher Hintergrund liegt im Enterprise-IT- und Modern-Workplace-Umfeld. Dort habe ich mehrere Jahre praktische Erfahrung mit Microsoft 365, Endpoint Operations, Microsoft Intune, Microsoft Entra ID, IT Service Management und der Automatisierung operativer Prozesse gesammelt.<br><br>Aktuell spezialisiere ich mich gezielt auf AWS Cloud. In einem Vollzeitprogramm und eigenen Praxisprojekten lerne ich, Cloud-Infrastrukturen mit AWS, Linux, Networking und Terraform aufzubauen, abzusichern, zu überwachen und reproduzierbar bereitzustellen.<br><br>Ich suche eine einsteigerfreundliche Junior-Position im AWS-Cloud-Umfeld, in der ich meine vorhandene Betriebserfahrung einbringen, reale Cloud-Aufgaben übernehmen und meine technischen Kenntnisse systematisch weiterentwickeln kann.",
+      text: "IT-Engineer mit mehrjähriger Erfahrung im Enterprise-IT-, Modern-Workplace- und technischen Dienstleistungsumfeld. Ich verbinde operativen Windows- und Microsoft-365-Betrieb mit Endpoint Management, Identity-Prozessen, ITSM und Automatisierung.<br><br>Besonders motiviert mich, wiederkehrende Aufgaben zu vereinfachen und Abläufe mit Power Automate, PowerShell, n8n und API-basierten Integrationen effizienter und nachvollziehbarer zu gestalten. Bei der ING arbeitete ich in einer regulierten Umgebung mit über 4.000 Nutzern und 8.000 Endgeräten und unterstützte Windows-Arbeitsplätze, Intune- und MDM-nahe Prozesse, Active-Directory- und IAM-Prozesse sowie technische Dokumentation.<br><br>Aktuell vertiefe ich AWS, Linux, Networking, Windows Server, Terraform, Docker, Kubernetes und CI/CD. Ich arbeite analytisch, serviceorientiert und mit hohem Qualitätsanspruch.",
       facts: {
         backgroundLabel: "Beruflicher Hintergrund",
         backgroundValue: "Enterprise IT & Modern Workplace",
         focusLabel: "Aktuelle Spezialisierung",
-        focusValue: "AWS Cloud & Cloud Operations",
+        focusValue: "Automatisierung, AWS Cloud & Infrastruktur",
         targetRoleLabel: "Gesuchte Einstiegsrolle",
-        targetRoleValue: "Junior AWS Cloud Engineer",
+        targetRoleValue: "Junior-Rolle in Cloud, Automatisierung oder IT-Operations",
       },
     },
     skills: {
-      cloud: "Aktueller AWS-Cloud-Schwerpunkt",
-      cloudStatus: "Aktuell im Training und in Praxisprojekten",
-      devops: "Infrastructure & Automation Foundations",
-      devopsStatus: "Grundlagen im Aufbau",
-      kubernetesStatus: "Aktuell im Training",
-      platform: "Berufliche Enterprise-IT-Erfahrung",
-      platformStatus: "Berufserfahrung",
+      intro: "Gruppiert nach meiner tatsächlichen Arbeitsweise: Automatisierung und Scripting zuerst, darauf die Infrastruktur- und Cloud-Ebene, die ich auf acht Jahre IT aufbaue.",
+      groups: {
+        automation: "Automation & Scripting",
+        automationNote: "Täglich im Enterprise-IT-Betrieb eingesetzt",
+        network: "Networking & Infrastruktur",
+        networkNote: "Praktische Basis, aktuell im Training vertieft",
+        cloud: "AWS & Cloud",
+        cloudNote: "Vollzeit-Weiterbildung und eigene Praxisprojekte",
+        devops: "DevOps & Infrastructure as Code",
+        devopsNote: "Grundlagen im Aufbau, spätere Module der Weiterbildung",
+        workplace: "Modern Workplace & Identity",
+        workplaceNote: "Zwei Jahre in einer regulierten Bankenumgebung",
+        itsm: "ITSM & Dokumentation",
+        itsmNote: "Incident-, Request- und Change-Prozesse unter SLA",
+      },
+      items: {
+        endpoint: "Endpoint Management",
+        monitoring: "Monitoring",
+        iac: "Infrastructure as Code",
+        onboarding: "On- / Re- / Offboarding",
+        troubleshooting: "Troubleshooting",
+        documentation: "Prozessdokumentation",
+      },
     },
     stack: {
-      title: "Mein AWS-Cloud-Lernstack",
-      intro:
-        "Technologien und AWS-Services, die ich aktuell im Vollzeittraining und in eigenen Praxisprojekten lerne und anwende.",
-      groups: {
-        aws: "AWS-Grundlagen",
-        technical: "Technische Grundlagen",
-        automation: "Infrastruktur und Automatisierung",
-      },
-      badges: {
-        training: "Aktuell im Training",
-        projects: "In Praxisprojekten",
-        foundations: "Grundlagen im Aufbau",
-        laterTraining: "Späterer Trainingsabschnitt",
-      },
       items: {
         aws: "AWS",
         iam: "IAM",
@@ -387,7 +407,8 @@ const translations = {
       date: "Mai 2026 – Oktober 2026",
       description:
         "Laufendes Vollzeittraining mit aktuellem Schwerpunkt auf AWS Cloud, Linux, Networking und Cloud-Infrastruktur. Weitere Module behandeln Terraform, Docker, Jenkins, CI/CD, Kubernetes, Monitoring und Automatisierung.",
-      certHeading: "Zertifizierungsplan",
+      certType: "Zertifizierungs-Fahrplan",
+      certHeading: "Geplante Zertifizierungen",
       certPreparationHeading: "In Vorbereitung",
       certAwsCp: "AWS Certified Cloud Practitioner",
       certAwsSolutions: "AWS Certified Solutions Architect – Associate",
@@ -427,7 +448,7 @@ const translations = {
       languagesHeading: "Sprachen",
       german: "Deutsch – verhandlungssicher",
       english: "Englisch – gute berufliche Kenntnisse",
-      farsi: "Farsi – Muttersprache",
+      farsi: "Farsi – verhandlungssicher",
       dari: "Dari – sehr gute Kenntnisse",
       kurdish: "Kurdisch – Muttersprache",
       strengthsHeading: "Arbeitsstärken",
@@ -441,6 +462,8 @@ const translations = {
     },
     projects: {
       featured: "Ausgewähltes AWS-Projekt",
+      stateProgress: "In Arbeit",
+      stateLive: "Live",
       viewProject: "Projekt ansehen",
       budgetup: {
         title: "BudgetUp",
@@ -525,6 +548,8 @@ const translations = {
       },
     },
     contact: {
+      email: "E-Mail",
+      availability: "Offen für Junior-Rollen in Cloud, Automatisierung und IT-Operations ab November 2026 — Berlin, remote oder hybrid.",
       primary: "Kontakt aufnehmen",
       primaryText: "Nachricht über LinkedIn senden",
       linkedin: "LinkedIn",
@@ -533,18 +558,19 @@ const translations = {
       cvText: "PDF-Lebenslauf öffnen",
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. AWS-Cloud- und Automatisierungsportfolio.",
+      text: "© 2026 Faroogh Yousefi. IT-, Cloud- & Automation-Portfolio.",
     },
     ui: {
+      skipLink: "Zum Hauptinhalt springen",
       backToTop: "Zum Anfang",
       top: "Anfang",
     },
   },
   fa: {
     meta: {
-      title: "Faroogh Yousefi | Junior AWS Cloud Engineer",
+      title: "Faroogh Yousefi | مهندس IT — اتوماسیون، کلاود و Modern Workplace",
       description:
-        "Junior AWS Cloud Engineer ساکن برلین با تمرکز بر AWS Cloud، Linux، Networking، Terraform، Cloud Operations و تجربه Enterprise IT.",
+        "مهندس IT ساکن برلین با تجربه Enterprise در Modern Workplace، Endpoint و Identity. تمرکز بر اتوماسیون با PowerShell، Power Automate و APIها و در حال تعمیق AWS، Linux و Networking.",
     },
     nav: {
       about: "درباره من",
@@ -557,18 +583,24 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "Junior AWS Cloud Engineer | Linux، Networking، Terraform و Automation",
+        "مهندس IT | اتوماسیون، AWS Cloud و Modern Workplace",
       meta: "برلین · Remote / Hybrid · آلمانی و انگلیسی",
-      text: "متخصص IT با چندین سال تجربه در محیط‌های Enterprise IT و تمرکز فعلی بر AWS Cloud. در آموزش تمام‌وقت و پروژه‌های عملی، مهارت‌های کاربردی خود را در Linux، Networking، IAM، EC2، S3، VPC، Terraform و Cloud Operations توسعه می‌دهم.",
-      viewProjects: "مشاهده پروژه‌های AWS",
+      text: "مهندس IT با چند سال تجربه در محیط‌های Enterprise IT و Modern Workplace. در ING از محیطی تحت مقررات با بیش از ۴۰۰۰ کاربر و ۸۰۰۰ دستگاه پشتیبانی کردم و فرآیندهای تکرارشونده را با Power Automate، PowerShell و یکپارچه‌سازی‌های مبتنی بر API خودکار کردم. اکنون AWS، Linux، Networking، Terraform و CI/CD را عمیق‌تر یاد می‌گیرم.",
+      viewProjects: "مشاهده پروژه‌ها",
       viewCv: "دانلود رزومه",
     },
+    proof: {
+      users: "کاربر پشتیبانی‌شده در Enterprise IT",
+      endpoints: "دستگاه تحت مدیریت",
+      since: "فعال در حوزه IT",
+      sinceValue: "از ۲۰۱۹",
+    },
     photo: {
-      caption: "Junior AWS Cloud Engineer",
+      caption: "مهندس IT — اتوماسیون و کلاود",
     },
     status: {
       role: "نقش",
-      roleValue: "Junior AWS Cloud Engineer",
+      roleValue: "مهندس IT — اتوماسیون و کلاود",
       location: "موقعیت",
       locationValue: "برلین",
       workModel: "مدل کاری",
@@ -578,19 +610,18 @@ const translations = {
     },
     sections: {
       about: "درباره من",
-      skills: "مهارت‌ها",
+      skills: "مهارت‌ها و استک",
       training: "آموزش و تحصیلات",
       projects: "پروژه‌های پورتفولیو",
       experience: "سوابق حرفه‌ای",
       contact: "تماس",
     },
     labels: {
-      terminalPath: "portfolio / aws-cloud",
-      shellState: "برلین · AWS Cloud · Automation",
-      hero: "پورتفولیوی AWS Cloud",
-      about: "مسیر من به سمت AWS Cloud",
+      terminalPath: "portfolio / cloud-automation",
+      shellState: "برلین · اتوماسیون · کلاود · Modern Workplace",
+      hero: "پورتفولیوی IT و کلاود",
+      about: "از Enterprise IT به سمت کلاود",
       skills: "توانمندی‌های اصلی",
-      stack: "مسیر یادگیری فعلی",
       coreStack: "استک اصلی",
       training: "مسیر یادگیری فعلی",
       projects: "نمونه‌کارهای منتخب",
@@ -598,40 +629,42 @@ const translations = {
       contact: "راه‌های تماس",
     },
     about: {
-      text: "پیشینه حرفه‌ای من در محیط‌های Enterprise IT و Modern Workplace است. طی چندین سال، تجربه عملی با Microsoft 365، Endpoint Operations، Microsoft Intune، Microsoft Entra ID، IT Service Management و خودکارسازی فرایندهای عملیاتی به دست آورده‌ام.<br><br>اکنون به‌صورت هدفمند روی AWS Cloud تخصص‌سازی می‌کنم. در یک برنامه آموزشی تمام‌وقت و پروژه‌های عملی، یاد می‌گیرم زیرساخت Cloud را با AWS، Linux، Networking و Terraform بسازم، ایمن کنم، پایش کنم و به‌صورت قابل تکرار آماده‌سازی کنم.<br><br>به‌دنبال یک موقعیت جونیور و مناسب ورود در محیط AWS Cloud هستم؛ جایی که بتوانم تجربه عملیاتی خود را وارد کار کنم، روی وظایف واقعی Cloud کار کنم و مهارت‌های فنی خود را به‌صورت منظم توسعه دهم.",
+      text: "مهندس IT با چند سال تجربه در محیط‌های Enterprise IT، Modern Workplace و خدمات فنی. من بهره‌برداری عملی از Windows و Microsoft 365 را با Endpoint Management، فرآیندهای Identity، ITSM و اتوماسیون ترکیب می‌کنم.<br><br>بیش از همه ساده‌سازی کارهای تکرارشونده به من انگیزه می‌دهد — اینکه فرآیندها را با Power Automate، PowerShell، n8n و یکپارچه‌سازی‌های مبتنی بر API سریع‌تر و قابل‌ردیابی‌تر کنم. در ING در محیطی تحت مقررات با بیش از ۴۰۰۰ کاربر و ۸۰۰۰ دستگاه کار کردم و از ایستگاه‌های کاری Windows، فرآیندهای مرتبط با Intune و MDM، فرآیندهای Active Directory و IAM و مستندسازی فنی پشتیبانی کردم.<br><br>اکنون AWS، Linux، Networking، Windows Server، Terraform، Docker، Kubernetes و CI/CD را عمیق‌تر یاد می‌گیرم. کارم تحلیلی، خدمت‌محور و با استاندارد کیفی بالا است.",
       facts: {
         backgroundLabel: "پیشینه حرفه‌ای",
         backgroundValue: "Enterprise IT & Modern Workplace",
         focusLabel: "تخصص فعلی",
-        focusValue: "AWS Cloud & Cloud Operations",
+        focusValue: "اتوماسیون، AWS Cloud و زیرساخت",
         targetRoleLabel: "نقش ورودی هدف",
-        targetRoleValue: "Junior AWS Cloud Engineer",
+        targetRoleValue: "نقش Junior در کلاود، اتوماسیون یا IT Operations",
       },
     },
     skills: {
-      cloud: "تمرکز فعلی روی AWS Cloud",
-      cloudStatus: "در حال توسعه از طریق آموزش و پروژه‌های عملی",
-      devops: "مبانی Infrastructure و Automation",
-      devopsStatus: "مبانی در حال شکل‌گیری",
-      kubernetesStatus: "در حال آموزش",
-      platform: "تجربه حرفه‌ای Enterprise IT",
-      platformStatus: "تجربه کاری",
+      intro: "بر اساس شیوه واقعی کارم دسته‌بندی شده است: ابتدا اتوماسیون و اسکریپت‌نویسی، سپس لایه زیرساخت و کلاود که روی هشت سال تجربه IT می‌سازم.",
+      groups: {
+        automation: "Automation و Scripting",
+        automationNote: "استفاده روزانه در محیط Enterprise IT",
+        network: "Networking و زیرساخت",
+        networkNote: "پایه عملی، در حال تعمیق در دوره فعلی",
+        cloud: "AWS و Cloud",
+        cloudNote: "دوره تمام‌وقت و پروژه‌های عملی",
+        devops: "DevOps و Infrastructure as Code",
+        devopsNote: "مبانی در حال شکل‌گیری، بخش‌های بعدی دوره",
+        workplace: "Modern Workplace و Identity",
+        workplaceNote: "دو سال در محیط بانکی تحت مقررات",
+        itsm: "ITSM و مستندسازی",
+        itsmNote: "فرآیندهای Incident، Request و Change تحت SLA",
+      },
+      items: {
+        endpoint: "Endpoint Management",
+        monitoring: "Monitoring",
+        iac: "Infrastructure as Code",
+        onboarding: "On- / Re- / Offboarding",
+        troubleshooting: "عیب‌یابی",
+        documentation: "مستندسازی فرآیند",
+      },
     },
     stack: {
-      title: "استک یادگیری AWS Cloud من",
-      intro:
-        "تکنولوژی‌ها و سرویس‌های AWS که در حال حاضر در آموزش تمام‌وقت و پروژه‌های عملی یاد می‌گیرم و به کار می‌برم.",
-      groups: {
-        aws: "مبانی AWS",
-        technical: "مبانی فنی",
-        automation: "زیرساخت و Automation",
-      },
-      badges: {
-        training: "در حال آموزش",
-        projects: "در پروژه‌های عملی",
-        foundations: "مبانی در حال شکل‌گیری",
-        laterTraining: "بخش بعدی آموزش",
-      },
       items: {
         aws: "AWS",
         iam: "IAM",
@@ -654,10 +687,11 @@ const translations = {
       type: "برنامه تمام‌وقت فعلی",
       status: "در حال انجام",
       title: "AWS & DevOps Engineer Program",
-      date: "می 2026 – اکتبر 2026",
+      date: "مه ۲۰۲۶ – اکتبر ۲۰۲۶",
       description:
         "آموزش تمام‌وقت و در حال انجام با تمرکز فعلی بر AWS Cloud، Linux، Networking و Cloud Infrastructure. ماژول‌های بعدی شامل Terraform، Docker، Jenkins، CI/CD، Kubernetes، Monitoring و Automation هستند.",
-      certHeading: "مسیر گواهی‌نامه‌ها",
+      certType: "مسیر گواهینامه‌ها",
+      certHeading: "گواهینامه‌های برنامه‌ریزی‌شده",
       certPreparationHeading: "در حال آمادگی",
       certAwsCp: "AWS Certified Cloud Practitioner",
       certAwsSolutions: "AWS Certified Solutions Architect – Associate",
@@ -697,7 +731,7 @@ const translations = {
       languagesHeading: "زبان‌ها",
       german: "آلمانی – تسلط حرفه‌ای",
       english: "انگلیسی – توانایی خوب حرفه‌ای",
-      farsi: "فارسی – زبان مادری",
+      farsi: "فارسی – تسلط کامل حرفه‌ای",
       dari: "دری – تسلط بسیار خوب",
       kurdish: "کردی – زبان مادری",
       strengthsHeading: "نقاط قوت کاری",
@@ -711,6 +745,8 @@ const translations = {
     },
     projects: {
       featured: "پروژه منتخب AWS",
+      stateProgress: "در حال انجام",
+      stateLive: "آنلاین",
       viewProject: "مشاهده پروژه",
       budgetup: {
         title: "BudgetUp",
@@ -796,6 +832,8 @@ const translations = {
       },
     },
     contact: {
+      email: "ایمیل",
+      availability: "آماده همکاری در نقش‌های Junior حوزه کلاود، اتوماسیون و IT Operations از نوامبر ۲۰۲۶ — برلین، دورکاری یا هیبرید.",
       primary: "تماس حرفه‌ای",
       primaryText: "ارسال پیام در LinkedIn",
       linkedin: "LinkedIn",
@@ -804,9 +842,10 @@ const translations = {
       cvText: "باز کردن رزومه PDF",
     },
     footer: {
-      text: "© 2026 Faroogh Yousefi. پورتفولیوی AWS Cloud و Automation.",
+      text: "© ۲۰۲۶ Faroogh Yousefi. پورتفولیوی IT، کلاود و اتوماسیون.",
     },
     ui: {
+      skipLink: "پرش به محتوای اصلی",
       backToTop: "بازگشت به بالا",
       top: "بالا",
     },
@@ -821,6 +860,37 @@ const ariaLabelElements = document.querySelectorAll("[data-i18n-aria-label]");
 const titleElements = document.querySelectorAll("[data-i18n-title]");
 const metaDescription = document.querySelector('meta[name="description"]');
 const backToTopButton = document.querySelector("[data-back-to-top]");
+const mailLink = document.querySelector("[data-mail-link]");
+
+/**
+ * The address never appears in the HTML source in readable order: the markup
+ * carries it reversed and CSS flips it back visually, so a scraper reading the
+ * raw response finds no address pattern. Here we restore the real order and
+ * attach the mailto: href, which only happens in a browser that runs scripts.
+ * Without JavaScript the address stays readable — just not clickable.
+ */
+function activateMailLink() {
+  if (!mailLink) {
+    return;
+  }
+
+  const obfuscated = mailLink.querySelector(".mail-obf");
+
+  if (!obfuscated) {
+    return;
+  }
+
+  const address = obfuscated.textContent.trim().split("").reverse().join("");
+
+  if (!address.includes("@")) {
+    return;
+  }
+
+  obfuscated.textContent = address;
+  obfuscated.classList.add("is-resolved");
+  mailLink.setAttribute("href", "mailto:" + address);
+  mailLink.setAttribute("rel", "nofollow");
+}
 
 function getNestedTranslation(language, key) {
   return key
@@ -887,7 +957,12 @@ function setLanguage(language) {
     button.setAttribute("aria-pressed", String(isActive));
   });
 
-  localStorage.setItem(storageKey, selectedLanguage);
+  try {
+    localStorage.setItem(storageKey, selectedLanguage);
+  } catch (error) {
+    // Storage can be unavailable (private mode, blocked cookies) — the page
+    // still works, it just will not remember the choice.
+  }
 }
 
 function updateBackToTopVisibility() {
@@ -926,4 +1001,14 @@ if (backToTopButton) {
   });
 }
 
-setLanguage(localStorage.getItem(storageKey) || defaultLanguage);
+activateMailLink();
+
+let storedLanguage = defaultLanguage;
+
+try {
+  storedLanguage = localStorage.getItem(storageKey) || defaultLanguage;
+} catch (error) {
+  // Private-mode browsers can throw on localStorage access; fall back silently.
+}
+
+setLanguage(storedLanguage);
