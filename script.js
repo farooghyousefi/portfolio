@@ -16,7 +16,7 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "IT Engineer | Automation, AWS Cloud & Modern Workplace",
+        "Junior Cloud & DevOps Engineer | AWS, Automation & Enterprise IT",
       meta: "Berlin · Remote / Hybrid · German & English",
       text: "IT engineer with several years of experience in enterprise IT and modern workplace environments. At ING I supported a regulated environment with more than 4,000 users and 8,000 endpoints and automated recurring processes with Power Automate, PowerShell and API integrations. I am currently deepening AWS, Linux, networking, Terraform and CI/CD.",
       viewProjects: "View Projects",
@@ -177,6 +177,19 @@ const translations = {
       strength7: "Intercultural collaboration",
     },
     projects: {
+      stateCompleted: "Completed",
+      viewCode: "View Code",
+      ihkProject: "IHK Final Project",
+      flowdesk: {
+        title: "Flowdesk \u2013 Market Data Pipeline on AWS",
+        description:
+          "Ingestion and processing pipeline for market data on AWS: 16 GB across 81 files and more than 960 million events. Python workers run as ARM64 containers on Fargate, and every file is verified by hash so a restart never processes the same data twice.",
+      },
+      azureMigration: {
+        title: "SQL Server Migration to Azure",
+        description:
+          "Final project of my IHK apprenticeship: migrating an on-premises SQL database server into an Azure cloud environment. Target architecture, migration plan, PowerShell for repeatable migration and verification steps, data validation after the move and full documentation.",
+      },
       featured: "Featured AWS Project",
       stateProgress: "In progress",
       stateLive: "Live",
@@ -300,7 +313,7 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "IT-Engineer | Automation, AWS Cloud & Modern Workplace",
+        "Junior Cloud & DevOps Engineer | AWS, Automatisierung & Enterprise IT",
       meta: "Berlin · Remote / Hybrid · Deutsch & Englisch",
       text: "IT-Engineer mit mehrjähriger Erfahrung im Enterprise-IT- und Modern-Workplace-Umfeld. Bei der ING habe ich eine regulierte Umgebung mit über 4.000 Nutzern und 8.000 Endgeräten betreut und wiederkehrende Abläufe mit Power Automate, PowerShell und API-Integrationen automatisiert. Aktuell vertiefe ich AWS, Linux, Networking, Terraform und CI/CD.",
       viewProjects: "Projekte ansehen",
@@ -461,6 +474,19 @@ const translations = {
       strength7: "Interkulturelle Zusammenarbeit",
     },
     projects: {
+      stateCompleted: "Abgeschlossen",
+      viewCode: "Code ansehen",
+      ihkProject: "IHK-Abschlussprojekt",
+      flowdesk: {
+        title: "Flowdesk \u2013 Marktdaten-Pipeline auf AWS",
+        description:
+          "Ingestion- und Verarbeitungs-Pipeline f\u00fcr Marktdaten auf AWS: 16 GB aus 81 Dateien und \u00fcber 960 Millionen Events. Python-Worker laufen als ARM64-Container auf Fargate, und jede Datei wird per Hash gepr\u00fcft, damit ein Neustart keine Daten doppelt verarbeitet.",
+      },
+      azureMigration: {
+        title: "SQL-Server-Migration nach Azure",
+        description:
+          "Abschlussprojekt meiner IHK-Ausbildung: Migration eines On-Premises-SQL-Datenbankservers in eine Azure-Cloudumgebung. Zielarchitektur, Migrationsplan, PowerShell f\u00fcr wiederholbare Migrations- und Pr\u00fcfschritte, Datenvalidierung nach dem Umzug und vollst\u00e4ndige Dokumentation.",
+      },
       featured: "Ausgewähltes AWS-Projekt",
       stateProgress: "In Arbeit",
       stateLive: "Live",
@@ -583,7 +609,7 @@ const translations = {
     hero: {
       name: "Faroogh Yousefi",
       subtitle:
-        "مهندس IT | اتوماسیون، AWS Cloud و Modern Workplace",
+        "مهندس ابر و DevOps (Junior) | AWS، اتوماسیون و فناوری اطلاعات سازمانی",
       meta: "برلین · Remote / Hybrid · آلمانی و انگلیسی",
       text: "مهندس IT با چند سال تجربه در محیط‌های Enterprise IT و Modern Workplace. در ING از محیطی تحت مقررات با بیش از ۴۰۰۰ کاربر و ۸۰۰۰ دستگاه پشتیبانی کردم و فرآیندهای تکرارشونده را با Power Automate، PowerShell و یکپارچه‌سازی‌های مبتنی بر API خودکار کردم. اکنون AWS، Linux، Networking، Terraform و CI/CD را عمیق‌تر یاد می‌گیرم.",
       viewProjects: "مشاهده پروژه‌ها",
@@ -744,6 +770,19 @@ const translations = {
       strength7: "همکاری بین‌فرهنگی",
     },
     projects: {
+      stateCompleted: "\u062a\u06a9\u0645\u06cc\u0644 \u0634\u062f\u0647",
+      viewCode: "\u0645\u0634\u0627\u0647\u062f\u0647 \u06a9\u062f",
+      ihkProject: "\u067e\u0631\u0648\u0698\u0647 \u067e\u0627\u06cc\u0627\u0646\u06cc IHK",
+      flowdesk: {
+        title: "Flowdesk \u2013 \u062e\u0637 \u0644\u0648\u0644\u0647 \u062f\u0627\u062f\u0647\u200c\u0647\u0627\u06cc \u0628\u0627\u0632\u0627\u0631 \u0631\u0648\u06cc AWS",
+        description:
+          "\u062e\u0637 \u0644\u0648\u0644\u0647 \u062f\u0631\u06cc\u0627\u0641\u062a \u0648 \u067e\u0631\u062f\u0627\u0632\u0634 \u062f\u0627\u062f\u0647\u200c\u0647\u0627\u06cc \u0628\u0627\u0632\u0627\u0631 \u0631\u0648\u06cc AWS: \u06f1\u06f6 \u06af\u06cc\u06af\u0627\u0628\u0627\u06cc\u062a \u062f\u0631 \u06f8\u06f1 \u0641\u0627\u06cc\u0644 \u0648 \u0628\u06cc\u0634 \u0627\u0632 \u06f9\u06f6\u06f0 \u0645\u06cc\u0644\u06cc\u0648\u0646 \u0631\u0648\u06cc\u062f\u0627\u062f. \u067e\u0631\u062f\u0627\u0632\u0634\u06af\u0631\u0647\u0627\u06cc Python \u0628\u0647 \u0635\u0648\u0631\u062a \u06a9\u0627\u0646\u062a\u06cc\u0646\u0631 ARM64 \u0631\u0648\u06cc Fargate \u0627\u062c\u0631\u0627 \u0645\u06cc\u200c\u0634\u0648\u0646\u062f \u0648 \u0647\u0631 \u0641\u0627\u06cc\u0644 \u0628\u0627 hash \u0628\u0631\u0631\u0633\u06cc \u0645\u06cc\u200c\u0634\u0648\u062f.",
+      },
+      azureMigration: {
+        title: "\u0645\u0647\u0627\u062c\u0631\u062a SQL Server \u0628\u0647 Azure",
+        description:
+          "\u067e\u0631\u0648\u0698\u0647 \u067e\u0627\u06cc\u0627\u0646\u06cc \u062f\u0648\u0631\u0647 IHK: \u0645\u0647\u0627\u062c\u0631\u062a \u06cc\u06a9 \u0633\u0631\u0648\u0631 \u067e\u0627\u06cc\u06af\u0627\u0647 \u062f\u0627\u062f\u0647 SQL \u0627\u0632 \u0645\u062d\u06cc\u0637 \u0645\u062d\u0644\u06cc \u0628\u0647 Azure. \u0645\u0639\u0645\u0627\u0631\u06cc \u0647\u062f\u0641\u060c \u0628\u0631\u0646\u0627\u0645\u0647 \u0645\u0647\u0627\u062c\u0631\u062a\u060c PowerShell \u0628\u0631\u0627\u06cc \u06af\u0627\u0645\u200c\u0647\u0627\u06cc \u062a\u06a9\u0631\u0627\u0631\u0634\u0648\u0646\u062f\u0647\u060c \u0627\u0639\u062a\u0628\u0627\u0631\u0633\u0646\u062c\u06cc \u062f\u0627\u062f\u0647 \u0648 \u0645\u0633\u062a\u0646\u062f\u0633\u0627\u0632\u06cc \u06a9\u0627\u0645\u0644.",
+      },
       featured: "پروژه منتخب AWS",
       stateProgress: "در حال انجام",
       stateLive: "آنلاین",
