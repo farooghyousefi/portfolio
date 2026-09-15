@@ -3,7 +3,6 @@
   "framework": null,
   "buildCommand": "node scripts/build.mjs --out-dir public",
   "outputDirectory": "public",
-  "public": false,
   "headers": [
     {
       "source": "/(.*)",
