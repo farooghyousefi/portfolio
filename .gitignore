@@ -2,3 +2,9 @@
 .codex/
 *.backup-*
 .claude/
+public/
+output/
+tmp/
+.vercel/
+.env
+.env.*
