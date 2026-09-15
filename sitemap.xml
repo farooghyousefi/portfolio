@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://farooghyousefi.com/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.farooghyousefi.com/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.farooghyousefi.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.farooghyousefi.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://www.farooghyousefi.com/fa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.farooghyousefi.com/" />
+  </url>
+  <url>
+    <loc>https://www.farooghyousefi.com/de/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.farooghyousefi.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.farooghyousefi.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://www.farooghyousefi.com/fa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.farooghyousefi.com/" />
+  </url>
+  <url>
+    <loc>https://www.farooghyousefi.com/fa/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.farooghyousefi.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.farooghyousefi.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://www.farooghyousefi.com/fa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.farooghyousefi.com/" />
   </url>
 </urlset>
