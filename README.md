@@ -49,6 +49,7 @@ The root URL is English, `/de/` is German and `/fa/` is Farsi. Each has localize
 
 ## Projects
 
+- [CareerPilot](https://careerpilot-staging.vercel.app/): public beta for private, evidence-based career analysis and application preparation. The source repository remains private.
 - [Flowdesk AWS portfolio](https://github.com/farooghyousefi/flowdesk-aws-portfolio)
 - Azure SQL migration: completed IHK project, described on the website.
 - [LifePilot](https://lifepilot.farooghyousefi.com/): MVP in development.
