@@ -3,6 +3,11 @@
   "framework": null,
   "buildCommand": "node scripts/build.mjs --out-dir public",
   "outputDirectory": "public",
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/de/index.html", "destination": "/de/", "permanent": true },
+    { "source": "/fa/index.html", "destination": "/fa/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

@@ -234,7 +234,7 @@ html[dir="rtl"] .tech-list li, html[dir="rtl"] .project-tags { unicode-bidi: iso
   .header-actions { gap: 6px; }
   .brand-name { display: none; }
   .language-switcher { border: 0; padding: 0; }
-  .hero { grid-template-columns: minmax(0, 1fr) 120px; gap: 0 16px; padding-top: 24px; padding-bottom: 20px; }
+  .hero { grid-template-columns: minmax(0, 1fr) 120px; gap: 0 16px; min-height: calc(100svh - 170px); align-content: space-between; padding-top: 24px; padding-bottom: 20px; }
   .hero-identity { align-self: center; }
   .hero .eyebrow { margin-bottom: 10px; font-size: .73rem; }
   .hero h1 { font-size: 1.95rem; line-height: 1.1; margin-bottom: 12px; }
