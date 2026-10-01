@@ -184,8 +184,6 @@ html[dir="rtl"] .credential-card h4[dir="ltr"] { text-align: right; }
 /* Contact, public privacy note and unobtrusive return navigation. */
 .contact-section h2 { max-width: 28ch; }
 .contact-section .section-intro { max-width: 67ch; }
-.contact-email { display: inline-flex; align-items: baseline; gap: 20px; min-height: 44px; color: var(--blue); font-size: 1.7rem; text-decoration: none; font-weight: 550; white-space: nowrap; }
-.contact-email > span { font-size: 1.3rem; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 20px; }
 .contact-location { margin-top: 18px; font-size: .85rem; color: var(--subtle); }
 .footer { border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 20px; padding-block: 24px 38px; font-size: .8rem; }
@@ -208,7 +206,6 @@ html[dir="rtl"] .tech-list li, html[dir="rtl"] .project-tags { unicode-bidi: iso
   .language-switcher a:hover { color: var(--text); background: var(--surface); }
   .button.primary:hover { background: #b3d2ff; }
   .button.secondary:hover { background: var(--surface); border-color: var(--blue); }
-  .contact-email:hover { text-decoration: underline; }
 }
 @media (max-width: 1100px) {
   .brand-name { display: none; }
@@ -281,7 +278,6 @@ html[dir="rtl"] .tech-list li, html[dir="rtl"] .project-tags { unicode-bidi: iso
   .timeline-content h3 { font-size: 1.15rem; }
   .certifications { border-inline-start: 0; border-top: 1px solid var(--line); padding-inline-start: 0; padding-top: 24px; }
   .education-grid { gap: 24px; margin-top: 26px; }
-  .contact-email { font-size: 1.07rem; gap: 10px; }
   .contact-links { gap: 22px; margin-top: 10px; }
   .footer { font-size: .74rem; gap: 12px; padding-bottom: 72px; }
   .privacy summary { font-size: .74rem; }
@@ -294,14 +290,12 @@ html[dir="rtl"] .tech-list li, html[dir="rtl"] .project-tags { unicode-bidi: iso
   .hero h1 { font-size: 1.75rem; }
   .hero-specialisms { font-size: .8rem; }
   .button { font-size: .78rem; padding-inline: 8px; }
-  .contact-email { font-size: 1rem; }
   .footer { grid-template-columns: 1fr; gap: 2px; }
   .privacy summary { grid-row: 2; grid-column: 1; }
 }
 @media (max-width: 300px) {
   .header-inner { gap: 4px; }
   .brand-mark { font-size: 1.125rem; }
-  .contact-email { font-size: .875rem; gap: 6px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
