@@ -42,7 +42,7 @@ The root URL is English, `/de/` is German and `/fa/` is Farsi. Each has localize
 
 - Use only the reviewed public CV copies under `assets/`, not private source documents.
 - Before replacing a CV, inspect extracted text, annotations, metadata and signature images as well as its visual appearance. A new file does not remove older versions from Git history.
-- The public email alias is intentional; no private recipient is embedded in the page.
+- No email address is rendered in the page or current public CV downloads. LinkedIn is the public contact route.
 - The site does not include analytics scripts or external fonts. The only application storage is an optional language preference.
 - Hosting security headers are configured in `vercel.json`. Public CV responses request no indexing and no caching; these headers are not access control.
 - Lucide icon licensing is retained in `assets/icons/LUCIDE-LICENSE`. Technology logos belong to their respective owners.
