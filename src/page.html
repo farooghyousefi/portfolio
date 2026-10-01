@@ -184,12 +184,22 @@
 
     <section class="section-shell content-section contact-section" id="contact" aria-labelledby="contact-title">
       <div class="section-heading"><p class="eyebrow">06 / <span data-i18n="nav.contact">{{nav.contact}}</span></p><h2 id="contact-title" data-i18n="contact.title">{{contact.title}}</h2><p class="section-intro" data-i18n="contact.text">{{contact.text}}</p></div>
-      <a class="contact-email" href="mailto:career@farooghyousefi.com" dir="ltr">career@farooghyousefi.com <span aria-hidden="true">↗</span></a>
+      <form class="contact-form" id="contact-form" method="post" action="{{base}}api/contact">
+        <div class="contact-fields">
+          <label><span data-i18n="contact.form.name">{{contact.form.name}}</span><input name="name" type="text" autocomplete="name" maxlength="120" required /></label>
+          <label><span data-i18n="contact.form.email">{{contact.form.email}}</span><input name="email" type="email" dir="ltr" autocomplete="email" maxlength="254" required /></label>
+          <label class="contact-message"><span data-i18n="contact.form.message">{{contact.form.message}}</span><textarea name="message" rows="6" minlength="10" maxlength="4000" required></textarea></label>
+        </div>
+        <div class="contact-form-actions"><button class="button primary" type="submit" data-i18n="contact.form.submit">{{contact.form.submit}}</button><p id="contact-status" role="status" aria-live="polite"></p></div>
+        <p class="contact-form-note" data-i18n="contact.form.notice">{{contact.form.notice}}</p>
+        <div class="contact-honeypot" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label></div>
+        <input type="hidden" name="lang" value="{{lang}}" />
+      </form>
       <div class="contact-links"><a class="text-link" href="https://www.linkedin.com/in/farooghyousefi/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="text-link" href="https://github.com/farooghyousefi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="text-link" href="{{base}}assets/{{cvFile}}" data-cv-link target="_blank" rel="noopener noreferrer" data-i18n="hero.cv">{{hero.cv}}</a></div>
       <p class="contact-location" data-i18n="contact.location">{{contact.location}}</p>
     </section>
   </main>
-  <footer class="section-shell footer"><p>© 2026 Faroogh Yousefi</p><details class="privacy" id="privacy"><summary data-i18n="privacy.title">{{privacy.title}}</summary><div><p data-i18n="privacy.owner">{{privacy.owner}}</p><p data-i18n="privacy.hosting">{{privacy.hosting}}</p><p data-i18n="privacy.storage">{{privacy.storage}}</p><p data-i18n="privacy.contact">{{privacy.contact}}</p><a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" data-i18n="privacy.vercel">{{privacy.vercel}}</a></div></details></footer>
+  <footer class="section-shell footer"><p>© 2026 Faroogh Yousefi</p><details class="privacy" id="privacy"><summary data-i18n="privacy.title">{{privacy.title}}</summary><div><p data-i18n="privacy.owner">{{privacy.owner}}</p><p data-i18n="privacy.hosting">{{privacy.hosting}}</p><p data-i18n="privacy.storage">{{privacy.storage}}</p><p data-i18n="privacy.contact">{{privacy.contact}}</p><a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" data-i18n="privacy.vercel">{{privacy.vercel}}</a> · <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" data-i18n="privacy.resend">{{privacy.resend}}</a></div></details></footer>
   <a class="back-to-top" href="#top" data-back-to-top aria-label="{{ui.top}}" data-i18n-aria-label="ui.top" title="{{ui.top}}" data-i18n-title="ui.top"><img src="{{base}}assets/icons/arrow-up.svg" width="22" height="22" alt="" /></a>
   <script src="{{base}}script.js?v={{version}}"></script>
 </body>

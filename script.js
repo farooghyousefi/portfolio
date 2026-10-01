@@ -89,12 +89,19 @@ const translations = {
     "contact.title": "ارتباط با من",
     "contact.text": "به دنبال مهندس فناوری اطلاعاتی هستید که عملیات سازمانی را بشناسد و در مسیر رایانش ابری و اتوماسیون پیش برود؟ درباره اینکه تجربه من چگونه به تیم شما کمک می‌کند گفت‌وگو کنیم.",
     "contact.location": "ساکن برلین · آماده گفت‌وگو درباره نقش‌های حضوری، ترکیبی و دورکاری.",
+    "contact.form.name": "نام", "contact.form.email": "ایمیل شما", "contact.form.message": "پیام",
+    "contact.form.submit": "ارسال پیام", "contact.form.sending": "در حال ارسال…",
+    "contact.form.success": "پیام شما ارسال شد. سپاسگزارم!",
+    "contact.form.error": "ارسال پیام انجام نشد. دوباره تلاش کنید یا از طریق لینکدین پیام بدهید.",
+    "contact.form.unavailable": "فرم تماس در حال حاضر در دسترس نیست. لطفاً از طریق لینکدین پیام بدهید.",
+    "contact.form.local": "فرم تماس فقط در نسخه آنلاین وب‌سایت کار می‌کند.",
+    "contact.form.notice": "نام، ایمیل و پیام شما فقط برای پاسخ‌گویی به درخواستتان استفاده می‌شود.",
     "privacy.title": "اطلاعات حریم خصوصی",
-    "privacy.owner": "این نمونه‌کار شخصی توسط فاروق یوسفی در برلین منتشر شده است. راه تماس: career@farooghyousefi.com.",
+    "privacy.owner": "این نمونه‌کار شخصی توسط فاروق یوسفی در برلین منتشر شده است. برای تماس از فرم همین صفحه استفاده کنید.",
     "privacy.hosting": "میزبانی سایت بر عهده Vercel است. هنگام بارگذاری صفحه، داده‌های فنی مانند نشانی IP، نشانی صفحه و اطلاعات مرورگر ممکن است در گزارش‌های میزبانی و امنیتی پردازش شوند.",
     "privacy.storage": "سایت اسکریپت تبلیغاتی یا تحلیل بازدید بارگذاری نمی‌کند. زبان انتخابی با نام portfolio-language در مرورگر شما ذخیره می‌شود و با پاک کردن داده‌های این سایت قابل حذف است.",
-    "privacy.contact": "لینک ایمیل، برنامه ایمیل شما را با نشانی عمومی حرفه‌ای باز می‌کند. با باز کردن لینک‌های GitHub و LinkedIn، آن سرویس‌ها داده دریافت می‌کنند. رزومه‌های عمومی شامل نشانی منزل، شماره تلفن، سال تولد یا ایمیل شخصی نیستند.",
-    "privacy.vercel": "سیاست حریم خصوصی Vercel",
+    "privacy.contact": "هنگام استفاده از فرم تماس، نام، نشانی ایمیل و پیام شما برای پاسخ‌گویی پردازش می‌شود. ارسال پیام از طریق Vercel و Resend انجام می‌شود. با باز کردن لینک‌های GitHub و LinkedIn، آن سرویس‌ها داده دریافت می‌کنند. رزومه‌های عمومی شامل نشانی منزل، شماره تلفن، سال تولد یا ایمیل شخصی نیستند.",
+    "privacy.vercel": "سیاست حریم خصوصی Vercel", "privacy.resend": "سیاست حریم خصوصی Resend",
   },
   de: {
     "meta.title": "Faroogh Yousefi | IT Engineer · Modern Workplace, Automation & Cloud",
@@ -186,12 +193,19 @@ const translations = {
     "contact.title": "Kontakt aufnehmen",
     "contact.text": "Du suchst einen IT Engineer, der den Enterprise-Betrieb kennt und sich in Richtung Cloud und Automatisierung weiterentwickelt? Lass uns besprechen, wo meine Erfahrung deinem Team helfen kann.",
     "contact.location": "Standort Berlin · Offen für Gespräche über Vor-Ort-, Hybrid- und Remote-Rollen.",
+    "contact.form.name": "Name", "contact.form.email": "Deine E-Mail-Adresse", "contact.form.message": "Nachricht",
+    "contact.form.submit": "Nachricht senden", "contact.form.sending": "Wird gesendet…",
+    "contact.form.success": "Deine Nachricht wurde gesendet. Vielen Dank!",
+    "contact.form.error": "Die Nachricht konnte nicht gesendet werden. Versuche es erneut oder schreibe mir auf LinkedIn.",
+    "contact.form.unavailable": "Das Kontaktformular ist derzeit nicht verfügbar. Schreib mir bitte auf LinkedIn.",
+    "contact.form.local": "Das Kontaktformular funktioniert nur auf der veröffentlichten Website.",
+    "contact.form.notice": "Deinen Namen, deine E-Mail-Adresse und deine Nachricht nutze ich nur, um dir zu antworten.",
     "privacy.title": "Datenschutzhinweise",
-    "privacy.owner": "Dieses persönliche Portfolio wird von Faroogh Yousefi, Berlin, veröffentlicht. Kontakt: career@farooghyousefi.com.",
+    "privacy.owner": "Dieses persönliche Portfolio wird von Faroogh Yousefi in Berlin veröffentlicht. Kontakt ist über das Formular auf dieser Seite möglich.",
     "privacy.hosting": "Die Website wird bei Vercel gehostet. Beim Abruf entstehen technische Anfragedaten wie IP-Adresse, aufgerufene URL und Browserinformationen, die in Hosting- und Sicherheitsprotokollen verarbeitet werden können.",
     "privacy.storage": "Die Seite lädt keine Werbe- oder Analyse-Skripte. Die gewählte Sprache wird lokal im Browser unter portfolio-language gespeichert. Durch Löschen der Website-Daten im Browser lässt sich diese Einstellung entfernen.",
-    "privacy.contact": "Der E-Mail-Link öffnet dein Mailprogramm mit der öffentlichen beruflichen Adresse. Externe Dienste wie GitHub und LinkedIn erhalten Daten, wenn du deren Links aufrufst. Öffentliche Lebensläufe enthalten keine Privatanschrift, Telefonnummer, Geburtsjahr oder persönliche E-Mail-Adresse.",
-    "privacy.vercel": "Datenschutzerklärung von Vercel",
+    "privacy.contact": "Beim Kontaktformular werden Name, E-Mail-Adresse und Nachricht zur Beantwortung verarbeitet. Der Versand erfolgt über Vercel und Resend. Externe Dienste wie GitHub und LinkedIn erhalten Daten, wenn du deren Links aufrufst. Öffentliche Lebensläufe enthalten keine Privatanschrift, Telefonnummer, Geburtsjahr oder persönliche E-Mail-Adresse.",
+    "privacy.vercel": "Datenschutzerklärung von Vercel", "privacy.resend": "Datenschutzerklärung von Resend",
   },
   en: {
     "meta.title": "Faroogh Yousefi | IT Engineer · Modern Workplace, Automation & Cloud",
@@ -283,12 +297,19 @@ const translations = {
     "contact.title": "Get in touch",
     "contact.text": "Looking for an IT engineer who understands enterprise operations and is growing into cloud and automation? Let us discuss where my experience can help your team.",
     "contact.location": "Based in Berlin · Open to discussing on-site, hybrid and remote roles.",
+    "contact.form.name": "Name", "contact.form.email": "Your email address", "contact.form.message": "Message",
+    "contact.form.submit": "Send message", "contact.form.sending": "Sending…",
+    "contact.form.success": "Your message has been sent. Thank you!",
+    "contact.form.error": "The message could not be sent. Please try again or reach me on LinkedIn.",
+    "contact.form.unavailable": "The contact form is currently unavailable. Please reach me on LinkedIn.",
+    "contact.form.local": "The contact form works on the published website only.",
+    "contact.form.notice": "I use your name, email address and message only to respond to your enquiry.",
     "privacy.title": "Privacy information",
-    "privacy.owner": "This personal portfolio is published by Faroogh Yousefi, Berlin. Contact: career@farooghyousefi.com.",
+    "privacy.owner": "This personal portfolio is published by Faroogh Yousefi in Berlin. You can reach me through the form on this page.",
     "privacy.hosting": "The website is hosted by Vercel. Serving the site involves technical request data such as IP address, requested URL and browser information, which may be processed in hosting and security logs.",
     "privacy.storage": "The site does not load advertising or analytics scripts. Your selected language is saved locally in your browser under portfolio-language. You can remove that preference by clearing this site's browser data.",
-    "privacy.contact": "The email link opens your email app with the public professional address. External services such as GitHub and LinkedIn receive data when you follow their links. Public CV downloads exclude private address, phone number, birth year and personal email.",
-    "privacy.vercel": "Vercel privacy policy",
+    "privacy.contact": "The contact form processes your name, email address and message so I can respond. Messages are sent through Vercel and Resend. External services such as GitHub and LinkedIn receive data when you follow their links. Public CV downloads exclude private address, phone number, birth year and personal email.",
+    "privacy.vercel": "Vercel privacy policy", "privacy.resend": "Resend privacy policy",
   },
 };
 
@@ -302,6 +323,17 @@ if (typeof document !== "undefined") {
   const isFile = location.protocol === "file:";
   const languagePaths = { en: "", de: "de/", fa: "fa/" };
   const localeNames = { en: "en_GB", de: "de_DE", fa: "fa_IR" };
+  const contactForm = document.querySelector("#contact-form");
+  const contactStatus = document.querySelector("#contact-status");
+  const contactSubmit = contactForm?.querySelector('button[type="submit"]');
+  const contactLanguage = contactForm?.querySelector('input[name="lang"]');
+
+  function setContactStatus(key, state = "") {
+    if (!contactStatus) return;
+    contactStatus.dataset.messageKey = key;
+    contactStatus.dataset.state = state;
+    contactStatus.textContent = key ? translations[document.documentElement.lang][key] : "";
+  }
 
   function closeMenu() { if (menu) menu.open = false; }
 
@@ -319,6 +351,9 @@ if (typeof document !== "undefined") {
       const value = content[element.dataset.i18n];
       if (value !== undefined) element.textContent = value;
     }
+    if (contactLanguage) contactLanguage.value = lang;
+    if (contactStatus?.dataset.messageKey) contactStatus.textContent = content[contactStatus.dataset.messageKey];
+    if (contactSubmit?.disabled) contactSubmit.textContent = content["contact.form.sending"];
     for (const attribute of ["aria-label", "title", "alt"]) {
       for (const element of document.querySelectorAll(`[data-i18n-${attribute}]`)) {
         const key = element.getAttribute(`data-i18n-${attribute}`);
@@ -390,6 +425,37 @@ if (typeof document !== "undefined") {
   });
   document.addEventListener("click", (event) => {
     if (menu?.open && !menu.contains(event.target)) closeMenu();
+  });
+  contactForm?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!contactForm.reportValidity()) return;
+    if (isFile) { setContactStatus("contact.form.local", "error"); return; }
+
+    contactSubmit.disabled = true;
+    contactSubmit.textContent = translations[document.documentElement.lang]["contact.form.sending"];
+    contactForm.setAttribute("aria-busy", "true");
+    setContactStatus("", "");
+    try {
+      const response = await fetch(new URL("api/contact", siteBase), {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new URLSearchParams(new FormData(contactForm)),
+      });
+      if (response.ok) {
+        contactForm.reset();
+        contactLanguage.value = document.documentElement.lang;
+        setContactStatus("contact.form.success", "success");
+      } else {
+        const result = await response.json().catch(() => ({}));
+        setContactStatus(result.code === "unavailable" ? "contact.form.unavailable" : "contact.form.error", "error");
+      }
+    } catch {
+      setContactStatus("contact.form.error", "error");
+    } finally {
+      contactSubmit.disabled = false;
+      contactSubmit.textContent = translations[document.documentElement.lang]["contact.form.submit"];
+      contactForm.removeAttribute("aria-busy");
+    }
   });
   const backToTop = document.querySelector("[data-back-to-top]");
   const hero = document.querySelector(".hero");

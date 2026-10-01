@@ -17,10 +17,10 @@
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); font-size: 1rem; line-height: 1.65; }
 body, main { min-width: 0; }
-button, input, summary { font: inherit; }
+button, input, textarea, summary { font: inherit; }
 a { color: inherit; text-underline-offset: 5px; }
 a, button, summary { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
-a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
 [tabindex="-1"]:focus { outline: none; }
 img { display: block; max-width: 100%; }
 h1, h2, h3, p, figure { margin: 0; }
@@ -184,8 +184,22 @@ html[dir="rtl"] .credential-card h4[dir="ltr"] { text-align: right; }
 /* Contact, public privacy note and unobtrusive return navigation. */
 .contact-section h2 { max-width: 28ch; }
 .contact-section .section-intro { max-width: 67ch; }
-.contact-email { display: inline-flex; align-items: baseline; gap: 20px; min-height: 44px; color: var(--blue); font-size: 1.7rem; text-decoration: none; font-weight: 550; white-space: nowrap; }
-.contact-email > span { font-size: 1.3rem; }
+.contact-form { position: relative; width: min(100%, 720px); }
+.contact-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 20px; }
+.contact-fields label { display: grid; gap: 8px; min-width: 0; color: var(--text); font-size: .84rem; font-weight: 600; }
+.contact-fields input, .contact-fields textarea { width: 100%; min-width: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); padding: 12px 14px; font-weight: 400; }
+.contact-fields input { min-height: 48px; }
+.contact-fields textarea { min-height: 146px; resize: vertical; }
+.contact-fields input:hover, .contact-fields textarea:hover { border-color: var(--subtle); }
+.contact-message { grid-column: 1 / -1; }
+.contact-form-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; margin-top: 22px; }
+.contact-form-actions button { cursor: pointer; }
+.contact-form-actions button:disabled { cursor: wait; opacity: .72; }
+#contact-status { min-height: 24px; font-size: .85rem; }
+#contact-status[data-state="success"] { color: var(--mint); }
+#contact-status[data-state="error"] { color: var(--amber); }
+.contact-form-note { margin-top: 12px; font-size: .78rem; color: var(--subtle); }
+.contact-honeypot { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 20px; }
 .contact-location { margin-top: 18px; font-size: .85rem; color: var(--subtle); }
 .footer { border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 20px; padding-block: 24px 38px; font-size: .8rem; }
@@ -208,7 +222,6 @@ html[dir="rtl"] .tech-list li, html[dir="rtl"] .project-tags { unicode-bidi: iso
   .language-switcher a:hover { color: var(--text); background: var(--surface); }
   .button.primary:hover { background: #b3d2ff; }
   .button.secondary:hover { background: var(--surface); border-color: var(--blue); }
-  .contact-email:hover { text-decoration: underline; }
 }
 @media (max-width: 1100px) {
   .brand-name { display: none; }
@@ -281,7 +294,7 @@ html[dir="rtl"] .tech-list li, html[dir="rtl"] .project-tags { unicode-bidi: iso
   .timeline-content h3 { font-size: 1.15rem; }
   .certifications { border-inline-start: 0; border-top: 1px solid var(--line); padding-inline-start: 0; padding-top: 24px; }
   .education-grid { gap: 24px; margin-top: 26px; }
-  .contact-email { font-size: 1.07rem; gap: 10px; }
+  .contact-fields { grid-template-columns: 1fr; }
   .contact-links { gap: 22px; margin-top: 10px; }
   .footer { font-size: .74rem; gap: 12px; padding-bottom: 72px; }
   .privacy summary { font-size: .74rem; }
@@ -294,14 +307,12 @@ html[dir="rtl"] .tech-list li, html[dir="rtl"] .project-tags { unicode-bidi: iso
   .hero h1 { font-size: 1.75rem; }
   .hero-specialisms { font-size: .8rem; }
   .button { font-size: .78rem; padding-inline: 8px; }
-  .contact-email { font-size: 1rem; }
   .footer { grid-template-columns: 1fr; gap: 2px; }
   .privacy summary { grid-row: 2; grid-column: 1; }
 }
 @media (max-width: 300px) {
   .header-inner { gap: 4px; }
   .brand-mark { font-size: 1.125rem; }
-  .contact-email { font-size: .875rem; gap: 6px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
