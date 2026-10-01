@@ -1,6 +1,6 @@
 const translations = {
   fa: {
-    "meta.title": "Faroogh Yousefi | مهندس فناوری اطلاعات، اتوماسیون و رایانش ابری",
+    "meta.title": "فاروق یوسفی | مهندس فناوری اطلاعات در برلین",
     "meta.description": "فاروق یوسفی، مهندس فناوری اطلاعات در برلین با تجربه Microsoft 365، Intune، PowerShell و Power Automate؛ در حال توسعه مهارت‌های AWS، لینوکس و DevOps با پروژه‌های عملی.",
     "ui.skip": "رفتن به محتوای اصلی", "ui.navigation": "ناوبری اصلی", "ui.language": "انتخاب زبان", "ui.menu": "باز کردن فهرست", "ui.top": "بازگشت به ابتدای صفحه",
     "nav.about": "درباره من", "nav.skills": "مهارت‌ها", "nav.projects": "پروژه‌ها", "nav.experience": "سوابق کاری", "nav.training": "تحصیلات", "nav.contact": "تماس",
@@ -98,8 +98,8 @@ const translations = {
     "privacy.vercel": "سیاست حریم خصوصی Vercel",
   },
   de: {
-    "meta.title": "Faroogh Yousefi | IT Engineer · Modern Workplace, Automation & Cloud",
-    "meta.description": "IT Engineer in Berlin mit Berufspraxis in Microsoft 365, Intune, PowerShell und Power Automate. AWS, Linux und DevOps im Ausbau durch Weiterbildung und eigene Projekte.",
+    "meta.title": "Faroogh Yousefi | IT Engineer · Cloud & Automation",
+    "meta.description": "Faroogh Yousefi ist IT Engineer in Berlin mit Praxis in Microsoft 365, Intune und Automatisierung. AWS, Linux und DevOps vertieft er durch Weiterbildung und Projekte.",
     "ui.skip": "Zum Inhalt springen", "ui.navigation": "Hauptnavigation", "ui.language": "Sprache wählen", "ui.menu": "Navigation öffnen", "ui.top": "Zurück zum Anfang",
     "nav.about": "Profil", "nav.skills": "Kompetenzen", "nav.projects": "Projekte", "nav.experience": "Erfahrung", "nav.training": "Bildung", "nav.contact": "Kontakt",
     "hero.location": "Berlin, Deutschland", "hero.name": "Faroogh Yousefi", "hero.role": "IT Engineer",
@@ -196,8 +196,8 @@ const translations = {
     "privacy.vercel": "Datenschutzerklärung von Vercel",
   },
   en: {
-    "meta.title": "Faroogh Yousefi | IT Engineer · Modern Workplace, Automation & Cloud",
-    "meta.description": "IT Engineer in Berlin with enterprise experience in Microsoft 365, Intune, PowerShell and Power Automate. Developing AWS, Linux and DevOps skills through hands-on projects.",
+    "meta.title": "Faroogh Yousefi | IT Engineer · Cloud & Automation",
+    "meta.description": "Faroogh Yousefi is a Berlin-based IT Engineer with experience in Microsoft 365, Intune and automation, building AWS, Linux and DevOps skills through hands-on projects.",
     "ui.skip": "Skip to content", "ui.navigation": "Main navigation", "ui.language": "Choose language", "ui.menu": "Open navigation", "ui.top": "Back to top",
     "nav.about": "Profile", "nav.skills": "Skills", "nav.projects": "Projects", "nav.experience": "Experience", "nav.training": "Education", "nav.contact": "Contact",
     "hero.location": "Berlin, Germany", "hero.name": "Faroogh Yousefi", "hero.role": "IT Engineer",
@@ -308,6 +308,11 @@ if (typeof document !== "undefined") {
 
   function closeMenu() { if (menu) menu.open = false; }
 
+  function scrollToCurrentSection() {
+    const id = location.hash.slice(1);
+    if (id) document.getElementById(id)?.scrollIntoView({ behavior: "instant", block: "start" });
+  }
+
   function languageFromPath() {
     const path = location.pathname.slice(siteBase.pathname.length);
     return path.startsWith("de/") ? "de" : path.startsWith("fa/") ? "fa" : "en";
@@ -384,9 +389,10 @@ if (typeof document !== "undefined") {
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
       setLanguage(link.dataset.lang, true);
+      scrollToCurrentSection();
     });
   }
-  window.addEventListener("popstate", () => setLanguage(languageFromPath()));
+  window.addEventListener("popstate", () => { setLanguage(languageFromPath()); scrollToCurrentSection(); });
   document.querySelectorAll('a[href^="#"]').forEach((link) => link.addEventListener("click", closeMenu));
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && menu?.open) { closeMenu(); menu.querySelector("summary").focus(); }
@@ -414,4 +420,5 @@ if (typeof document !== "undefined") {
     restoredUrl.hash = location.hash;
     history.replaceState({ language: document.documentElement.lang }, "", restoredUrl);
   }
+  scrollToCurrentSection();
 }

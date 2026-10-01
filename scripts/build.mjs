@@ -31,6 +31,7 @@ const structuredData = JSON.stringify({
   "@type": "Person",
   "@id": `${origin}/#person`,
   name: "Faroogh Yousefi",
+  alternateName: ["FarooghYousefi", "Faruk Yousefi", "فاروق یوسفی"],
   url: `${origin}/`,
   image: `${origin}/assets/faroogh-yousefi-sep-2026-800.webp`,
   jobTitle: "IT Engineer",
@@ -41,6 +42,16 @@ const structuredData = JSON.stringify({
   hasCredential: { "@type": "EducationalOccupationalCredential", name: "Fachinformatiker für Anwendungsentwicklung (IHK)", credentialCategory: "Vocational qualification" },
   alumniOf: { "@type": "EducationalOrganization", name: "FORUM Berufsbildung e.V., Berlin" },
   sameAs: ["https://www.linkedin.com/in/farooghyousefi/", "https://github.com/farooghyousefi"],
+}).replace(/</g, "\\u003c");
+
+const siteNameData = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${origin}/#website`,
+  name: "Faroogh Yousefi",
+  alternateName: "farooghyousefi.com",
+  url: `${origin}/`,
+  publisher: { "@id": `${origin}/#person` },
 }).replace(/</g, "\\u003c");
 
 for (const language of languages) {
@@ -56,6 +67,7 @@ for (const language of languages) {
   };
   let html = template.replace(/\{\{([\w.]+)\}\}/g, (_, key) => {
     if (key === "structuredData") return structuredData;
+    if (key === "siteNameData") return siteNameData;
     if (values[key] === undefined) throw new Error(`Missing ${language} translation: ${key}`);
     return escapeHtml(values[key]);
   });
@@ -66,7 +78,7 @@ for (const language of languages) {
 }
 
 const alternateLinks = languages.map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${origin}${routes[lang]}" />`).join("\n") + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${origin}/" />`;
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${languages.map((lang) => `  <url>\n    <loc>${origin}${routes[lang]}</loc>\n    <lastmod>2026-09-30</lastmod>\n${alternateLinks}\n  </url>`).join("\n")}\n</urlset>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${languages.map((lang) => `  <url>\n    <loc>${origin}${routes[lang]}</loc>\n    <lastmod>2026-10-01</lastmod>\n${alternateLinks}\n  </url>`).join("\n")}\n</urlset>\n`;
 await writeFile(join(output, "sitemap.xml"), sitemap);
 
 // Publish only this explicit set, never local CV sources, scratch files or tools.
