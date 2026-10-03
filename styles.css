@@ -135,8 +135,7 @@ p { color: var(--muted); }
 .credential-mark img { width: 48px; height: 48px; filter: invert(1); }
 .credential-mark strong { font-family: var(--mono); font-size: 1.7rem; margin-top: 8px; }
 .credential-mark--ihk { color: var(--mint); }
-.credential-mark--aws { color: var(--subtle); }
-.credential-mark--aws img { opacity: .6; }
+.credential-mark--aws { color: var(--mint); }
 .credential-mark--aws span { font-family: var(--mono); font-size: .72rem; margin-top: 6px; }
 .credential-state { display: flex; align-items: center; gap: 7px; margin-top: 6px; font-size: .9rem; font-weight: 600; line-height: 1.5; color: var(--mint); }
 .credential-card--pending .credential-state { color: var(--muted); }
