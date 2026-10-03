@@ -34,14 +34,17 @@ const structuredData = JSON.stringify({
   alternateName: ["FarooghYousefi", "Faruk Yousefi", "فاروق یوسفی"],
   url: `${origin}/`,
   image: `${origin}/assets/faroogh-yousefi-sep-2026-800.webp`,
-  jobTitle: "IT Engineer",
+  jobTitle: "Cloud Engineer | AWS & Azure | DevOps & Automation",
   description: translations.en["meta.description"],
   homeLocation: { "@type": "Place", name: "Berlin, Germany" },
   knowsLanguage: ["de", "en", "fa", "ku", "prs"],
-  knowsAbout: ["Microsoft 365", "Modern Workplace", "Endpoint Management", "Power Automate", "PowerShell", "IT Service Management"],
-  hasCredential: { "@type": "EducationalOccupationalCredential", name: "Fachinformatiker für Anwendungsentwicklung (IHK)", credentialCategory: "Vocational qualification" },
+  knowsAbout: ["Amazon Web Services", "Microsoft Azure", "Cloud Architecture", "DevOps", "Terraform", "Docker", "Linux", "Microsoft 365", "Power Automate", "PowerShell"],
+  hasCredential: [
+    { "@type": "EducationalOccupationalCredential", name: "AWS Certified Solutions Architect – Associate", credentialCategory: "Certification", url: "https://www.credly.com/badges/5a12bdb6-9ff6-47e6-ba10-af309c26da79" },
+    { "@type": "EducationalOccupationalCredential", name: "Fachinformatiker für Anwendungsentwicklung (IHK)", credentialCategory: "Vocational qualification" },
+  ],
   alumniOf: { "@type": "EducationalOrganization", name: "FORUM Berufsbildung e.V., Berlin" },
-  sameAs: ["https://www.linkedin.com/in/farooghyousefi/", "https://github.com/farooghyousefi"],
+  sameAs: ["https://www.linkedin.com/in/farooghyousefi/", "https://github.com/farooghyousefi", "https://www.credly.com/users/faroogh-yousefi"],
 }).replace(/</g, "\\u003c");
 
 const siteNameData = JSON.stringify({
@@ -78,7 +81,7 @@ for (const language of languages) {
 }
 
 const alternateLinks = languages.map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${origin}${routes[lang]}" />`).join("\n") + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${origin}/" />`;
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${languages.map((lang) => `  <url>\n    <loc>${origin}${routes[lang]}</loc>\n    <lastmod>2026-10-01</lastmod>\n${alternateLinks}\n  </url>`).join("\n")}\n</urlset>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${languages.map((lang) => `  <url>\n    <loc>${origin}${routes[lang]}</loc>\n    <lastmod>2026-10-03</lastmod>\n${alternateLinks}\n  </url>`).join("\n")}\n</urlset>\n`;
 await writeFile(join(output, "sitemap.xml"), sitemap);
 
 // Publish only this explicit set, never local CV sources, scratch files or tools.
