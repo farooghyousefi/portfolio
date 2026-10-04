@@ -81,12 +81,12 @@ for (const language of languages) {
 }
 
 const alternateLinks = languages.map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${origin}${routes[lang]}" />`).join("\n") + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${origin}/" />`;
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${languages.map((lang) => `  <url>\n    <loc>${origin}${routes[lang]}</loc>\n    <lastmod>2026-10-03</lastmod>\n${alternateLinks}\n  </url>`).join("\n")}\n</urlset>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${languages.map((lang) => `  <url>\n    <loc>${origin}${routes[lang]}</loc>\n    <lastmod>2026-10-04</lastmod>\n${alternateLinks}\n  </url>`).join("\n")}\n</urlset>\n`;
 await writeFile(join(output, "sitemap.xml"), sitemap);
 
 // Publish only this explicit set, never local CV sources, scratch files or tools.
 if (output !== root) {
-  const assets = ["favicon.svg", "apple-touch-icon.png", "faroogh-yousefi-sep-2026-400.webp", "faroogh-yousefi-sep-2026-800.webp", "Faroogh-Yousefi-CV.pdf", "Faroogh-Yousefi-CV-EN.pdf"];
+  const assets = ["favicon.svg", "apple-touch-icon.png", "faroogh-yousefi-sep-2026-400.webp", "faroogh-yousefi-sep-2026-800.webp", "Faroogh-Yousefi-CV.pdf", "Faroogh-Yousefi-CV-EN.pdf", "credentials/aws-solutions-architect-associate.png", "credentials/aws-cloud-practitioner.png", "credentials/microsoft-certified-associate.svg"];
   const icons = (await readdir(join(root, "assets/icons"))).filter((name) => name.endsWith(".svg") || name === "LUCIDE-LICENSE");
   const files = ["styles.css", "script.js", "robots.txt", ...assets.map((name) => `assets/${name}`), ...icons.map((name) => `assets/icons/${name}`)];
   for (const file of files) {
