@@ -155,7 +155,7 @@
         <div class="credentials-grid">
           <article class="credential-card credential-card--earned" aria-labelledby="credential-ihk-title">
             <div class="credential-header">
-              <div class="credential-mark credential-mark--ihk" aria-hidden="true"><img src="{{base}}assets/icons/badge-check.svg" width="48" height="48" alt="" loading="lazy" /><strong>IHK</strong></div>
+              <a class="credential-badge-link" href="#project-azure" aria-label="{{credentials.ihk.project}}" data-i18n-aria-label="credentials.ihk.project"><span class="ihk-seal" aria-hidden="true"><img src="{{base}}assets/icons/badge-check.svg" width="40" height="40" alt="" loading="lazy" /><strong>IHK</strong></span></a>
               <div><p class="small-label" data-i18n="credentials.ihk.type">{{credentials.ihk.type}}</p><p class="credential-state" data-i18n="training.completed">{{training.completed}}</p></div>
             </div>
             <h4 id="credential-ihk-title" data-i18n="education.ihk.title">{{education.ihk.title}}</h4>
@@ -164,7 +164,7 @@
           </article>
           <article class="credential-card credential-card--earned" aria-labelledby="credential-aws-title">
             <div class="credential-header">
-              <div class="credential-mark credential-mark--aws" aria-hidden="true"><img src="{{base}}assets/icons/cloud.svg" width="48" height="48" alt="" loading="lazy" /><strong>AWS</strong><span>SAA</span></div>
+              <a class="credential-badge-link" href="https://www.credly.com/badges/5a12bdb6-9ff6-47e6-ba10-af309c26da79" target="_blank" rel="noopener noreferrer" aria-label="{{credentials.aws.verify}}" data-i18n-aria-label="credentials.aws.verify"><img src="{{base}}assets/credentials/aws-solutions-architect-associate.png" width="128" height="128" alt="AWS Certified Solutions Architect – Associate" loading="lazy" /></a>
               <div><p class="small-label" data-i18n="credentials.aws.type">{{credentials.aws.type}}</p><p class="credential-state"><img src="{{base}}assets/icons/badge-check.svg" width="17" height="17" alt="" loading="lazy" /><span data-i18n="credentials.aws.status">{{credentials.aws.status}}</span></p></div>
             </div>
             <h4 id="credential-aws-title" lang="en" dir="ltr">AWS Certified Solutions Architect – Associate</h4>
@@ -172,8 +172,16 @@
             <div class="credential-footer"><span class="date" data-i18n="credentials.aws.note">{{credentials.aws.note}}</span><a class="text-link" href="https://www.credly.com/badges/5a12bdb6-9ff6-47e6-ba10-af309c26da79" target="_blank" rel="noopener noreferrer"><span data-i18n="credentials.aws.verify">{{credentials.aws.verify}}</span><span aria-hidden="true">↗</span></a></div>
           </article>
         </div>
+        <div class="credential-goals" aria-labelledby="credential-goals-title">
+          <h4 id="credential-goals-title" data-i18n="training.cert.title">{{training.cert.title}}</h4>
+          <ul class="credential-goals-grid">
+            <li><img src="{{base}}assets/credentials/aws-cloud-practitioner.png" width="72" height="72" alt="" loading="lazy" /><div><span class="credential-goal-code" lang="en" dir="ltr">AWS · CLF-C02</span><p class="credential-goal-name" lang="en" dir="ltr">AWS Certified Cloud Practitioner</p><span class="visually-hidden" data-i18n="training.preparation">{{training.preparation}}</span></div></li>
+            <li><img src="{{base}}assets/credentials/microsoft-certified-associate.svg" width="72" height="72" alt="" loading="lazy" /><div><span class="credential-goal-code" lang="en" dir="ltr">Microsoft · AZ-104</span><p class="credential-goal-name" lang="en" dir="ltr">Azure Administrator Associate</p><span class="visually-hidden" data-i18n="training.preparation">{{training.preparation}}</span></div></li>
+            <li><img src="{{base}}assets/credentials/microsoft-certified-associate.svg" width="72" height="72" alt="" loading="lazy" /><div><span class="credential-goal-code" lang="en" dir="ltr">Microsoft · AI-103</span><p class="credential-goal-name" lang="en" dir="ltr">Azure AI Apps and Agents Developer Associate</p><span class="visually-hidden" data-i18n="training.preparation">{{training.preparation}}</span></div></li>
+          </ul>
+        </div>
       </div>
-      <div class="training-current"><div><span class="status-label developing" data-i18n="training.ongoing">{{training.ongoing}}</span><h3 data-i18n="training.clarusway.title">{{training.clarusway.title}}</h3><p class="company">Clarusway GmbH</p><p class="date" data-i18n="training.clarusway.date">{{training.clarusway.date}}</p><p data-i18n="training.clarusway.text">{{training.clarusway.text}}</p></div><div class="certifications"><h3 data-i18n="training.cert.title">{{training.cert.title}}</h3><ul class="cert-list"><li><span>AWS Certified Cloud Practitioner</span><small data-i18n="training.preparation">{{training.preparation}}</small></li></ul></div></div>
+      <div class="training-current"><div><span class="status-label developing" data-i18n="training.ongoing">{{training.ongoing}}</span><h3 data-i18n="training.clarusway.title">{{training.clarusway.title}}</h3><p class="company">Clarusway GmbH</p><p class="date" data-i18n="training.clarusway.date">{{training.clarusway.date}}</p><p data-i18n="training.clarusway.text">{{training.clarusway.text}}</p></div></div>
       <div class="education-grid">
         <article><span class="status-label established" data-i18n="training.completed">{{training.completed}}</span><h3 data-i18n="education.ihk.title">{{education.ihk.title}}</h3><p class="company">FORUM Berufsbildung e.V., Berlin</p><p class="date" data-i18n="education.ihk.date">{{education.ihk.date}}</p><p data-i18n="education.ihk.text">{{education.ihk.text}}</p></article>
         <article><span class="status-label developing" data-i18n="training.studying">{{training.studying}}</span><h3 data-i18n="education.hagen.title">{{education.hagen.title}}</h3><p class="company">FernUniversität in Hagen</p><p class="date" data-i18n="education.hagen.date">{{education.hagen.date}}</p><p data-i18n="education.hagen.text">{{education.hagen.text}}</p></article>
