@@ -1,6 +1,6 @@
 # Faroogh Yousefi Portfolio
 
-Personal portfolio for Faroogh Yousefi, a Berlin-based Cloud Engineer and AWS Certified Solutions Architect – Associate, focused on AWS, Azure, DevOps and automation. Includes Enterprise IT experience, an Azure SQL migration project and ongoing AWS and DevOps training.
+Personal portfolio for Faroogh Yousefi, a Berlin-based Cloud Engineer, Microsoft Certified Azure Administrator Associate (AZ-104) and AWS Certified Solutions Architect – Associate, focused on AWS, Azure, DevOps and automation. Includes Enterprise IT experience, an Azure SQL migration project and ongoing AWS and DevOps training.
 
 Live website:
 

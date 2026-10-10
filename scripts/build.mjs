@@ -38,8 +38,9 @@ const structuredData = JSON.stringify({
   description: translations.en["meta.description"],
   homeLocation: { "@type": "Place", name: "Berlin, Germany" },
   knowsLanguage: ["de", "en", "fa", "ku", "prs"],
-  knowsAbout: ["Amazon Web Services", "Microsoft Azure", "Cloud Architecture", "DevOps", "Terraform", "Docker", "Linux", "Microsoft 365", "Power Automate", "PowerShell"],
+  knowsAbout: ["Amazon Web Services", "Microsoft Azure", "Azure Administration", "Microsoft Entra ID", "Azure Networking", "Azure Monitor", "Azure Backup", "Bicep", "Cloud Architecture", "DevOps", "Terraform", "Docker", "Linux", "Microsoft 365", "Power Automate", "PowerShell"],
   hasCredential: [
+    { "@type": "EducationalOccupationalCredential", name: "Microsoft Certified: Azure Administrator Associate", credentialCategory: "Certification", identifier: "CB7D5DA096843C0D", dateCreated: "2026-10-10", expires: "2027-10-11", url: "https://learn.microsoft.com/de-de/users/farooghyousefi-8393/credentials/certification/azure-administrator?tab=credentials-tab" },
     { "@type": "EducationalOccupationalCredential", name: "AWS Certified Solutions Architect – Associate", credentialCategory: "Certification", url: "https://www.credly.com/badges/5a12bdb6-9ff6-47e6-ba10-af309c26da79" },
     { "@type": "EducationalOccupationalCredential", name: "Fachinformatiker für Anwendungsentwicklung (IHK)", credentialCategory: "Vocational qualification" },
   ],
@@ -81,7 +82,7 @@ for (const language of languages) {
 }
 
 const alternateLinks = languages.map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${origin}${routes[lang]}" />`).join("\n") + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${origin}/" />`;
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${languages.map((lang) => `  <url>\n    <loc>${origin}${routes[lang]}</loc>\n    <lastmod>2026-10-04</lastmod>\n${alternateLinks}\n  </url>`).join("\n")}\n</urlset>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${languages.map((lang) => `  <url>\n    <loc>${origin}${routes[lang]}</loc>\n    <lastmod>2026-10-10</lastmod>\n${alternateLinks}\n  </url>`).join("\n")}\n</urlset>\n`;
 await writeFile(join(output, "sitemap.xml"), sitemap);
 
 // Publish only this explicit set, never local CV sources, scratch files or tools.

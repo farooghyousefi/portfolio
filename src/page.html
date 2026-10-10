@@ -112,6 +112,13 @@
     <section class="section-shell content-section" id="skills" aria-labelledby="skills-title">
       <div class="section-heading"><p class="eyebrow">02 / <span data-i18n="nav.skills">{{nav.skills}}</span></p><h2 id="skills-title" data-i18n="skills.title">{{skills.title}}</h2><p class="section-intro" data-i18n="skills.intro">{{skills.intro}}</p></div>
       <div class="skills-grid">
+        <article class="skill-group azure-administration"><span class="status-label established" data-i18n="skills.azure.status">{{skills.azure.status}}</span><h3 data-i18n="skills.azure.title">{{skills.azure.title}}</h3><p data-i18n="skills.azure.text">{{skills.azure.text}}</p><ul class="azure-skills-list">
+          <li data-i18n="skills.azure.identity">{{skills.azure.identity}}</li>
+          <li data-i18n="skills.azure.compute">{{skills.azure.compute}}</li>
+          <li data-i18n="skills.azure.storage">{{skills.azure.storage}}</li>
+          <li data-i18n="skills.azure.network">{{skills.azure.network}}</li>
+          <li data-i18n="skills.azure.operations">{{skills.azure.operations}}</li>
+        </ul></article>
         <article class="skill-group professional"><span class="status-label established" data-i18n="skills.professional">{{skills.professional}}</span><h3 data-i18n="skills.workplace.title">{{skills.workplace.title}}</h3><p data-i18n="skills.workplace.text">{{skills.workplace.text}}</p><ul class="tech-list">
           <li><img src="{{base}}assets/icons/microsoft-365.svg" width="24" height="24" alt="" loading="lazy" />Microsoft 365</li><li><img src="{{base}}assets/icons/intune.svg" width="24" height="24" alt="" loading="lazy" />Intune / MDM</li><li><img src="{{base}}assets/icons/entra-id.svg" width="24" height="24" alt="" loading="lazy" />Entra ID / AD</li><li>Windows 10 / 11</li><li>Exchange Online</li><li>Teams Rooms</li>
         </ul></article>
@@ -153,6 +160,16 @@
       <div class="credentials" aria-labelledby="credentials-title">
         <h3 id="credentials-title" data-i18n="credentials.title">{{credentials.title}}</h3>
         <div class="credentials-grid">
+          <article class="credential-card credential-card--earned credential-card--azure" aria-labelledby="credential-azure-title">
+            <div class="credential-header">
+              <a class="credential-badge-link" href="https://learn.microsoft.com/de-de/users/farooghyousefi-8393/credentials/certification/azure-administrator?tab=credentials-tab" target="_blank" rel="noopener noreferrer" aria-label="{{credentials.azure.verify}}" data-i18n-aria-label="credentials.azure.verify"><img src="{{base}}assets/credentials/microsoft-certified-associate.svg" width="128" height="128" alt="Microsoft Certified: Azure Administrator Associate" loading="lazy" /></a>
+              <div><p class="small-label" data-i18n="credentials.azure.type">{{credentials.azure.type}}</p><p class="credential-state"><img src="{{base}}assets/icons/badge-check.svg" width="17" height="17" alt="" loading="lazy" /><span data-i18n="credentials.azure.status">{{credentials.azure.status}}</span></p></div>
+            </div>
+            <h4 id="credential-azure-title" lang="en" dir="ltr">Microsoft Certified: Azure Administrator Associate</h4>
+            <p class="credential-description" data-i18n="credentials.azure.text">{{credentials.azure.text}}</p>
+            <p class="small-label" lang="en" dir="ltr">Credential ID: CB7D5DA096843C0D</p>
+            <div class="credential-footer"><span class="date" data-i18n="credentials.azure.note">{{credentials.azure.note}}</span><a class="text-link" href="https://learn.microsoft.com/de-de/users/farooghyousefi-8393/credentials/certification/azure-administrator?tab=credentials-tab" target="_blank" rel="noopener noreferrer"><span data-i18n="credentials.azure.verify">{{credentials.azure.verify}}</span><span aria-hidden="true">↗</span></a></div>
+          </article>
           <article class="credential-card credential-card--earned" aria-labelledby="credential-ihk-title">
             <div class="credential-header">
               <a class="credential-badge-link" href="#project-azure" aria-label="{{credentials.ihk.project}}" data-i18n-aria-label="credentials.ihk.project"><span class="ihk-seal" aria-hidden="true"><img src="{{base}}assets/icons/badge-check.svg" width="40" height="40" alt="" loading="lazy" /><strong>IHK</strong></span></a>
@@ -176,7 +193,6 @@
           <h4 id="credential-goals-title" data-i18n="training.cert.title">{{training.cert.title}}</h4>
           <ul class="credential-goals-grid">
             <li><img src="{{base}}assets/credentials/aws-cloud-practitioner.png" width="72" height="72" alt="" loading="lazy" /><div><span class="credential-goal-code" lang="en" dir="ltr">AWS · CLF-C02</span><p class="credential-goal-name" lang="en" dir="ltr">AWS Certified Cloud Practitioner</p><span class="visually-hidden" data-i18n="training.preparation">{{training.preparation}}</span></div></li>
-            <li><img src="{{base}}assets/credentials/microsoft-certified-associate.svg" width="72" height="72" alt="" loading="lazy" /><div><span class="credential-goal-code" lang="en" dir="ltr">Microsoft · AZ-104</span><p class="credential-goal-name" lang="en" dir="ltr">Azure Administrator Associate</p><span class="visually-hidden" data-i18n="training.preparation">{{training.preparation}}</span></div></li>
             <li><img src="{{base}}assets/credentials/microsoft-certified-associate.svg" width="72" height="72" alt="" loading="lazy" /><div><span class="credential-goal-code" lang="en" dir="ltr">Microsoft · AI-103</span><p class="credential-goal-name" lang="en" dir="ltr">Azure AI Apps and Agents Developer Associate</p><span class="visually-hidden" data-i18n="training.preparation">{{training.preparation}}</span></div></li>
           </ul>
         </div>
